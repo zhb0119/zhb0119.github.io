@@ -46,7 +46,7 @@ body {
 
 body:after {
     display: none;
-    content: url("images/background/background1.JPG") url("images/background/background2.jpg")
+    content: url("images/zjut.jpg")
 }
 
 h1,
@@ -859,6 +859,22 @@ pre>code {
 }
 
 .icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 2.0rem;
+    line-height: 1;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
     background-color: rgba(255, 255, 255, 0.55);
     -webkit-backdrop-filter: blur(10px) saturate(160%);
     backdrop-filter: blur(10px) saturate(160%);
@@ -866,6 +882,20 @@ pre>code {
     box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
     border-radius: 999px;
     transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease
+}
+
+.icon-button span {
+    display: none
+}
+
+.icon-button i {
+    position: relative;
+    line-height: 1
+}
+
+.icon-button img {
+    width: 22px;
+    height: 22px
 }
 
 .icon-button.linkedin {
@@ -1001,6 +1031,7 @@ pre>code {
 .text-left {
     text-align: left
 }
+
 .text-center {
     text-align: center
 }
@@ -1031,65 +1062,6 @@ hr.soft {
 
 .back-to-top:hover {
     background-color: rgba(135, 135, 135, 0.5)
-}
-
-.icon-button span {
-    border-radius: 0;
-    display: block;
-    height: 0;
-    left: 50%;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 0;
-    background-color: transparent
-}
-
-.icon-button:hover span {
-    width: 3.6rem;
-    height: 3.6rem;
-    border-radius: 3.6rem;
-    margin: -1.8rem
-}
-
-.twitter span {
-    background-color: transparent
-}
-
-.facebook span {
-    background-color: transparent
-}
-
-.linkedin span {
-    background-color: transparent
-}
-
-.github span {
-    background-color: transparent
-}
-
-.xiaohongshu span {
-    background-color: transparent
-}
-
-.icon-button i {
-    background: none;
-    color: inherit;
-    height: 3.6rem;
-    left: 0;
-    line-height: 3.6rem;
-    position: absolute;
-    top: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 3.6rem;
-    z-index: 10
 }
 
 .timeline-brief,
