@@ -373,24 +373,28 @@ pre>code {
 
 .md-heading {
     font-size: 24px;
-    font-color: #9b3022;
-    font-weight: 400
+    font-weight: 700;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 18px 0 12px 0
 }
 
 .section-icon {
-    width: 28px;
-    height: 28px;
-    vertical-align: -3px;
-    margin-right: 8px;
+    width: 22px;
+    height: 22px;
+    vertical-align: -2px;
+    margin-right: 0;
     display: inline-block;
     object-fit: contain
 }
 
 .inline-icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: -3px;
-    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+    vertical-align: -2px;
+    margin-right: 4px;
     display: inline-block;
     object-fit: contain
 }
@@ -401,8 +405,8 @@ pre>code {
 
 .bio-subtitle {
     font-family: "Inter", "Roboto", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 700;
     color: #0f172a;
     margin: 10px 0 8px 0
 }
@@ -421,7 +425,7 @@ pre>code {
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #0f172a;
     line-height: 1.6
