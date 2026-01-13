@@ -35,7 +35,7 @@ html {
 
 body {
     z-index: initial;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Inter", "Roboto", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
@@ -739,7 +739,11 @@ pre>code {
 }
 
 .wrapper-light {
-    background-color: rgba(255, 255, 255, 0.8)
+    background-color: rgba(255, 255, 255, 0.70);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18)
 }
 
 .wrapper-dark {
@@ -815,19 +819,62 @@ pre>code {
 #my-name {
     font-size: 32px;
     font-weight: bold;
-    color: #292929
+    color: #0f172a;
+    letter-spacing: -0.02em
 }
 
 #my-title {
     font-size: 20px;
-    color: #292929;
+    color: rgba(15, 23, 42, 0.78);
     font-weight: 200
 }
 
 #my-email {
     font-size: 16px;
-    color: #292929;
+    color: rgba(15, 23, 42, 0.70);
     font-weight: 160
+}
+
+.social-media {
+    margin-top: 10px
+}
+
+.icon-button {
+    background-color: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(10px) saturate(160%);
+    backdrop-filter: blur(10px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+    border-radius: 999px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease
+}
+
+.icon-button:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+    text-decoration: none
+}
+
+.icon-button i,
+.icon-button img {
+    transition: transform 0.18s ease
+}
+
+.icon-button:hover i,
+.icon-button:hover img {
+    transform: scale(1.06)
+}
+
+.icon-button.linkedin:hover {
+    background: linear-gradient(135deg, rgba(66, 133, 244, 0.22), rgba(15, 23, 42, 0.08))
+}
+
+.icon-button.github:hover {
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.20), rgba(15, 23, 42, 0.06))
+}
+
+.icon-button.xiaohongshu:hover {
+    background: linear-gradient(135deg, rgba(255, 45, 85, 0.24), rgba(15, 23, 42, 0.06))
 }
 
 #my-desc-title {
@@ -918,7 +965,6 @@ pre>code {
 .text-left {
     text-align: left
 }
-
 .text-center {
     text-align: center
 }
@@ -951,30 +997,6 @@ hr.soft {
     background-color: rgba(135, 135, 135, 0.5)
 }
 
-.social-icon {
-    width: 40px;
-    height: 40px;
-    display: inline-block
-}
-
-.icon-button {
-    background-color: white;
-    border-radius: 3.6rem;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 2.0rem;
-    height: 3.6rem;
-    line-height: 3.6rem;
-    margin: 0 5px;
-    position: relative;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 3.6rem
-}
-
 .icon-button span {
     border-radius: 0;
     display: block;
@@ -987,7 +1009,8 @@ hr.soft {
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    width: 0
+    width: 0;
+    background-color: transparent
 }
 
 .icon-button:hover span {
@@ -998,24 +1021,28 @@ hr.soft {
 }
 
 .twitter span {
-    background-color: #4099ff
+    background-color: transparent
 }
 
 .facebook span {
-    background-color: #3B5998
+    background-color: transparent
 }
 
 .linkedin span {
-    background-color: #0077B5
+    background-color: transparent
 }
 
 .github span {
-    background-color: #000
+    background-color: transparent
+}
+
+.xiaohongshu span {
+    background-color: transparent
 }
 
 .icon-button i {
     background: none;
-    color: white;
+    color: inherit;
     height: 3.6rem;
     left: 0;
     line-height: 3.6rem;
@@ -1029,33 +1056,9 @@ hr.soft {
     z-index: 10
 }
 
-.icon-button .icon-twitter {
-    color: #4099ff
-}
-
-.icon-button .icon-facebook {
-    color: #3B5998
-}
-
-.icon-button .icon-github {
-    color: #000
-}
-
-.icon-button .icon-linkedin {
-    color: #0077B5
-}
-
-
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-github,
-.icon-button:hover .icon-linkedin {
-    color: white
-}
-
 .timeline-brief,
 .timeline {
-    font-family: 'Roboto', sans-serif, Helvetica;
+    font-family: "Inter", "Roboto", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
@@ -1064,79 +1067,6 @@ hr.soft {
 
 .timeline-body {
     padding: 0
-}
-
-.timeline-start {
-    width: -webkit-calc(100% - 2 * (20px));
-    width: calc(100% - 2 * (20px));
-    text-align: center;
-    padding: 20px
-}
-
-.timeline-item:before {
-    width: 11px;
-    height: 11px;
-    background: #333;
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 5px
-}
-
-.timeline-item {
-    width: -webkit-calc(50% - (20px));
-    width: calc(50% - (20px));
-    position: relative
-}
-
-.timeline-item:nth-child(odd):before {
-    left: -8px
-}
-
-.timeline-item:nth-child(odd):after {
-    left: -8px;
-    bottom: 0
-}
-
-.timeline-item:nth-child(odd) {
-    margin-left: 50%;
-    padding-left: 20px;
-    border-left: 5px solid #333;
-    text-align: left
-}
-
-.timeline-item:nth-child(even) {
-    margin-right: -webkit-calc(50% + (20px));
-    margin-right: calc(50% + (20px));
-    padding-right: 20px;
-    border-right: 5px solid #333;
-    text-align: right
-}
-
-.timeline-item:nth-child(even):before {
-    right: -8px
-}
-
-.timeline-item:nth-child(even):after {
-    right: -8px
-}
-
-.timeline-date {
-    font-size: 16px;
-    font-weight: 600;
-    color: #113f7c
-}
-
-.timeline-title {
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    color: #9b3022
-}
-
-.timeline-desc {
-    font-size: 16px;
-    font-weight: 200
 }
 
 .timeline-host {
