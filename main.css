@@ -377,6 +377,15 @@ pre>code {
     font-weight: 400
 }
 
+.section-icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: -3px;
+    margin-right: 8px;
+    display: inline-block;
+    object-fit: contain
+}
+
 .lg-heading {
     font-size: 30px;
     font-color: #9b3022;
