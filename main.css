@@ -739,11 +739,26 @@ pre>code {
 }
 
 .wrapper-light {
-    background-color: rgba(255, 255, 255, 0.70);
-    -webkit-backdrop-filter: blur(14px) saturate(140%);
-    backdrop-filter: blur(14px) saturate(140%);
+    background-color: rgba(255, 255, 255, 0.40);
     border: 1px solid rgba(255, 255, 255, 0.55);
-    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18)
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+    position: relative;
+    overflow: hidden
+}
+
+.wrapper-light::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.70);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    backdrop-filter: blur(18px) saturate(160%);
+    z-index: 0
+}
+
+.wrapper-light > * {
+    position: relative;
+    z-index: 1
 }
 
 .wrapper-dark {
@@ -836,7 +851,11 @@ pre>code {
 }
 
 .social-media {
-    margin-top: 10px
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center
 }
 
 .icon-button {
@@ -847,6 +866,23 @@ pre>code {
     box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
     border-radius: 999px;
     transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease
+}
+
+.icon-button.linkedin {
+    background: linear-gradient(135deg, rgba(66, 133, 244, 0.85), rgba(15, 23, 42, 0.25))
+}
+
+.icon-button.github {
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.85), rgba(148, 163, 184, 0.18))
+}
+
+.icon-button.xiaohongshu {
+    background: linear-gradient(135deg, rgba(255, 45, 85, 0.85), rgba(15, 23, 42, 0.20))
+}
+
+.icon-button.linkedin i,
+.icon-button.github i {
+    color: #fff
 }
 
 .icon-button:hover {
