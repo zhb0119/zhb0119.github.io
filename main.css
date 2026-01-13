@@ -386,6 +386,51 @@ pre>code {
     object-fit: contain
 }
 
+.inline-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: -3px;
+    margin-right: 6px;
+    display: inline-block;
+    object-fit: contain
+}
+
+.bio-section {
+    margin-top: 14px
+}
+
+.bio-subtitle {
+    font-family: "Inter", "Roboto", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 10px 0 8px 0
+}
+
+.edu-school {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 6px 0 4px 0;
+    font-size: 16px;
+    color: #0f172a
+}
+
+.internship-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0f172a;
+    line-height: 1.6
+}
+
+.internship-sep {
+    opacity: 0.55
+}
+
 .lg-heading {
     font-size: 30px;
     font-color: #9b3022;
