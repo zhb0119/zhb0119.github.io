@@ -1696,6 +1696,8 @@ div.paginate-container li:nth-last-child(2) a:after {
 
 .pub-right>.desc>p {
     margin: auto
+}
+
 .media-list {
     margin-top: 10px
 }
@@ -1710,6 +1712,17 @@ div.paginate-container li:nth-last-child(2) a:after {
     background: rgba(255, 255, 255, 0.70);
     -webkit-backdrop-filter: blur(12px) saturate(140%);
     backdrop-filter: blur(12px) saturate(140%)
+}
+
+.media-left {
+    display: flex;
+    align-items: flex-start
+}
+
+.media-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px
 }
 
 .media-gallery > a {
