@@ -1698,30 +1698,42 @@ div.paginate-container li:nth-last-child(2) a:after {
     margin: auto
 }
 
-.pub-right>.publish {
-    float: right
+.media-list {
+    margin-top: 10px
 }
 
-.pub-right>.publish>.publisher {
-    color: #002336;
-    font-size: 16px
+.media-item {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px 14px;
+    background: rgba(255, 255, 255, 0.70);
+    -webkit-backdrop-filter: blur(12px) saturate(140%);
+    backdrop-filter: blur(12px) saturate(140%)
 }
 
-.pub-right>.publish>.status {
-    color: #9b3022;
-    font-weight: 800;
-    font-size: 16px
+.media-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px
 }
 
-@media screen and (max-width: 600px) {
-    .pub-right>.publish>.status {
-        display: none
-    }
+.media-thumb {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fff
 }
 
-.pub-right>.publish>.place {
-    color: #0077B5;
-    font-weight: 500;
+.media-title {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 16px;
+    line-height: 1.35
     font-size: 16px
 }
 
