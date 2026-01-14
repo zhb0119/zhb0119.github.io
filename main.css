@@ -1697,7 +1697,6 @@ div.paginate-container li:nth-last-child(2) a:after {
 .pub-right>.desc>p {
     margin: auto
 }
-
 .media-list {
     margin-top: 10px
 }
@@ -1714,108 +1713,28 @@ div.paginate-container li:nth-last-child(2) a:after {
     backdrop-filter: blur(12px) saturate(140%)
 }
 
+.media-left {
+    display: flex;
+    align-items: center
+}
+
 .media-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px
 }
 
+.media-gallery > a {
+    display: block
+}
+
 .media-thumb {
     width: 100%;
-    height: 140px;
+    height: 200px;
     object-fit: cover;
     border: 1px solid #e5e7eb;
     border-radius: 10px;
     background: #fff
-}
-
-.media-title {
-    font-weight: 700;
-    color: #0f172a;
-    font-size: 16px;
-    line-height: 1.35;
-}
-
-.media-subtitle {
-    margin-top: 4px;
-    color: rgba(15, 23, 42, 0.75);
-    font-weight: 600;
-    font-size: 14px
-}
-
-.media-actions {
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center
-}
-
-.media-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(15, 23, 42, 0.15);
-    background: rgba(255, 255, 255, 0.75);
-    color: #0f172a;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 13px
-}
-
-.media-link:hover {
-    text-decoration: none;
-    border-color: rgba(155, 48, 34, 0.45)
-}
-
-.media-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(15, 23, 42, 0.15);
-    background: rgba(155, 48, 34, 0.10);
-    color: #0f172a;
-    font-weight: 700;
-    font-size: 13px;
-    cursor: pointer
-}
-
-.media-toggle:hover {
-    border-color: rgba(155, 48, 34, 0.45)
-}
-
-.media-desc {
-    margin-top: 10px;
-    color: rgba(15, 23, 42, 0.82);
-    font-size: 14px;
-    line-height: 1.65
-}
-
-.media-paragraph {
-    margin-bottom: 8px
-}
-
-.media-bullets {
-    margin: 0;
-    padding-left: 18px
-}
-
-.media-tags {
-    margin-top: 8px;
-    color: rgba(15, 23, 42, 0.70);
-    font-size: 13px
-}
-
-.media-list[data-lang="zh"] .lang-en {
-    display: none
-}
-
-.media-list[data-lang="en"] .lang-zh {
-    display: none
 }
 
 @media screen and (max-width: 800px) {
@@ -1824,13 +1743,8 @@ div.paginate-container li:nth-last-child(2) a:after {
     }
 
     .media-thumb {
-        height: 160px
+        height: 190px
     }
-}
-
-@media screen and (max-width: 600px) {
-    .pub-right>.publish>.place {
-        display: none
     }
 }
 
