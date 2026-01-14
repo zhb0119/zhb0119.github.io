@@ -806,6 +806,97 @@ hr.soft {
     gap: 20px;
 }
 
+.award-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.award-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-items: stretch;
+}
+
+.award-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.award-image {
+    width: 300px;
+    flex-shrink: 0;
+    border-right: 1px solid #e5e7eb;
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.award-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.award-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.award-card:hover .award-image img {
+    transform: scale(1.05);
+}
+
+.award-content {
+    padding: 20px 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.award-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #0f172a;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.award-meta {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .award-card {
+        flex-direction: column;
+    }
+    
+    .award-image {
+        width: 100%;
+        height: 200px;
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+    }
+}
+
 .media-item {
     display: flex;
     align-items: flex-start;
@@ -816,6 +907,7 @@ hr.soft {
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-direction: row;
 }
 
 .media-item:hover {
@@ -826,7 +918,8 @@ hr.soft {
 .media-left {
     flex-shrink: 0;
     width: 380px;
-    margin-right: 12px
+    margin-right: 12px;
+    border-right: 1px solid #e5e7eb;
 }
 
 .media-gallery {
@@ -985,14 +1078,14 @@ hr.soft {
 }
 
 .bio-body {
-    margin: 5px;
+    margin: 5px 0;
     padding: 0px
 }
 
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 4px 2px;  /* row gap 24px, column gap 32px */
+    gap: 4px 2px;
     flex-wrap: wrap;
     width: 940px; /* 控制最大宽度，2列布局 */
     margin: 0 auto;
