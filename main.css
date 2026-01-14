@@ -1702,25 +1702,27 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 .media-item {
+    display: flex;
+    align-items: flex-start;
     overflow: hidden;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
-    padding: 14px 14px;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.70);
     -webkit-backdrop-filter: blur(12px) saturate(140%);
     backdrop-filter: blur(12px) saturate(140%)
 }
 
 .media-left {
-    float: left;
-    width: 420px;
-    margin-right: 18px
+    flex-shrink: 0;
+    width: 380px;
+    margin-right: 12px
 }
 
 .media-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px
+    gap: 4px
 }
 
 .media-gallery > a {
@@ -1729,15 +1731,16 @@ div.paginate-container li:nth-last-child(2) a:after {
 
 .media-thumb {
     width: 100%;
-    height: 220px;
+    height: 180px;
     object-fit: cover;
     border: 1px solid #e5e7eb;
-    border-radius: 10px;
+    border-radius: 6px;
     background: #fff
 }
 
 .media-right {
-    min-width: 0
+    min-width: 0;
+    flex: 1;
 }
 
 .media-title {
@@ -1745,6 +1748,15 @@ div.paginate-container li:nth-last-child(2) a:after {
     color: #0f172a;
     font-size: 16px;
     line-height: 1.35
+}
+
+.media-title a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.media-title a:hover {
+    text-decoration: underline;
 }
 
 .media-subtitle {
@@ -1830,6 +1842,10 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 @media screen and (max-width: 800px) {
+    .media-item {
+        flex-direction: column;
+    }
+
     .media-left {
         float: none;
         width: 100%;
@@ -2168,4 +2184,5 @@ div.paginate-container li:nth-last-child(2) a:after {
     width: 16px;
     height: 16px;
     margin-right: 4px;
+    vertical-align: text-bottom;
   }
