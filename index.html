@@ -521,7 +521,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   }
 
+  function initMediaLanguageToggles() {
+    const lists = document.querySelectorAll('.media-list');
+    for (const list of lists) {
+      const toggles = list.querySelectorAll('[data-toggle-lang]');
+      for (const btn of toggles) {
+        btn.addEventListener('click', () => {
+          const current = list.getAttribute('data-lang') || 'zh';
+          list.setAttribute('data-lang', current === 'zh' ? 'en' : 'zh');
+        });
+      }
+    }
+  }
+
   loadGitHubCardStats();
+  initMediaLanguageToggles();
 </script>
 
 <div class="wrapper">
