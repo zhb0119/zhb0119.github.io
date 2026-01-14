@@ -1256,18 +1256,14 @@ hr.soft {
 }
 
 .bio {
-    max-width: -webkit-calc(100% - (30px / 2));
-    max-width: calc(100% - (30px / 2));
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto
 }
 
 @media screen and (max-width: 600px) {
     .bio {
-        max-width: -webkit-calc(100% - (30px / 2));
-        max-width: calc(100% - (30px / 2))
+        width: 100%;
     }
 }
 
