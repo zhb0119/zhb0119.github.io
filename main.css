@@ -513,7 +513,18 @@ pre>code {
     margin: 10px 0 8px 0;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+}
+
+.bio-subtitle > i,
+.bio-subtitle > img,
+.bio-subtitle > .section-icon {
+    flex: 0 0 22px;
+    width: 22px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .edu-school {
@@ -1141,8 +1152,18 @@ hr.soft {
         padding: 16px;
     }
 
+    .media-gallery {
+        flex-direction: row;
+    }
+
     .media-gallery > a {
-        width: calc(50% - 4px);
+        width: 50%;
+        border-bottom: none;
+        border-right: 1px solid #e5e7eb;
+    }
+
+    .media-gallery > a:last-child {
+        border-right: none;
     }
 
     .media-thumb {
