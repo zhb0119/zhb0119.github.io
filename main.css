@@ -1309,25 +1309,22 @@ hr.soft {
     justify-content: center;
     padding: 12px;
     border-radius: 0;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
 }
 
 .pub-left .intro-img {
-    width: 100%;
-    height: auto;
-    max-height: 140px;
-    object-fit: contain;
-    display: block;
-    transition: transform 0.3s ease;
-    border: 1px solid #e5e7eb;
-    background: #fff;
-    border-radius: 6px;
+width: 100%;
+height: auto;
+max-height: 110px;
+object-fit: contain;
+display: block;
+transition: transform 0.3s ease;
+border: 1px solid #e5e7eb;
+background: #fff;
+border-radius: 6px;
 }
 
 .pub:hover .pub-left .intro-img {
-    transform: scale(1.03);
+transform: scale(1.03);
 }
 
 .pub-right {
