@@ -1715,7 +1715,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 
 .media-left {
     display: flex;
-    align-items: center
+    align-items: flex-start
 }
 
 .media-gallery {
@@ -1744,7 +1744,6 @@ div.paginate-container li:nth-last-child(2) a:after {
 
     .media-thumb {
         height: 190px
-    }
     }
 }
 
