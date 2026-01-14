@@ -436,19 +436,71 @@ pre>code {
     color: #0f172a
 }
 
+.timeline-brief {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.timeline-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .internship-row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
+    padding: 18px 24px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     font-size: 16px;
     font-weight: 500;
     color: #0f172a;
-    line-height: 1.6
+    line-height: 1.6;
+}
+
+.internship-row:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #d1d5db;
+}
+
+.internship-title {
+    font-weight: 600;
+    color: #111827;
+}
+
+.internship-topic {
+    color: #4b5563;
+}
+
+.internship-time {
+    color: #64748b;
+    font-size: 14px;
+    margin-left: auto;
+    background-color: #f1f5f9;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .internship-time {
+        margin-left: 0;
+        margin-top: 8px;
+        width: 100%;
+        display: inline-block;
+        text-align: center; /* Optional: Center the time on mobile */
+    }
 }
 
 .internship-sep {
-    opacity: 0.55
+    display: none;
 }
 
 .lg-heading {
@@ -827,7 +879,7 @@ hr.soft {
 }
 
 .award-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -912,7 +964,7 @@ hr.soft {
 
 .media-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .media-left {
@@ -1092,15 +1144,22 @@ hr.soft {
   }
   
   .github-card {
-    border: 1.5px solid #e5e7eb;
-    border-radius: 8px;
-    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
     background-color: white;
-    margin-bottom: 2px;
+    margin-bottom: 0;
     width: 430px;
     font-family: system-ui, sans-serif;
     font-size: 14px;
     color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .github-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
   
   .github-card a {
@@ -1168,3 +1227,154 @@ hr.soft {
     margin-right: 4px;
     vertical-align: text-bottom;
   }
+
+/* Publications Section */
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pub {
+    display: flex;
+    align-items: stretch;
+    padding: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.pub:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #e5e7eb;
+}
+
+.pub-left {
+    flex-shrink: 0;
+    width: 300px;
+    margin-right: 0;
+    border-right: 1px solid #e5e7eb;
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 0;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.pub-left .intro-img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.pub:hover .pub-left .intro-img {
+    transform: scale(1.03);
+}
+
+.pub-right {
+    flex: 1;
+    min-width: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pub-right .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.pub-right .authors {
+    font-size: 15px;
+    color: #475569;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.pub-right .authors .author {
+    display: inline-block;
+}
+
+.pub-right .authors .author:not(:last-child)::after {
+    content: ",";
+    margin-right: 4px;
+}
+
+.pub-right .desc {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #64748b;
+}
+
+.pub-right .desc p {
+    margin-bottom: 0;
+}
+
+.pub-right .desc a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2563eb;
+    margin-right: 12px;
+    text-decoration: none;
+    background-color: #eff6ff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.pub-right .desc a:hover {
+    background-color: #dbeafe;
+    text-decoration: none;
+}
+
+.pub-right .publish {
+    font-size: 13px;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pub-right .publish .place {
+    font-weight: 600;
+    color: #0f172a;
+    background-color: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .pub {
+        flex-direction: column;
+    }
+
+    .pub-left {
+        width: 100%;
+        margin-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+        max-width: none;
+    }
+}
