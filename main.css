@@ -877,7 +877,7 @@ hr.soft {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     align-items: stretch;
-    min-height: 180px;
+    min-height: 120px;
 }
 
 .award-card:hover {
@@ -920,7 +920,7 @@ hr.soft {
 }
 
 .award-content {
-    padding: 20px 24px;
+    padding: 8px 12px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -967,7 +967,7 @@ hr.soft {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     flex-direction: row;
-    min-height: 180px;
+    min-height: 120px;
 }
 
 .media-item:hover {
@@ -977,11 +977,11 @@ hr.soft {
 
 .media-left {
     flex-shrink: 0;
-    width: 300px;
+    width: 240px;
     margin-right: 0;
     border-right: 1px solid #e5e7eb;
     background-color: #f8fafc;
-    padding: 20px;
+    padding: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1018,7 +1018,7 @@ hr.soft {
 .media-right {
     min-width: 0;
     flex: 1;
-    padding: 20px 24px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1036,12 +1036,25 @@ hr.soft {
         padding: 20px;
     }
 
-    .media-right {
-        padding: 20px;
-    }
-    
     .media-thumb {
         height: 150px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .media-item {
+        flex-direction: column;
+    }
+
+    .media-left {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px
+    }
+
+    .media-thumb {
+        height: 200px
     }
 }
 
@@ -1141,23 +1154,6 @@ hr.soft {
 
 .media-list[data-lang="en"] .lang-zh {
     display: none
-}
-
-@media screen and (max-width: 800px) {
-    .media-item {
-        flex-direction: column;
-    }
-
-    .media-left {
-        float: none;
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 12px
-    }
-
-    .media-thumb {
-        height: 200px
-    }
 }
 
 .bio {
@@ -1293,7 +1289,7 @@ hr.soft {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
-    min-height: 180px;
+    min-height: 120px;
 }
 
 .pub:hover {
@@ -1304,14 +1300,14 @@ hr.soft {
 
 .pub-left {
     flex-shrink: 0;
-    width: 300px;
+    width: 240px;
     margin-right: 0;
     border-right: 1px solid #e5e7eb;
     background-color: #f8fafc;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 12px;
     border-radius: 0;
     border-left: none;
     border-top: none;
@@ -1337,7 +1333,7 @@ hr.soft {
 .pub-right {
     flex: 1;
     min-width: 0;
-    padding: 24px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
