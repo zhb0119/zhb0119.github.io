@@ -1697,15 +1697,12 @@ div.paginate-container li:nth-last-child(2) a:after {
 .pub-right>.desc>p {
     margin: auto
 }
-
 .media-list {
     margin-top: 10px
 }
 
 .media-item {
-    display: grid;
-    grid-template-columns: 420px 1fr;
-    gap: 18px;
+    overflow: hidden;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     padding: 14px 14px;
@@ -1715,8 +1712,9 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 .media-left {
-    display: flex;
-    align-items: flex-start
+    float: left;
+    width: 420px;
+    margin-right: 18px
 }
 
 .media-gallery {
@@ -1832,8 +1830,11 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 @media screen and (max-width: 800px) {
-    .media-item {
-        grid-template-columns: 1fr
+    .media-left {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 12px
     }
 
     .media-thumb {
