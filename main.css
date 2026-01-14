@@ -941,13 +941,13 @@ hr.soft {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
 }
 
 .award-grid {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     margin-top: 20px;
 }
 
