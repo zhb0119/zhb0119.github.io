@@ -162,6 +162,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="page-link" href="#bio"><b>Biography</b></a>
     <a class="page-link" href="#timeline"><b>Experiences</b></a>
     <a class="page-link" href="#publications"><b>Publications</b></a>
+    <a class="page-link" href="#demos-media"><b>Demos &amp; Media</b></a>
     <a class="page-link" href="#codebase"><b>GitHub</b></a>
     <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
     <!--<a class="page-link" href="#otherprojects">Projects</a>-->
@@ -389,62 +390,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-  <div id="demos-media" class="bio">
-    <div class="bio-body" style="overflow:hidden;">
-      <h1 class="md-heading text-left">
-        <i class="fa fa-play-circle" aria-hidden="true"></i>
-        Demos &amp; Media
-      </h1>
-
-      <div class="media-list" data-lang="zh">
-        <div class="media-item">
-          <div class="media-left">
-            <div class="media-gallery">
-              <a href="images/media/diansai.jpg" target="_blank" rel="noopener noreferrer">
-                <img class="media-thumb" src="images/media/diansai.jpg" alt="NUEDC 2025" />
-              </a>
-              <a href="images/media/pic1.jpg" target="_blank" rel="noopener noreferrer">
-                <img class="media-thumb" src="images/media/pic1.jpg" alt="NUEDC 2025 Team" />
-              </a>
-            </div>
-          </div>
-
-          <div class="media-right">
-            <div class="media-title">2025 TI Cup National Undergraduate Electronics Design Contest (NUEDC) · Problem E</div>
-            <div class="media-subtitle">Simple Self-Aiming Device</div>
-
-            <div class="media-actions">
-              <a class="media-link" href="https://res.nuedc-training.com.cn/topic/2025/topic_124.html" target="_blank" rel="noopener noreferrer">Official Page</a>
-              <button class="media-toggle" type="button" data-toggle-lang>中文 / EN</button>
-            </div>
-
-            <div class="media-desc lang-zh">
-              <div class="media-paragraph">设计并制作一套具备自动寻迹与激光自瞄能力的小车系统：沿黑色轨迹自动行驶（可设 1–5 圈、单圈 ≤20s），在指定或任意位置自动搜索并识别靶标，通过二维云台控制激光精准命中靶心（误差 ≤2cm）。</div>
-              <ul class="media-bullets">
-                <li>主控：TI MSPM0 系列 MCU（如 MSPM0G3507）；视觉：K230（用于图像识别）。</li>
-                <li>寻迹：八路灰度/红外阵列，支持直道跟踪与 90° 转弯控制，按键设置圈数，完成后自动停止。</li>
-                <li>自瞄：双轴云台（步进/舵机），激光与摄像头同轴；OpenCV 矩形检测 + 透视变换定位靶心，PID 控制闭环对准。</li>
-                <li>工程细节：数模隔离供电、云台高刚性结构（常用 3D 打印）、双独立电源开关规则满足。</li>
-              </ul>
-              <div class="media-tags">关键词：MSPM0G3507 · K230 · 8-channel grayscale · 2-DoF gimbal · OpenCV · PID · Coaxial laser</div>
-            </div>
-
-            <div class="media-desc lang-en">
-              <div class="media-paragraph">Built an autonomous line-following car with a 2-DoF gimbal laser aiming module. The system completes 1–5 laps (≤20s per lap), detects/locks targets automatically, and aligns the laser to the bullseye with ≤2cm error.</div>
-              <ul class="media-bullets">
-                <li>MCU: TI MSPM0 (e.g., MSPM0G3507); Vision: K230 for target perception.</li>
-                <li>Line following: 8-channel grayscale/IR array with straight tracking and 90° turn handling; lap count configurable; auto stop.</li>
-                <li>Aiming: dual-axis gimbal (stepper/servo), coaxial camera+laser; OpenCV detection + homography; PID closed-loop alignment.</li>
-                <li>Engineering: mixed-signal power isolation, rigid gimbal (3D-printed), dual power-switch rule compliance.</li>
-              </ul>
-              <div class="media-tags">Keywords: MSPM0G3507 · K230 · 8-channel grayscale · 2-DoF gimbal · OpenCV · PID · Coaxial laser</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div id="codebase" class="bio">
     <div class="bio-body" style="overflow:hidden;">
       <h1 class="md-heading text-left">
@@ -583,6 +528,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
+
+  <div id="demos-media" class="bio">
+    <div class="bio-body" style="overflow:hidden;">
+      <h1 class="md-heading text-left">
+        <i class="fa fa-play-circle" aria-hidden="true"></i>
+        Demos &amp; Media
+      </h1>
+
+      <div class="media-list" data-lang="zh">
+        <div class="media-item">
+          <div class="media-left">
+            <div class="media-gallery">
+              <a href="images/media/diansai.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="media-thumb" src="images/media/diansai.jpg" alt="NUEDC 2025" />
+              </a>
+              <a href="images/media/pic1.jpg" target="_blank" rel="noopener noreferrer">
+                <img class="media-thumb" src="images/media/pic1.jpg" alt="NUEDC 2025 Team" />
+              </a>
+            </div>
+          </div>
+
+          <div class="media-right">
+            <div class="media-title">2025 TI Cup National Undergraduate Electronics Design Contest (NUEDC) · Problem E</div>
+            <div class="media-subtitle">Simple Self-Aiming Device</div>
+
+            <div class="media-actions">
+              <a class="media-link" href="https://res.nuedc-training.com.cn/topic/2025/topic_124.html" target="_blank" rel="noopener noreferrer">Official Page</a>
+              <button class="media-toggle" type="button" data-toggle-lang>中文 / EN</button>
+            </div>
+
+            <div class="media-desc lang-zh">
+              <div class="media-paragraph">设计并制作一套具备自动寻迹与激光自瞄能力的小车系统：沿黑色轨迹自动行驶（可设 1–5 圈、单圈 ≤20s），在指定或任意位置自动搜索并识别靶标，通过二维云台控制激光精准命中靶心（误差 ≤2cm）。</div>
+              <ul class="media-bullets">
+                <li>主控：TI MSPM0 系列 MCU（如 MSPM0G3507）；视觉：K230（用于图像识别）。</li>
+                <li>寻迹：八路灰度/红外阵列，支持直道跟踪与 90° 转弯控制，按键设置圈数，完成后自动停止。</li>
+                <li>自瞄：双轴云台（步进/舵机），激光与摄像头同轴；OpenCV 矩形检测 + 透视变换定位靶心，PID 控制闭环对准。</li>
+                <li>工程细节：数模隔离供电、云台高刚性结构（常用 3D 打印）、双独立电源开关规则满足。</li>
+              </ul>
+              <div class="media-tags">关键词：MSPM0G3507 · K230 · 8-channel grayscale · 2-DoF gimbal · OpenCV · PID · Coaxial laser</div>
+            </div>
+
+            <div class="media-desc lang-en">
+              <div class="media-paragraph">Built an autonomous line-following car with a 2-DoF gimbal laser aiming module. The system completes 1–5 laps (≤20s per lap), detects/locks targets automatically, and aligns the laser to the bullseye with ≤2cm error.</div>
+              <ul class="media-bullets">
+                <li>MCU: TI MSPM0 (e.g., MSPM0G3507); Vision: K230 for target perception.</li>
+                <li>Line following: 8-channel grayscale/IR array with straight tracking and 90° turn handling; lap count configurable; auto stop.</li>
+                <li>Aiming: dual-axis gimbal (stepper/servo), coaxial camera+laser; OpenCV detection + homography; PID closed-loop alignment.</li>
+                <li>Engineering: mixed-signal power isolation, rigid gimbal (3D-printed), dual power-switch rule compliance.</li>
+              </ul>
+              <div class="media-tags">Keywords: MSPM0G3507 · K230 · 8-channel grayscale · 2-DoF gimbal · OpenCV · PID · Coaxial laser</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <div style="max-width: 400px; width: 100%;">
