@@ -307,65 +307,6 @@
   </div>
 </div>
 
-<script>
-  async function loadGitHubCardStats() {
-    const cards = document.querySelectorAll('#codebase .github-card');
-    for (const card of cards) {
-      const repoLink = card.querySelector('a.repo-link');
-      const starSpan = card.querySelector('.gh-star');
-      const forkSpan = card.querySelector('.gh-fork');
-      const starLink = card.querySelector('a.gh-star-link');
-      const forkLink = card.querySelector('a.gh-fork-link');
-
-      if (!repoLink || !starSpan || !forkSpan || !starLink || !forkLink) continue;
-      if (!repoLink.href) continue;
-
-      let owner = '';
-      let repo = '';
-      try {
-        const url = new URL(repoLink.href);
-        const parts = url.pathname.split('/').filter(Boolean);
-        owner = parts[0] || '';
-        repo = parts[1] || '';
-      } catch (e) {
-        continue;
-      }
-
-      if (!owner || !repo) continue;
-      if (repo.startsWith('REPO_NAME_')) continue;
-
-      starLink.href = `https://github.com/${owner}/${repo}/stargazers`;
-      forkLink.href = `https://github.com/${owner}/${repo}/forks`;
-
-      try {
-        const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
-        if (!res.ok) throw new Error('GitHub API error');
-        const data = await res.json();
-        starSpan.textContent = data.stargazers_count ?? '–';
-        forkSpan.textContent = data.forks_count ?? '–';
-      } catch (e) {
-        starSpan.textContent = '–';
-        forkSpan.textContent = '–';
-      }
-    }
-  }
-
-  function initMediaLanguageToggles() {
-    const lists = document.querySelectorAll('.media-list');
-    for (const list of lists) {
-      const toggles = list.querySelectorAll('[data-toggle-lang]');
-      for (const btn of toggles) {
-        btn.addEventListener('click', () => {
-          const current = list.getAttribute('data-lang') || 'zh';
-          list.setAttribute('data-lang', current === 'zh' ? 'en' : 'zh');
-        });
-      }
-    }
-  }
-
-  loadGitHubCardStats();
-  initMediaLanguageToggles();
-</script>
 
 <div class="wrapper">
   <div id="awards" class="bio">
@@ -373,49 +314,58 @@
 	  <img class="section-icon" src="images/icon/honor.png" alt="Honors" />
       Selected Honors & Awards
     </h1>
-    <div style="display:grid; grid-template-columns: 1fr; gap:10px; margin-top:10px;">
-      <div style="border:1px solid #e5e7eb; border-radius:10px; padding:10px 12px; background:#fafafa;">
-        <div style="font-weight:600;">
-          <img class="inline-icon" src="images/icon/car.png" alt="Car" width="16" height="16" />
-          National University Students Intelligent Car Race 2025
+    
+    <div class="award-grid">
+        <!-- Robot Competition -->
+        <div class="award-card">
+            <div class="award-content">
+                <div class="award-title">
+                    <img class="inline-icon" src="images/icon/robocup.png" alt="RoboCup" width="16" height="16" />
+                    China Robot Competition & RoboCup China Open 2024
+                </div>
+                <div class="award-meta">Jul. 2024 – Nov. 2024 · National First Prize</div>
+            </div>
+            <div class="award-image">
+                <a href="images/robocup.jpg" target="_blank">
+                    <img src="images/robocup.jpg" alt="RoboCup Certificate" loading="lazy">
+                </a>
+            </div>
         </div>
-        <div style="color:#666; font-size:0.95em; margin-top:4px;">Dec. 2024 – Jul. 2025 · National First Prize</div>
-      </div>
 
-      <div style="border:1px solid #e5e7eb; border-radius:10px; padding:10px 12px; background:#fafafa;">
-        <div style="font-weight:600;">
-          <img class="inline-icon" src="images/icon/design.png" alt="Design" width="16" height="16" />
-          TI Cup National Undergraduate Electronics Design Contest 2025
+        <!-- Smart Car -->
+        <div class="award-card">
+            <div class="award-content">
+                <div class="award-title">
+                    <img class="inline-icon" src="images/icon/car.png" alt="Car" width="16" height="16" />
+                    National University Students Intelligent Car Race 2025
+                </div>
+                <div class="award-meta">Dec. 2024 – Jul. 2025 · National First Prize</div>
+            </div>
+            <div class="award-image">
+                <a href="images/smartcar.png" target="_blank">
+                    <img src="images/smartcar.png" alt="Smart Car Certificate" loading="lazy">
+                </a>
+            </div>
         </div>
-        <div style="color:#666; font-size:0.95em; margin-top:4px;">Aug. 2025 · National Second Prize</div>
-      </div>
 
-      <div style="border:1px solid #e5e7eb; border-radius:10px; padding:10px 12px; background:#fafafa;">
-        <div style="font-weight:600;">
-          <img class="inline-icon" src="images/icon/robocup.png" alt="RoboCup" width="16" height="16" />
-          China Robot Competition & RoboCup China Open 2024
+        <!-- TI Cup -->
+        <div class="award-card">
+            <div class="award-content">
+                <div class="award-title">
+                    <img class="inline-icon" src="images/icon/design.png" alt="Design" width="16" height="16" />
+                    TI Cup National Undergraduate Electronics Design Contest 2025
+                </div>
+                <div class="award-meta">Aug. 2025 · National Second Prize</div>
+            </div>
+            <!-- No certificate image provided for TI Cup -->
         </div>
-        <div style="color:#666; font-size:0.95em; margin-top:4px;">Jul. 2024 – Nov. 2024 · National First Prize</div>
-      </div>
-    </div>
-
-    <div style="margin-top: 14px;">
-      <div style="display:flex; gap:16px; flex-wrap:wrap; align-items:flex-start;">
-        <a href="images/robocup.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="images/robocup.jpg" alt="RoboCup Certificate" style="width:220px; max-width:100%; height:auto; border:1px solid #e5e7eb; border-radius:10px;" />
-        </a>
-
-        <a href="images/smartcar.png" target="_blank" rel="noopener noreferrer">
-          <img src="images/smartcar.png" alt="Smart Car Certificate" style="width:220px; max-width:100%; height:auto; border:1px solid #e5e7eb; border-radius:10px;" />
-        </a>
-      </div>
     </div>
   </div>
-</div>
-
-<div style="display: flex; justify-content: center; align-items: center;">
-  <div style="max-width: 400px; width: 100%;">
-    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=Pp7r2CVZfS3lp3E3NPi7ktQJRP-qhpQwyGJJ1PkwtrI&cl=ffffff&w=a"></script>
+</div
+iv style="display: flex; justify-content: center; align-items: center;">
+  <divtyle="max-width: 400px; width: 100%;">
+    </h1>
+<s  cdiv class="bio-body" style="overflow:iidden;"t type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=Pp7r2CVZfS3lp3E3NPi7ktQJRP-qhpQwyGJJ1PkwtrI&cl=ffffff&w=a"></script>
   </div>
 </div>
 
@@ -550,3 +500,65 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <!--<script src="custom-pub.js"></script>-->
 </html>
+// Bak t Top fuctionality
+    conooth'
+        });
+    });
+
+    // GitHub Card Stats
+    async function loadGitHubCardStats() {
+        const cards = document.querySelectorAll('#codebase .github-card');
+        for (const card of cards) {
+            const repoLink = card.querySelector('a.repo-link');
+            const starSpan = card.querySelector('.gh-star');
+            const forkSpan = card.querySelector('.gh-fork');
+            const starLink = card.querySelector('a.gh-star-link');
+            const forkLink = card.querySelector('a.gh-fork-link');
+
+            if (!repLink || !starSpan || !frkSpan || !sarLink || !forkLink) continue;
+            if (!repoLink.ref) continue;
+
+            let owner = '';
+            let repo = '';
+            try {
+                const url = new URL(repoLink.href);
+                const parts = url.pathname.split('/').filter(Boolean);
+                owner = parts[0] || '';
+                repo = parts[1] || ';     catch (e {
+                continue        
+
+            if (!owner || !repo) continue;
+            if (repo.startsWith('REPO_NAME_')) continue;
+
+            starLink.href = `https://github.com/${owner}/${repo}/stargazers`;
+            forkLink.href = `https://github.com/${owner}/${repo}/forks`;
+
+            try {
+                const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
+                if (!res.ok) throw new Error('GitHub API error');
+                const data = await res.json();
+                starSpan.textContent = data.stargazers_count ?? '–';
+                forkSpan.textContent = data.forks_count ?? '–';
+            } catch (e) {
+                starSpan.textContent = '–';
+                forkSpan.textContent = '–';
+            }
+        }
+    }
+
+    // Media Language Toggles
+    function initMediaLanguageToggles() {
+        const lists = document.querySelectorAll('.media-list');
+        for (const list of lists) {
+            const toggles = list.querySelectorAll('[data-toggle-lang]');
+            for (const btn of toggles) {
+                btn.addEventListener('click', () => {
+                    const current = list.getAttribute('data-lang') || 'zh';
+                    list.setAttribute('data-lang', current === 'zh' ? 'en' : 'zh');
+                });
+            }
+        }
+    }
+
+    loadGitHubCardStats();
+    initMediaLanguageToggles(

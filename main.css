@@ -800,7 +800,10 @@ hr.soft {
 }
 
 .media-list {
-    margin-top: 10px
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .media-item {
@@ -809,10 +812,15 @@ hr.soft {
     overflow: hidden;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.70);
-    -webkit-backdrop-filter: blur(12px) saturate(140%);
-    backdrop-filter: blur(12px) saturate(140%)
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.media-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .media-left {
