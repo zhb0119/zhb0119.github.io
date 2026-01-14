@@ -1641,12 +1641,13 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 .pub-left > .intro-img {
-    width: 224px;
-    height: 104px;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
+    width: 320px;
+    max-width: 100%;
+    height: 150px;
+    border: 2px solid #9b3022;
+    border-radius: 10px;
     background: #fff;
-    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+    box-shadow: none;
     object-fit: contain;
     object-position: center
 }
