@@ -428,7 +428,8 @@ pre>code {
     margin-top: 14px
 }
 
-.education-card {
+.education-card,
+.experience-card {
     display: flex;
     align-items: center;
     padding: 16px 20px;
@@ -437,17 +438,18 @@ pre>code {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    gap: 16px;
     margin-top: 10px;
 }
 
-.education-card:hover {
+.education-card:hover,
+.experience-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     border-color: #d1d5db;
 }
 
-.edu-logo {
+.edu-logo,
+.exp-logo {
     flex-shrink: 0;
     width: 56px;
     height: 56px;
@@ -459,20 +461,24 @@ pre>code {
     border: 1px solid #e5e7eb;
 }
 
-.edu-logo img {
+.edu-logo img,
+.exp-logo img {
     width: 36px;
     height: 36px;
     object-fit: contain;
 }
 
-.edu-content {
+.edu-content,
+.exp-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 16px;
 }
 
-.edu-header {
+.edu-header,
+.exp-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -481,12 +487,18 @@ pre>code {
     gap: 8px;
 }
 
-.edu-school {
+.edu-school,
+.exp-title {
     font-size: 16px;
     color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
 }
 
-.edu-time {
+.edu-time,
+.exp-time {
     font-size: 13px;
     color: #64748b;
     background-color: #f1f5f9;
@@ -496,7 +508,8 @@ pre>code {
     font-weight: 500;
 }
 
-.edu-details {
+.edu-details,
+.exp-details {
     font-size: 14px;
     color: #475569;
     line-height: 1.5;
@@ -1541,4 +1554,104 @@ hr.soft {
         max-width: none;
         padding: 16px;
     }
+}
+
+/* --- Beautification & Animations --- */
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8; 
+}
+
+/* Scroll Animation Classes */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Navigation Link Hover Effect */
+.site-nav .page-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.site-nav .page-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: #9b3022;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.site-nav .page-link:hover {
+    color: #9b3022;
+    text-decoration: none;
+}
+
+.site-nav .page-link:hover::after {
+    width: 100%;
+}
+
+/* Card Hover Effects Refinement */
+.experience-card,
+.education-card,
+.award-card,
+.media-item,
+.pub,
+.github-card {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s ease;
+}
+
+.experience-card:hover,
+.education-card:hover,
+.award-card:hover,
+.media-item:hover,
+.pub:hover,
+.github-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e1;
+}
+
+/* Image Hover Zoom (Subtle) */
+.intro-img,
+.award-image img,
+.media-thumb {
+    transition: transform 0.5s ease;
+}
+
+.pub:hover .intro-img,
+.award-card:hover .award-image img,
+.media-item:hover .media-thumb {
+    transform: scale(1.05);
+}
+
+/* Link styling transition */
+a {
+    transition: color 0.2s ease;
 }

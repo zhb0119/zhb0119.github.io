@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css?v=20260114-2">
+  <link rel="stylesheet" href="main.css?v=20260114-3">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
@@ -82,6 +82,86 @@
 
     #profile-namecard .social-media .icon-button.xiaohongshu {
         background: linear-gradient(135deg, rgba(255, 45, 85, 0.85), rgba(15, 23, 42, 0.20)) !important;
+    }
+
+    /* Fallback styles for Experience Card in case main.css is cached */
+    .experience-card {
+        display: flex;
+        align-items: center;
+        padding: 16px 20px;
+        background-color: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        margin-top: 10px;
+    }
+    .experience-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-color: #d1d5db;
+    }
+    .exp-logo {
+        flex-shrink: 0;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8fafc;
+        border-radius: 8px;
+        border: 1px solid #e5e7eb;
+    }
+    .exp-logo img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+    }
+    .exp-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 16px;
+    }
+    .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .exp-title {
+        font-size: 16px;
+        color: #0f172a;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: bold;
+    }
+    .exp-time {
+        font-size: 13px;
+        color: #64748b;
+        background-color: #f1f5f9;
+        padding: 2px 10px;
+        border-radius: 999px;
+        white-space: nowrap;
+        font-weight: 500;
+    }
+    .exp-details {
+        font-size: 14px;
+        color: #475569;
+        line-height: 1.5;
+    }
+    @media screen and (max-width: 600px) {
+        .exp-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .exp-time {
+            margin-top: 4px;
+        }
     }
 
   </style>
@@ -223,13 +303,19 @@
     </h1>
   
     <div class="timeline-body">
-      <div class="internship-row">
-        <img class="inline-icon" src="images/icon/zju.png" alt="ZJU" width="16" height="16" />
-        <span class="internship-title">Zhejiang University (ZJU) Research Internship</span>
-        <span class="internship-sep">·</span>
-        <span class="internship-topic">LLM Fingerprint</span>
-        <span class="internship-sep">·</span>
-        <span class="internship-time">2024.6 – Present</span>
+      <div class="experience-card">
+        <div class="exp-logo">
+          <img src="images/icon/zju.png" alt="ZJU" />
+        </div>
+        <div class="exp-content">
+          <div class="exp-header">
+            <div class="exp-title">Zhejiang University (ZJU) Research Internship</div>
+            <div class="exp-time">2024.6 – Present</div>
+          </div>
+          <div class="exp-details">
+            <div>Topic: LLM Fingerprint</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
