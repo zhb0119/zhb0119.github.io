@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css?v=20260116-1">
+  <link rel="stylesheet" href="main.css?v=20260116-2">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
@@ -207,7 +207,7 @@
       </div>
       <div id="my-contact" class="profile-col profile-col-2">
         <div id="my-name" class="text-grey-dark">
-          Haobo Zhang<br>
+          <span id="typing-text"></span><span class="cursor">|</span><br>
         </div>
         <div id="my-title" class="text-grey">
           Zhejiang University of Technology
@@ -752,6 +752,22 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.fade-in-section').forEach(section => {
         observer.observe(section);
     });
+
+    // Typing Effect
+    const typingTextElement = document.getElementById('typing-text');
+    const textToType = "Haobo Zhang";
+    let charIndex = 0;
+
+    function type() {
+        if (charIndex < textToType.length) {
+            typingTextElement.textContent += textToType.charAt(charIndex);
+            charIndex++;
+            setTimeout(type, 150); // Typing speed
+        }
+    }
+
+    // Start typing after a short delay
+    setTimeout(type, 800);
 });
 </script>
   </body>

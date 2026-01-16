@@ -1655,3 +1655,36 @@ hr.soft {
 a {
     transition: color 0.2s ease;
 }
+
+/* Typing Effect Cursor */
+.cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: #0f172a;
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Enhanced Glassmorphism & Shadow */
+.wrapper-light {
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Gradient text for name (optional, but looks nice) */
+#typing-text {
+    background: linear-gradient(120deg, #0f172a, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
