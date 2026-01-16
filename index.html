@@ -83,6 +83,7 @@
     #profile-namecard .social-media .icon-button.xiaohongshu {
         background: linear-gradient(135deg, rgba(255, 45, 85, 0.85), rgba(15, 23, 42, 0.20)) !important;
     }
+
   </style>
   
 
@@ -269,7 +270,7 @@
           </p>
         </div>
         <div class="publish">
-          <span class="place">arXiv</span>
+          <span class="place">ICASSP</span>
           <span class="status">2026</span>
         </div>
       </div>
@@ -386,15 +387,90 @@
     </h1>
     <div class="bio-body" style="overflow:hidden;">
       <div class="media-list" data-lang="en">
+        <!-- Smart Car: Healthcare & Camera -->
+        <div class="media-item">
+          <div class="media-left">
+            <div class="media-gallery">
+              <!-- Video 1: Healthcare -->
+              <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000; border-bottom: 1px solid #e5e7eb;">
+                <video controls style="width: 100%; height: 100%; object-fit: contain;">
+                  <source src="images/video/horizon.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <!-- Video 2: Camera -->
+              <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000;">
+                <video controls style="width: 100%; height: 100%; object-fit: contain;">
+                  <source src="images/video/camera.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="media-right">
+            <div class="media-title lang-zh">
+              <a href="http://smartcarrace.com/" target="_blank" rel="noopener noreferrer">全国大学生智能汽车竞赛：智慧医疗 | 镜头组</a>
+            </div>
+            <div class="media-title lang-en">
+              <a href="http://smartcarrace.com/" target="_blank" rel="noopener noreferrer">National Intelligent Car Race: Smart Healthcare | Camera Group</a>
+            </div>
+
+            <div class="media-subtitle lang-zh">地平线 RDK X3 机器人系统 | 英飞凌 TC264 高速视觉循迹</div>
+            <div class="media-subtitle lang-en">Horizon RDK X3 Robot System | Infineon TC264 High-Speed Vision</div>
+
+            <div class="media-actions">
+              <button class="media-toggle" type="button" data-toggle-lang>中文 / EN</button>
+            </div>
+
+            <div class="media-desc lang-zh">
+              <div class="media-paragraph">
+                <strong>[智慧医疗]</strong> 基于 <strong>地平线 RDK X3</strong> 与 ROS2 构建的人机协同平台。部署轻量化 YOLO/MobileNet 实现二维码与障碍物识别，结合数字孪生交互，在 5×5m 场景中完成自主导航、巡检与物资配送。
+              </div>
+              
+              <hr style="border: 0; border-top: 1px dashed #e5e7eb; margin: 10px 0;">
+
+              <div class="media-paragraph">
+                <strong>[镜头组]</strong> 基于 <strong>英飞凌 TC264/297</strong> 多核 MCU 开发的 3–5m/s 高速视觉循迹系统。
+              </div>
+              <ul class="media-bullets">
+                <li><strong>视觉感知：</strong>设计动态阈值与中值滤波流水线，实时处理 120×188 灰度图像，在复杂光照下精准提取赛道边线。</li>
+                <li><strong>控制决策：</strong>采用多核任务分配架构（图像/控制分离），基于偏差计算与 PID 舵机闭环控制，实现高速稳定过弯。</li>
+              </ul>
+              <div class="media-tags">关键词：Horizon RDK X3 · ROS2 · Infineon TC264 · High-Speed Vision · PID Control · Multi-core</div>
+            </div>
+
+            <div class="media-desc lang-en">
+              <div class="media-paragraph">
+                <strong>[Smart Healthcare]</strong> A human-robot collaboration platform based on <strong>Horizon RDK X3</strong> and ROS2. Deploys lightweight YOLO/MobileNet for object detection, integrating digital twins for autonomous navigation and inspection in a 5×5m scenario.
+              </div>
+
+              <hr style="border: 0; border-top: 1px dashed #e5e7eb; margin: 10px 0;">
+
+              <div class="media-paragraph">
+                <strong>[Camera Group]</strong> High-speed (3–5m/s) vision tracking system based on <strong>Infineon TC264/297</strong> multi-core MCU.
+              </div>
+              <ul class="media-bullets">
+                <li><strong>Vision Perception:</strong> Designed an image processing pipeline (dynamic thresholding, median filtering) for real-time 120×188 frame analysis and robust lane extraction.</li>
+                <li><strong>Control & Integration:</strong> Implemented multi-core task scheduling (vision/control separation) and PID closed-loop servo control for stable high-speed maneuvering and obstacle handling.</li>
+              </ul>
+              <div class="media-tags">Keywords: Horizon RDK X3 · ROS2 · Infineon TC264 · High-Speed Vision · PID Control · Multi-core</div>
+            </div>
+          </div>
+        </div>
+
         <div class="media-item">
           <div class="media-left">
             <div class="media-gallery">
               <a href="images/media/diansai.jpg" target="_blank" rel="noopener noreferrer">
                 <img class="media-thumb" src="images/media/diansai.jpg" alt="NUEDC 2025" />
               </a>
-              <a href="images/media/pic1.jpg" target="_blank" rel="noopener noreferrer">
-                <img class="media-thumb" src="images/media/pic1.jpg" alt="NUEDC 2025 Team" />
-              </a>
+              <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000;">
+                <video controls style="width: 100%; height: 100%; object-fit: contain;">
+                  <source src="images/video/jiguang.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
 
@@ -517,6 +593,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 list.setAttribute('data-lang', newLang);
             });
         });
+    });
+
+    // GitHub Repo Stats Fetcher
+    const githubCards = document.querySelectorAll('.github-card');
+    githubCards.forEach(card => {
+        const repoLink = card.querySelector('.repo-link');
+        if (!repoLink) return;
+        
+        // Extract owner/repo from href (e.g., https://github.com/owner/repo)
+        try {
+            const url = new URL(repoLink.href);
+            const pathParts = url.pathname.split('/').filter(p => p);
+            if (pathParts.length < 2) return;
+            
+            const owner = pathParts[0];
+            const repo = pathParts[1];
+            const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
+            
+            fetch(apiUrl)
+                .then(response => {
+                    if (!response.ok) throw new Error(`GitHub API Error: ${response.status}`);
+                    return response.json();
+                })
+                .then(data => {
+                    const starSpan = card.querySelector('.gh-star');
+                    const forkSpan = card.querySelector('.gh-fork');
+                    
+                    if (starSpan) starSpan.textContent = data.stargazers_count;
+                    if (forkSpan) forkSpan.textContent = data.forks_count;
+                })
+                .catch(err => {
+                    console.warn('Failed to fetch GitHub stats:', err);
+                });
+        } catch (e) {
+            console.error('Error parsing GitHub URL:', e);
+        }
     });
 });
 </script>
