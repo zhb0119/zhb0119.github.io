@@ -207,10 +207,6 @@
 
   <div id="profile-cover" class="cover shallow-bg img-responsive"> 
     <div id="profile-namecard" class="profile-wrapper wrapper-light">
-      <!-- Global Language Toggle -->
-      <div class="lang-switch-abs">
-        <button id="global-lang-toggle" class="lang-btn">中文 / EN</button>
-      </div>
       <div id="my-pic" class="profile-col profile-col-1">
         <img id="profile-avatar" src="images/myself.jpg" alt="Me" class="circle-img border-dark"-/>
       </div>
@@ -219,7 +215,7 @@
           <span id="typing-text"></span><span class="cursor">|</span><br>
         </div>
         <div id="my-title" class="text-grey">
-          Haobo Zhang
+          Zhejiang University of Technology
         </div>
         <div id="my-email" class="text-grey-light">
           zhanghaobo@zjut.edu.cn
@@ -236,10 +232,6 @@
             <span></span>
           </a>
          
-        <!-- <a href="work/Resume_Jun_CEN.pdf" target="_blank" class="icon-button github">
-            <i class="ai ai-cv icon-github"></i>
-            <span></span>
-          </a> -->
           <a href="https://www.xiaohongshu.com/user/profile/64a92324000000001f007da6" class="icon-button xiaohongshu" aria-label="小红书" target="_blank" rel="noopener noreferrer">
             <i> <img src="https://cdn.simpleicons.org/xiaohongshu/FF2D55" alt="" width="45" height="45" style="vertical-align:middle;"> </i>
             <span></span>
@@ -398,7 +390,7 @@
 <div class="wrapper">
   <div id="codebase" class="bio fade-in-section">
     <h1 class="md-heading text-left">
-      <i class="fa fa-tasks" aria-hidden="true"></i>
+      <img class="section-icon" src="images/icon/github.png" alt="GitHub" />
       GitHub
     </h1>  
     <div class="bio-body" style="overflow:hidden;">
@@ -428,8 +420,6 @@
     </div>
   </div>
 </div>
-</div>
-
 
 <div class="wrapper">
   <div id="awards" class="bio fade-in-section">
@@ -493,8 +483,9 @@
 <div class="wrapper">
   <div id="demos-media" class="bio fade-in-section">
     <h1 class="md-heading text-left">
-      <i class="fa fa-play-circle" aria-hidden="true"></i>
+      <img class="section-icon" src="images/icon/media.png" alt="Demos & Media" />
       Demos &amp; Media
+      <button id="global-lang-toggle" class="lang-btn-inline">中文 / EN</button>
     </h1>
     <div class="bio-body" style="overflow:hidden;">
       <div class="media-list" data-lang="en">
@@ -521,13 +512,13 @@
 
           <div class="media-right">
             <div class="media-title lang-zh">
-              <a href="http://smartcarrace.com/" target="_blank" rel="noopener noreferrer">全国大学生智能汽车竞赛：智慧医疗 | 镜头组</a>
+              <a href="http://smartcarrace.com/" target="_blank" rel="noopener noreferrer">全国大学生智能汽车竞赛：智慧医疗组 | 镜头组</a>
             </div>
             <div class="media-title lang-en">
               <a href="http://smartcarrace.com/" target="_blank" rel="noopener noreferrer">National Intelligent Car Race: Smart Healthcare | Camera Group</a>
             </div>
 
-            <div class="media-subtitle lang-zh">地平线 RDK X3 机器人系统 | 英飞凌 TC264 高速视觉循迹</div>
+            <div class="media-subtitle lang-zh">地平线 RDK X3 机器人系统 | 英飞凌 TC264 高速视觉</div>
             <div class="media-subtitle lang-en">Horizon RDK X3 Robot System | Infineon TC264 High-Speed Vision</div>
 
             <div class="media-actions">
@@ -536,19 +527,19 @@
 
             <div class="media-desc lang-zh">
               <div class="media-paragraph">
-                <strong>[智慧医疗]</strong> 基于 <strong>地平线 RDK X3</strong> 与 ROS2 构建的人机协同平台。部署轻量化 YOLO/MobileNet 实现二维码与障碍物识别，结合数字孪生交互，在 5×5m 场景中完成自主导航、巡检与物资配送。
+                <strong>[智慧医疗组]</strong> 基于地平线 RDK X3 和 ROS2 构建的人机协作平台，部署轻量化 YOLO/MobileNet 模型实现目标检测，融合数字孪生技术，实现在 5×5 米场景下的自主导航与巡检任务。
               </div>
               
               <hr style="border: 0; border-top: 1px dashed #e5e7eb; margin: 10px 0;">
 
               <div class="media-paragraph">
-                <strong>[镜头组]</strong> 基于 <strong>英飞凌 TC264/297</strong> 多核 MCU 开发的 3–5m/s 高速视觉循迹系统。
+                <strong>[镜头组]</strong> 基于英飞凌 TC264/297 多核 MCU 的高速（3–5 m/s）视觉循迹系统。
               </div>
               <ul class="media-bullets">
-                <li><strong>视觉感知：</strong>设计动态阈值与中值滤波流水线，实时处理 120×188 灰度图像，在复杂光照下精准提取赛道边线。</li>
-                <li><strong>控制决策：</strong>采用多核任务分配架构（图像/控制分离），基于偏差计算与 PID 舵机闭环控制，实现高速稳定过弯。</li>
+                <li><strong>视觉感知：</strong>设计图像处理流水线（动态阈值、中值滤波），实现对 120×188 分辨率图像的实时分析与鲁棒车道线提取。</li>
+                <li><strong>控制与集成：</strong>实现多核任务调度（视觉/控制分离），并采用 PID 闭环伺服控制，保障高速行驶下的稳定操控与障碍物响应能力。</li>
               </ul>
-              <div class="media-tags">关键词：Horizon RDK X3 · ROS2 · Infineon TC264 · High-Speed Vision · PID Control · Multi-core</div>
+              <div class="media-tags">关键词：地平线 RDK X3 · ROS2 · 英飞凌 TC264 · 高速视觉 · PID 控制 · 多核架构</div>
             </div>
 
             <div class="media-desc lang-en">
@@ -580,20 +571,15 @@
                 <video controls style="width: 100%; height: 100%; object-fit: contain;">
                   <source src="images/video/jiguang.mp4" type="video/mp4">
                   Your browser does not support the video tag.
-                </video>
-              </div>
             </div>
-          </div>
-
-          <div class="media-right">
             <div class="media-title lang-zh">
-              <a href="https://res.nuedc-training.com.cn/topic/2025/topic_124.html" target="_blank" rel="noopener noreferrer">2025年全国大学生电子设计竞赛 (NUEDC) · E题</a>
+              <a href="https://res.nuedc-training.com.cn/topic/2025/topic_124.html" target="_blank" rel="noopener noreferrer">2025 全国大学生电子设计竞赛（TI 杯）· E 题</a>
             </div>
             <div class="media-title lang-en">
-              <a href="https://res.nuedc-training.com.cn/topic/2025/topic_124.html" target="_blank" rel="noopener noreferrer">2025 TI Cup National Undergraduate Electronics Design Contest (NUEDC) · Problem E</a>
+              <a href="https://res.nuedc-training.com.cn/topic/2025/topic_124.html" target="_blank" rel="noopener noreferrer">2025 National Undergraduate Electronics Design Contest (NUEDC) · Problem E</a>
             </div>
 
-            <div class="media-subtitle lang-zh">简易自瞄装置</div>
+            <div class="media-subtitle lang-zh">简易自瞄准装置</div>
             <div class="media-subtitle lang-en">Simple Self-Aiming Device</div>
 
             <div class="media-actions">
@@ -601,23 +587,23 @@
             </div>
 
             <div class="media-desc lang-zh">
-              <div class="media-paragraph">设计并制作一套具备自动寻迹与激光自瞄能力的小车系统：沿黑色轨迹自动行驶（可设 1–5 圈、单圈 ≤20s），在指定或任意位置自动搜索并识别靶标，通过二维云台控制激光精准命中靶心（误差 ≤2cm）。</div>
+              <div class="media-paragraph">构建了一款具备自动循迹功能的智能小车，搭载双自由度云台激光瞄准模块。系统可完成 1–5 圈赛程（每圈 ≤20 秒），自动识别并锁定目标，将激光精准对准靶心，误差小于 2 cm。</div>
               <ul class="media-bullets">
-                <li>主控：TI MSPM0 系列 MCU（如 MSPM0G3507）；视觉：K230（用于图像识别）。</li>
-                <li>寻迹：八路灰度/红外阵列，支持直道跟踪与 90° 转弯控制，按键设置圈数，完成后自动停止。</li>
-                <li>自瞄：双轴云台（步进/舵机），激光与摄像头同轴；OpenCV 矩形检测 + 透视变换定位靶心，PID 控制闭环对准。</li>
-                <li>工程细节：数模隔离供电、云台高刚性结构（常用 3D 打印）、双独立电源开关规则满足。</li>
+                <li><strong>MCU：</strong>TI MSPM0（如 MSPM0G3507）；<strong>视觉：</strong>K230 用于目标感知。</li>
+                <li><strong>循迹：</strong>8 通道灰度/红外阵列，支持直线跟踪与 90° 转弯处理；圈数可配置，自动停止。</li>
+                <li><strong>瞄准：</strong>双轴云台（步进电机/舵机），同轴相机+激光；基于 OpenCV 目标检测 + 图像透视变换（homography），结合 PID 闭环实现高精度对准。</li>
+                <li><strong>工程设计：</strong>混合信号电源隔离、3D 打印刚性云台结构，双电源切换符合安全规范。</li>
               </ul>
-              <div class="media-tags">关键词：MSPM0G3507 · K230 · 8-channel grayscale · 2-DoF gimbal · OpenCV · PID · Coaxial laser</div>
+              <div class="media-tags">关键词：MSPM0G3507 · K230 · 8 通道灰度传感器 · 双自由度云台 · OpenCV · PID · 同轴激光</div>
             </div>
 
             <div class="media-desc lang-en">
               <div class="media-paragraph">Built an autonomous line-following car with a 2-DoF gimbal laser aiming module. The system completes 1–5 laps (≤20s per lap), detects/locks targets automatically, and aligns the laser to the bullseye with ≤2cm error.</div>
               <ul class="media-bullets">
-                <li>MCU: TI MSPM0 (e.g., MSPM0G3507); Vision: K230 for target perception.</li>
-                <li>Line following: 8-channel grayscale/IR array with straight tracking and 90° turn handling; lap count configurable; auto stop.</li>
-                <li>Aiming: dual-axis gimbal (stepper/servo), coaxial camera+laser; OpenCV detection + homography; PID closed-loop alignment.</li>
-                <li>Engineering: mixed-signal power isolation, rigid gimbal (3D-printed), dual power-switch rule compliance.</li>
+                <li><strong>MCU:</strong> TI MSPM0 (e.g., MSPM0G3507); <strong>Vision:</strong> K230 for target perception.</li>
+                <li><strong>Line following:</strong> 8-channel grayscale/IR array with straight tracking and 90° turn handling; lap count configurable; auto stop.</li>
+                <li><strong>Aiming:</strong> dual-axis gimbal (stepper/servo), coaxial camera+laser; OpenCV detection + homography; PID closed-loop alignment.</li>
+                <li><strong>Engineering:</strong> mixed-signal power isolation, rigid gimbal (3D-printed), dual power-switch rule compliance.</li>
               </ul>
               <div class="media-tags">Keywords: MSPM0G3507 · K230 · 8-channel grayscale · 2-DoF gimbal · OpenCV · PID · Coaxial laser</div>
             </div>
@@ -700,6 +686,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function setLang(lang) {
         body.setAttribute('data-lang', lang);
         localStorage.setItem('lang', lang);
+        if (globalLangBtn) {
+            globalLangBtn.textContent = lang === 'zh' ? 'EN' : '中文';
+        }
     }
 
     // Initialize
