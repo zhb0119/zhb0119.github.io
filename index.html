@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css?v=20260116-13">
+  <link rel="stylesheet" href="main.css?v=20260129-1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
@@ -178,6 +178,15 @@
 
 <body>
 
+<canvas id="fx-canvas"></canvas>
+
+<div id="video-modal" class="video-modal" aria-hidden="true">
+  <div class="video-modal-content" role="dialog" aria-modal="true">
+    <button id="video-modal-fs" class="video-modal-fs" type="button">全屏</button>
+    <button id="video-modal-close" class="video-modal-close" type="button">✕</button>
+    <video id="video-modal-player" controls></video>
+  </div>
+</div>
 
     <header class="site-header">
 
@@ -746,6 +755,78 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Video Modal Logic
+    const videoModal = document.getElementById('video-modal');
+    const videoModalPlayer = document.getElementById('video-modal-player');
+    const videoModalClose = document.getElementById('video-modal-close');
+    const videoModalFs = document.getElementById('video-modal-fs');
+
+    function closeVideoModal() {
+        if (!videoModal || !videoModalPlayer) return;
+        videoModal.classList.remove('is-open');
+        videoModal.setAttribute('aria-hidden', 'true');
+        try { videoModalPlayer.pause(); } catch (e) {}
+        videoModalPlayer.removeAttribute('src');
+        videoModalPlayer.load();
+        document.body.style.overflow = '';
+    }
+
+    function openVideoModal(src) {
+        if (!videoModal || !videoModalPlayer) return;
+        videoModalPlayer.src = src;
+        videoModal.classList.add('is-open');
+        videoModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        try { videoModalPlayer.play(); } catch (e) {}
+    }
+
+    if (videoModal && videoModalPlayer) {
+        document.querySelectorAll('.media-gallery video').forEach(v => {
+            const host = v.parentElement;
+            if (!host) return;
+            if (host.querySelector('.video-expand-btn')) return;
+
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'video-expand-btn';
+            btn.textContent = 'Expand';
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                try { v.pause(); } catch (err) {}
+                const src = v.currentSrc || v.querySelector('source')?.getAttribute('src');
+                if (src) openVideoModal(src);
+            });
+            host.appendChild(btn);
+        });
+
+        if (videoModalClose) {
+            videoModalClose.addEventListener('click', (e) => {
+                e.preventDefault();
+                closeVideoModal();
+            });
+        }
+
+        if (videoModalFs && videoModalPlayer) {
+            videoModalFs.addEventListener('click', (e) => {
+                e.preventDefault();
+                const el = videoModalPlayer;
+                try {
+                    if (el.requestFullscreen) el.requestFullscreen();
+                    else if (el.webkitEnterFullscreen) el.webkitEnterFullscreen();
+                } catch (err) {}
+            });
+        }
+
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) closeVideoModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeVideoModal();
+        });
+    }
+
     // Intersection Observer for fade-in animations
     const observerOptions = {
         root: null,
@@ -781,6 +862,195 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Start typing after a short delay
     setTimeout(type, 800);
+
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0);
+    const fxCanvas = document.getElementById('fx-canvas');
+
+    if (!prefersReducedMotion && !isTouchDevice && fxCanvas) {
+        fxCanvas.style.position = 'fixed';
+        fxCanvas.style.left = '0';
+        fxCanvas.style.top = '0';
+        fxCanvas.style.right = '0';
+        fxCanvas.style.bottom = '0';
+        fxCanvas.style.pointerEvents = 'none';
+        fxCanvas.style.zIndex = '9999';
+
+        const ctx = fxCanvas.getContext('2d');
+        const dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+        let w = 0;
+        let h = 0;
+
+        const trail = [];
+        const meteors = [];
+        let lastMouse = null;
+        let lastTime = performance.now();
+        let meteorCooldown = 900 + Math.random() * 900;
+
+        function resizeFx() {
+            w = window.innerWidth;
+            h = window.innerHeight;
+            fxCanvas.width = Math.floor(w * dpr);
+            fxCanvas.height = Math.floor(h * dpr);
+            fxCanvas.style.width = w + 'px';
+            fxCanvas.style.height = h + 'px';
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+
+        function addTrail(x, y, vx, vy) {
+            trail.push({
+                x,
+                y,
+                vx,
+                vy,
+                r: 3.0 + Math.random() * 2.2,
+                rot: Math.random() * Math.PI * 2,
+                spin: (Math.random() * 2 - 1) * 0.008,
+                tw: Math.random() * Math.PI * 2,
+                life: 520 + Math.random() * 320,
+                born: performance.now(),
+            });
+            if (trail.length > 140) trail.splice(0, trail.length - 140);
+        }
+
+        function drawStar(x, y, outerR, innerR, rotation) {
+            const spikes = 5;
+            let rot = rotation;
+            const step = Math.PI / spikes;
+            ctx.beginPath();
+            ctx.moveTo(x + Math.cos(rot) * outerR, y + Math.sin(rot) * outerR);
+            for (let i = 0; i < spikes; i++) {
+                rot += step;
+                ctx.lineTo(x + Math.cos(rot) * innerR, y + Math.sin(rot) * innerR);
+                rot += step;
+                ctx.lineTo(x + Math.cos(rot) * outerR, y + Math.sin(rot) * outerR);
+            }
+            ctx.closePath();
+        }
+
+        function spawnMeteor() {
+            const startX = w * (0.2 + Math.random() * 0.8);
+            const startY = -40 - Math.random() * 120;
+            const speed = 900 + Math.random() * 700;
+            const angle = (Math.PI / 2) + (Math.PI / 6) + (Math.random() * Math.PI / 12);
+            const vx = Math.cos(angle) * speed;
+            const vy = Math.sin(angle) * speed;
+            meteors.push({
+                x: startX,
+                y: startY,
+                vx,
+                vy,
+                len: 180 + Math.random() * 220,
+                born: performance.now(),
+                life: 900 + Math.random() * 500,
+            });
+            if (meteors.length > 8) meteors.shift();
+        }
+
+        function drawTrail(now, dt) {
+            for (let i = trail.length - 1; i >= 0; i--) {
+                const p = trail[i];
+                const age = now - p.born;
+                const t = Math.max(0, 1 - age / p.life);
+                p.x += p.vx * 0.016;
+                p.y += p.vy * 0.016;
+                p.vx *= 0.92;
+                p.vy *= 0.92;
+
+                p.rot += p.spin * dt;
+
+                const twinkle = 0.78 + 0.22 * Math.sin((now * 0.012) + p.tw);
+                const alpha = 0.55 * t * twinkle;
+                const size = p.r * (0.8 + 0.7 * t);
+                ctx.save();
+                ctx.shadowColor = `rgba(56, 189, 248, ${0.55 * t})`;
+                ctx.shadowBlur = 10 * t;
+                ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+                drawStar(p.x, p.y, size, size * 0.5, p.rot);
+                ctx.fill();
+                ctx.restore();
+
+                if (t <= 0.02 || p.x < -50 || p.x > w + 50 || p.y < -50 || p.y > h + 50) {
+                    trail.splice(i, 1);
+                }
+            }
+        }
+
+        function drawMeteors(now, dt) {
+            meteorCooldown -= dt;
+            if (meteorCooldown <= 0) {
+                spawnMeteor();
+                meteorCooldown = 1200 + Math.random() * 1800;
+            }
+
+            for (let i = meteors.length - 1; i >= 0; i--) {
+                const m = meteors[i];
+                const age = now - m.born;
+                const t = Math.max(0, 1 - age / m.life);
+
+                m.x += (m.vx * dt) / 1000;
+                m.y += (m.vy * dt) / 1000;
+
+                const dx = (m.vx / 1000) * (m.len / 2);
+                const dy = (m.vy / 1000) * (m.len / 2);
+
+                const x1 = m.x;
+                const y1 = m.y;
+                const x2 = m.x - dx;
+                const y2 = m.y - dy;
+
+                const grad = ctx.createLinearGradient(x2, y2, x1, y1);
+                grad.addColorStop(0, `rgba(56, 189, 248, 0)`);
+                grad.addColorStop(0.35, `rgba(56, 189, 248, ${0.28 * t})`);
+                grad.addColorStop(1, `rgba(255, 255, 255, ${0.55 * t})`);
+
+                ctx.lineWidth = 2;
+                ctx.strokeStyle = grad;
+                ctx.beginPath();
+                ctx.moveTo(x2, y2);
+                ctx.lineTo(x1, y1);
+                ctx.stroke();
+
+                if (t <= 0.02 || m.y > h + 200 || m.x > w + 200) {
+                    meteors.splice(i, 1);
+                }
+            }
+        }
+
+        function tick(now) {
+            const dt = Math.min(50, now - lastTime);
+            lastTime = now;
+            ctx.clearRect(0, 0, w, h);
+            drawMeteors(now, dt);
+            drawTrail(now, dt);
+            requestAnimationFrame(tick);
+        }
+
+        window.addEventListener('resize', resizeFx);
+        window.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            if (!lastMouse) {
+                lastMouse = { x, y, t: performance.now() };
+                addTrail(x, y, 0, 0);
+                return;
+            }
+            const dx = x - lastMouse.x;
+            const dy = y - lastMouse.y;
+            const dist = Math.hypot(dx, dy);
+            const steps = Math.max(1, Math.min(6, Math.floor(dist / 12)));
+            for (let i = 0; i < steps; i++) {
+                const k = (i + 1) / steps;
+                addTrail(lastMouse.x + dx * k, lastMouse.y + dy * k, dx * 0.05, dy * 0.05);
+            }
+            lastMouse = { x, y, t: performance.now() };
+        }, { passive: true });
+
+        resizeFx();
+        requestAnimationFrame(tick);
+    } else if (fxCanvas) {
+        fxCanvas.remove();
+    }
 });
 </script>
   </body>
