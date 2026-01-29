@@ -684,12 +684,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Global Language Toggle Logic
     const globalLangBtn = document.getElementById('global-lang-toggle');
     const body = document.body;
+    const mediaLists = document.querySelectorAll('.media-list');
 
     // Load saved language or default to English
     const savedLang = localStorage.getItem('lang') || 'en';
     
     function setLang(lang) {
         body.setAttribute('data-lang', lang);
+        mediaLists.forEach(list => list.setAttribute('data-lang', lang));
         localStorage.setItem('lang', lang);
         if (globalLangBtn) {
             globalLangBtn.textContent = lang === 'zh' ? 'EN' : '中文';
