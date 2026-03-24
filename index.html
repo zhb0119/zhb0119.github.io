@@ -1,1058 +1,1561 @@
 <!DOCTYPE html>
+
 <html>
+
+
 
   <head>
 
 
+
+
+
   <meta charset="utf-8">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	  
+
 	<!-- <meta name="google-site-verification" content="u_--0s_Uw50r4zCgRrzltkmFhNCduYOJwPGlKVTuNJU" /> -->
 
+
+
   <title>Haobo Zhang</title>
+
   <meta name="description" lang="en" content="Zhang's Personal Homepage">
+
   <meta name="keywords" lang="en" content="Haobo Zhang" />
+
   
 
+
+
   <link rel="shortcut icon" href="images/icon/tinyicon.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css?v=20260129-1">
+
+  <link rel="stylesheet" href="main.css?v=20260116-13">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+
+
 
 
 
 
   <style>
 
+
+
     #profile-namecard.wrapper-light {
+
         background-color: rgba(15, 23, 42, 0.6) !important;
+
         position: relative !important;
+
         overflow: hidden !important;
+
         border: 1px solid rgba(255, 255, 255, 0.1) !important;
+
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+
         backdrop-filter: blur(20px) saturate(180%) !important;
+
         -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+
     }
+
+
 
     #profile-namecard.wrapper-light::before {
+
         content: "";
+
         position: absolute;
+
         inset: 0;
+
         background: transparent; 
+
         z-index: 0;
+
     }
+
+
 
     /* Force light text for dark card */
+
     #my-name { color: #f1f5f9 !important; }
+
     #my-title { color: #e2e8f0 !important; }
+
     #my-email { color: #94a3b8 !important; }
 
+
+
     #profile-namecard.wrapper-light > * {
+
         position: relative;
+
         z-index: 1;
+
     }
+
+
 
     #profile-namecard .social-media {
+
         display: flex !important;
+
         justify-content: center !important;
+
         align-items: center !important;
+
         gap: 12px !important;
+
         margin-top: 12px !important;
+
     }
+
+
 
     #profile-namecard .social-media .icon-button {
+
         border-radius: 999px !important;
+
         border: 1px solid rgba(255, 255, 255, 0.65) !important;
+
         box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12) !important;
+
         transition: transform 0.18s ease, box-shadow 0.18s ease !important;
+
     }
+
+
 
     #profile-namecard .social-media .icon-button:hover {
+
         transform: translateY(-2px) scale(1.03) !important;
+
         box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18) !important;
+
     }
+
+
 
     #profile-namecard .social-media .icon-button.linkedin {
+
         background: linear-gradient(135deg, rgba(66, 133, 244, 0.85), rgba(15, 23, 42, 0.25)) !important;
+
     }
+
+
 
     #profile-namecard .social-media .icon-button.github {
+
         background: linear-gradient(135deg, rgba(17, 24, 39, 0.85), rgba(148, 163, 184, 0.18)) !important;
+
     }
+
+
 
     #profile-namecard .social-media .icon-button.xiaohongshu {
+
         background: linear-gradient(135deg, rgba(255, 45, 85, 0.85), rgba(15, 23, 42, 0.20)) !important;
+
     }
+
+
 
     /* Fallback styles for Experience Card in case main.css is cached */
+
     .experience-card {
+
         display: flex;
+
         align-items: center;
+
         padding: 16px 20px;
+
         background-color: #fff;
+
         border: 1px solid #e5e7eb;
+
         border-radius: 12px;
+
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
         transition: transform 0.2s ease, box-shadow 0.2s ease;
+
         margin-top: 10px;
+
     }
+
     .experience-card:hover {
+
         transform: translateY(-2px);
+
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
         border-color: #d1d5db;
+
     }
+
     .exp-logo {
+
         flex-shrink: 0;
+
         width: 56px;
+
         height: 56px;
+
         display: flex;
+
         align-items: center;
+
         justify-content: center;
+
         background-color: #f8fafc;
+
         border-radius: 8px;
+
         border: 1px solid #e5e7eb;
+
     }
+
     .exp-logo img {
+
         width: 36px;
+
         height: 36px;
+
         object-fit: contain;
+
     }
+
     .exp-content {
+
         flex: 1;
+
         display: flex;
+
         flex-direction: column;
+
         justify-content: center;
+
         margin-left: 16px;
+
     }
+
     .exp-header {
+
         display: flex;
+
         justify-content: space-between;
+
         align-items: flex-start;
+
         margin-bottom: 4px;
+
         flex-wrap: wrap;
+
         gap: 8px;
+
     }
+
     .exp-title {
+
         font-size: 16px;
+
         color: #0f172a;
+
         display: flex;
+
         align-items: center;
+
         gap: 6px;
+
         font-weight: bold;
+
     }
+
     .exp-time {
+
         font-size: 13px;
+
         color: #64748b;
+
         background-color: #f1f5f9;
+
         padding: 2px 10px;
+
         border-radius: 999px;
+
         white-space: nowrap;
+
         font-weight: 500;
+
     }
+
     .exp-details {
+
         font-size: 14px;
+
         color: #475569;
+
         line-height: 1.5;
+
     }
+
     @media screen and (max-width: 600px) {
+
         .exp-header {
+
             flex-direction: column;
+
             align-items: flex-start;
+
         }
+
         .exp-time {
+
             margin-top: 4px;
+
         }
+
     }
+
+
 
   </style>
-  
 
   
+
+
+
+  
+
 </head>
+
+
+
 
 
 <body>
 
-<canvas id="fx-canvas"></canvas>
 
-<div id="video-modal" class="video-modal" aria-hidden="true">
-  <div class="video-modal-content" role="dialog" aria-modal="true">
-    <button id="video-modal-fs" class="video-modal-fs" type="button">全屏</button>
-    <button id="video-modal-close" class="video-modal-close" type="button">✕</button>
-    <video id="video-modal-player" controls></video>
-  </div>
-</div>
+
+
 
     <header class="site-header">
 
+
+
   <div class="wrapper">
+
 <nav class="site-nav">
+
   <a href="#" class="menu-icon">
+
     <svg viewBox="0 0 18 15">
+
       <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+
       <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+
       <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+
     </svg>
+
   </a>
 
+
+
   <div class="trigger">
+
     <a class="page-link" href="#bio"><b>About</b></a>
+
     <a class="page-link" href="#timeline"><b>Experiences</b></a>
+
     <a class="page-link" href="#publications"><b>Publications</b></a>
+
     <a class="page-link" href="#demos-media"><b>Demos &amp; Media</b></a>
+
     <a class="page-link" href="#codebase"><b>GitHub</b></a>
+
     <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
+
     <!--<a class="page-link" href="#otherprojects">Projects</a>-->
+
     <!-- Button for Posts -->
+
   </div>
+
 </nav>
+
   </div>
+
 </header>
 
+
+
   <div id="profile-cover" class="cover shallow-bg img-responsive"> 
+
     <div id="profile-namecard" class="profile-wrapper wrapper-light">
+
       <div id="my-pic" class="profile-col profile-col-1">
+
         <img id="profile-avatar" src="images/myself.jpg" alt="Me" class="circle-img border-dark"-/>
+
       </div>
+
       <div id="my-contact" class="profile-col profile-col-2">
+
         <div id="my-name" class="text-grey-dark">
+
           <span id="typing-text"></span><span class="cursor">|</span><br>
+
         </div>
+
         <div id="my-title" class="text-grey">
+
           Zhejiang University of Technology
+
         </div>
+
         <div id="my-email" class="text-grey-light">
+
           zhanghaobo@zjut.edu.cn
+
         </div>
+
+
 
         <div class="social-media">
+
           <a href="https://scholar.google.com/citations?hl=zh-CN&user=sY6udPcAAAAJ" target="_blank" class="icon-button linkedin">
+
           <i class="ai ai-google-scholar-square icon-linkedin"></i>
+
             <span></span>
+
           </a>
+
+
 
           <a href="https://github.com/zhb0119" target="_blank" class="icon-button github">
+
             <i class="fa fa-github icon-github"></i>
+
             <span></span>
+
           </a>
+
          
+
           <a href="https://www.xiaohongshu.com/user/profile/64a92324000000001f007da6" class="icon-button xiaohongshu" aria-label="小红书" target="_blank" rel="noopener noreferrer">
+
             <i> <img src="https://cdn.simpleicons.org/xiaohongshu/FF2D55" alt="" width="45" height="45" style="vertical-align:middle;"> </i>
+
             <span></span>
+
           </a>
+
         </div>
+
       </div>
 
+
+
     </div>
+
   </div>
+
+
 
 <div class="page-content">
+
 <div class="wrapper">
+
 <div id="bio" class="bio fade-in-section">
 
+
+
   <h1 class="md-heading text-left">
+
     <img class="section-icon" src="images/icon/aboutme.png" alt="About" />
+
     About
+
   </h1>
+
   <div class="bio-body" style="overflow:hidden;">
+
     <p>
+
       I am an undergraduate student at Zhejiang University of Technology, majoring in Intelligent Science and Technology.
+
       As a newcomer to the field, I am particularly interested in embedded systems and have participated in several embedded-related competitions.
+
       During the summer of my sophomore year, I joined a research internship at Zhejiang University, where I worked on LLM Fingerprinting.
+
       If you would like to get in touch, feel free to send me an <a href="mailto:zhanghaobo@zjut.edu.cn" target="_blank">email</a>.
 
+
+
       <br>
+
     </p>
 
+
+
     <div class="bio-section">
+
 			<h3 class="bio-subtitle">
+
 		    <i class="fa fa-star" aria-hidden="true"></i>
+
 		    <strong>Research Directions</strong>
+
 			</h3>
+
       <ul>
+
         <li><b>Trustworthy AI</b></li>
+
       </ul>
+
     </div>
+
+
 
     <div class="bio-section">
+
 			<h3 class="bio-subtitle">
+
 				<img class="section-icon" src="images/icon/education.png" alt="Education" />
+
 				<strong>Education</strong>
+
 			</h3>
+
 			<div class="education-card">
+
         <div class="edu-logo">
+
           <img src="images/icon/zjut.png" alt="ZJUT" />
+
         </div>
+
         <div class="edu-content">
+
           <div class="edu-header">
+
             <div class="edu-school"><b>Zhejiang University of Technology</b></div>
+
             <div class="edu-time">Sep. 2023 – Present</div>
+
           </div>
+
           <div class="edu-details">
+
             <div>College of Information Engineering</div>
+
             <div>Major: Intelligent Science and Technology</div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   
+
   </div>
+
 </div>
 
 
+
+
+
 <div class="wrapper">
+
   <div id="timeline" class="timeline-brief fade-in-section">
+
     <h1 class="md-heading text-left">
+
       <img class="section-icon" src="images/icon/internship.png" alt="Experiences" />
+
       Experiences
+
     </h1>
+
   
+
     <div class="timeline-body">
+
       <div class="experience-card">
+
         <div class="exp-logo">
+
           <img src="images/icon/zju.png" alt="ZJU" />
+
         </div>
+
         <div class="exp-content">
+
           <div class="exp-header">
+
             <div class="exp-title">Zhejiang University (ZJU) Research Internship</div>
+
             <div class="exp-time">2024.6 – Present</div>
+
           </div>
+
           <div class="exp-details">
+
             <div>Topic: LLM Fingerprint</div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 </div>
 
 
+
+
+
 <div class="wrapper">
+
 <div id="publications" class="publications fade-in-section">
+
   <h1 class="md-heading text-left">
+
     <img class="section-icon" src="images/icon/pub.png" alt="Publications" />
+
     Publications
+
   </h1>
+
+
+
+
 
 
 
   <div class="pub-list">
+
     <!-- AttnDiff -->
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img" src="images/attndiff.png" alt="AttnDiff" />
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          AttnDiff: Attention-based Differential Fingerprinting for Large Language Models
-        </div>
-        <div class="publish">
-          <span class="place">Under Review</span>
-          <span class="status">2026</span>
-        </div>
-      </div>
-    </div>
 
     <div class="pub">
+
       <div class="pub-left">
-        <img class="intro-img" src="images/icon/forgetmark.png" alt="ForgetMark" />
+
+        <img class="intro-img" src="images/attndiff.png" alt="AttnDiff" />
+
       </div>
+
       <div class="pub-right">
+
         <div class="title">
-          ForgetMark: Stealthy Fingerprint Embedding via Targeted Unlearning in Language Models
+
+          AttnDiff: Attention-based Differential Fingerprinting for Large Language Models
+
         </div>
-        <div class="authors">
-          <span class="author">Zhenhua Xu</span>,
-          <span class="author">Haobo Zhang</span>,
-          <span class="author">Zhebo Wang</span>,
-          <span class="author">Qichen Liu</span>,
-          <span class="author">Haitao Xu</span>,
-          <span class="author">Wenpeng Xing</span>,
-          <span class="author">Meng Han</span>
-        </div>
-        <div class="desc">
-          <p>
-            <a href="https://arxiv.org/abs/2601.08189" target="_blank" rel="noopener noreferrer">[Paper]</a>
-            <a href="https://github.com/zhb0119/ForgetMark" target="_blank" rel="noopener noreferrer">[Code]</a>
-          </p>
-        </div>
+
         <div class="publish">
-          <span class="place">ICASSP</span>
+
+          <span class="place">Under Review</span>
+
           <span class="status">2026</span>
+
         </div>
+
       </div>
+
     </div>
+
+
+
+    <div class="pub">
+
+      <div class="pub-left">
+
+        <img class="intro-img" src="images/icon/forgetmark.png" alt="ForgetMark" />
+
+      </div>
+
+      <div class="pub-right">
+
+        <div class="title">
+
+          ForgetMark: Stealthy Fingerprint Embedding via Targeted Unlearning in Language Models
+
+        </div>
+
+        <div class="authors">
+
+          <span class="author">Zhenhua Xu</span>,
+
+          <span class="author">Haobo Zhang</span>,
+
+          <span class="author">Zhebo Wang</span>,
+
+          <span class="author">Qichen Liu</span>,
+
+          <span class="author">Haitao Xu</span>,
+
+          <span class="author">Wenpeng Xing</span>,
+
+          <span class="author">Meng Han</span>
+
+        </div>
+
+        <div class="desc">
+
+          <p>
+
+            <a href="https://arxiv.org/abs/2601.08189" target="_blank" rel="noopener noreferrer">[Paper]</a>
+
+            <a href="https://github.com/zhb0119/ForgetMark" target="_blank" rel="noopener noreferrer">[Code]</a>
+
+          </p>
+
+        </div>
+
+        <div class="publish">
+
+          <span class="place">ICASSP</span>
+
+          <span class="status">2026</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
   
 
 
 
 
+
+
+
+
+
   </div>
-</div>
+
 </div>
 
+</div>
+
+
+
 <div class="wrapper">
+
   <div id="codebase" class="bio fade-in-section">
+
     <h1 class="md-heading text-left">
+
       <img class="section-icon" src="images/icon/github.png" alt="GitHub" />
+
       GitHub
+
     </h1>  
+
     <div class="bio-body" style="overflow:hidden;">
+
       <div class="card-container">
+
         <div class="github-card">
+
           <div>
+
             <a class="repo-link" href="https://github.com/zhb0119/ForgetMark" target="_blank" rel="noopener noreferrer">zhb0119/<b>ForgetMark</b></a>
+
             <span class="label">Project</span>
+
           </div>
+
           <div class="description">ForgetMark — Stealthy fingerprinting for LLMs via targeted unlearning: build human‑readable key–value sets, embed probabilistic traces, and verify ownership with probability or sematic similarity.</div>
+
           <div class="meta">
+
             <span class="dot"></span>
+
             <span>Python</span>
+
             <a class="gh-star-link" href="https://github.com/zhb0119/ForgetMark/stargazers" target="_blank" rel="noopener noreferrer">
+
               <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 12.026l-3.09 1.626.59-3.446L2 6.97l3.454-.502L8 3.34l1.546 3.128L13 6.97l-2.5 2.236.59 3.446z"/></svg>
+
               Star <span class="gh-star">–</span>
+
             </a>
+
             <a class="gh-fork-link" href="https://github.com/zhb0119/ForgetMark/forks" target="_blank" rel="noopener noreferrer">
+
               <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M5 3a2 2 0 1 1-1 1.732V6a2 2 0 0 0 2 2h1v4.268A2 2 0 1 1 6 14a1.99 1.99 0 0 1 .268-1H6a3 3 0 0 1-3-3V4.732A2 2 0 0 1 5 3zm6 0a2 2 0 0 1 2 2 2 2 0 0 1-1 1.732V9a3 3 0 0 1-3 3h-.268A1.99 1.99 0 0 1 9 14a2 2 0 1 1-1-1.732V8H7a3 3 0 0 1 3-3V6.732A2 2 0 0 1 11 3z"/></svg>
+
               Fork <span class="gh-fork">–</span>
+
             </a>
+
           </div>
+
         </div>
+
+
+
 
 
       </div>
+
     </div>
+
   </div>
+
 </div>
 
+
+
 <div class="wrapper">
+
   <div id="awards" class="bio fade-in-section">
+
     <h1 class="md-heading text-left">
+
 	  <img class="section-icon" src="images/icon/honor.png" alt="Honors" />
+
       Selected Honors & Awards
+
     </h1>
+
     
+
     <div class="award-grid">
+
         <!-- Robot Competition -->
+
         <div class="award-card">
+
             <div class="award-image">
+
                 <a href="images/robocup.jpg" target="_blank">
+
                     <img src="images/robocup.jpg" alt="RoboCup Certificate" loading="lazy">
+
                 </a>
+
             </div>
+
             <div class="award-content">
+
                 <div class="award-title">
+
                     <img class="inline-icon" src="images/icon/robocup.png" alt="RoboCup" width="16" height="16" />
+
                     China Robot Competition & RoboCup China Open 2024
+
                 </div>
+
                 <div class="award-meta">Jul. 2024 – Nov. 2024 · National First Prize</div>
+
             </div>
+
         </div>
+
+
 
         <!-- Smart Car -->
+
         <div class="award-card">
+
             <div class="award-image">
+
                 <a href="images/smartcar.png" target="_blank">
+
                     <img src="images/smartcar.png" alt="Smart Car Certificate" loading="lazy">
+
                 </a>
+
             </div>
+
             <div class="award-content">
+
                 <div class="award-title">
+
                     <img class="inline-icon" src="images/icon/car.png" alt="Car" width="16" height="16" />
+
                     National University Students Intelligent Car Race 2025
+
                 </div>
+
                 <div class="award-meta">Dec. 2024 – Jul. 2025 · National First Prize</div>
+
             </div>
+
         </div>
+
+
 
         <!-- TI Cup -->
+
         <div class="award-card">
+
             <div class="award-image">
+
                 <a href="images/media/diansai.jpg" target="_blank">
+
                     <img src="images/media/diansai.jpg" alt="TI Cup Certificate/Photo" loading="lazy">
+
                 </a>
+
             </div>
+
             <div class="award-content">
+
                 <div class="award-title">
+
                     <img class="inline-icon" src="images/icon/design.png" alt="Design" width="16" height="16" />
+
                     TI Cup National Undergraduate Electronics Design Contest 2025
+
                 </div>
+
                 <div class="award-meta">Aug. 2025 · National Second Prize</div>
+
             </div>
+
         </div>
+
     </div>
+
   </div>
+
 </div>
+
+
 
 <div class="wrapper">
+
   <div id="demos-media" class="bio fade-in-section">
+
     <h1 class="md-heading text-left">
+
       <img class="section-icon" src="images/icon/media.png" alt="Demos & Media" />
+
       Demos &amp; Media
+
       <button id="global-lang-toggle" class="lang-btn-inline">中文 / EN</button>
+
     </h1>
+
     <div class="bio-body" style="overflow:hidden;">
+
       <div class="media-list" data-lang="en">
+
         <!-- Smart Car: Healthcare & Camera -->
+
         <div class="media-item">
+
           <div class="media-left">
+
             <div class="media-gallery">
+
               <!-- Video 1: Healthcare -->
+
               <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000; border-bottom: 1px solid #e5e7eb;">
+
                 <video controls style="width: 100%; height: 100%; object-fit: contain;">
+
                   <source src="images/video/horizon.mp4" type="video/mp4">
+
                   Your browser does not support the video tag.
+
                 </video>
+
               </div>
+
               <!-- Video 2: Camera -->
+
               <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000;">
+
                 <video controls style="width: 100%; height: 100%; object-fit: contain;">
+
                   <source src="images/video/camera.mp4" type="video/mp4">
+
                   Your browser does not support the video tag.
+
                 </video>
+
               </div>
+
             </div>
+
           </div>
 
+
+
           <div class="media-right">
+
             <div class="media-title lang-zh">
+
               <a href="http://smartcarrace.com/" target="_blank" rel="noopener noreferrer">全国大学生智能汽车竞赛：智慧医疗组 | 镜头组</a>
+
             </div>
+
             <div class="media-title lang-en">
+
               <a href="http://smartcarrace.com/" target="_blank" rel="noopener noreferrer">National Intelligent Car Race: Smart Healthcare | Camera Group</a>
+
             </div>
+
+
 
             <div class="media-subtitle lang-zh">地平线 RDK X3 机器人系统 | 英飞凌 TC264 高速视觉</div>
+
             <div class="media-subtitle lang-en">Horizon RDK X3 Robot System | Infineon TC264 High-Speed Vision</div>
 
+
+
             <div class="media-actions">
+
               <button class="media-toggle" type="button" data-toggle-lang>中文 / EN</button>
+
             </div>
+
+
 
             <div class="media-desc lang-zh">
-              <div class="media-paragraph">
-                <strong>[智慧医疗组]</strong> 基于地平线 RDK X3 和 ROS2 构建的人机协作平台，部署轻量化 YOLO/MobileNet 模型实现目标检测，融合数字孪生技术，实现在 5×5 米场景下的自主导航与巡检任务。
-              </div>
-              
-              <hr style="border: 0; border-top: 1px dashed #e5e7eb; margin: 10px 0;">
 
               <div class="media-paragraph">
-                <strong>[镜头组]</strong> 基于英飞凌 TC264/297 多核 MCU 的高速（3–5 m/s）视觉循迹系统。
+
+                <strong>[智慧医疗组]</strong> 基于地平线 RDK X3 和 ROS2 构建的人机协作平台，部署轻量化 YOLO/MobileNet 模型实现目标检测，融合数字孪生技术，实现在 5×5 米场景下的自主导航与巡检任务。
+
               </div>
+
+              
+
+              <hr style="border: 0; border-top: 1px dashed #e5e7eb; margin: 10px 0;">
+
+
+
+              <div class="media-paragraph">
+
+                <strong>[镜头组]</strong> 基于英飞凌 TC264/297 多核 MCU 的高速（3–5 m/s）视觉循迹系统。
+
+              </div>
+
               <ul class="media-bullets">
+
                 <li><strong>视觉感知：</strong>设计图像处理流水线（动态阈值、中值滤波），实现对 120×188 分辨率图像的实时分析与鲁棒车道线提取。</li>
+
                 <li><strong>控制与集成：</strong>实现多核任务调度（视觉/控制分离），并采用 PID 闭环伺服控制，保障高速行驶下的稳定操控与障碍物响应能力。</li>
+
               </ul>
+
               <div class="media-tags">关键词：地平线 RDK X3 · ROS2 · 英飞凌 TC264 · 高速视觉 · PID 控制 · 多核架构</div>
+
             </div>
+
+
 
             <div class="media-desc lang-en">
+
               <div class="media-paragraph">
+
                 <strong>[Smart Healthcare]</strong> A human-robot collaboration platform based on <strong>Horizon RDK X3</strong> and ROS2. Deploys lightweight YOLO/MobileNet for object detection, integrating digital twins for autonomous navigation and inspection in a 5×5m scenario.
+
               </div>
+
+
 
               <hr style="border: 0; border-top: 1px dashed #e5e7eb; margin: 10px 0;">
 
+
+
               <div class="media-paragraph">
+
                 <strong>[Camera Group]</strong> High-speed (3–5m/s) vision tracking system based on <strong>Infineon TC264/297</strong> multi-core MCU.
+
               </div>
+
               <ul class="media-bullets">
+
                 <li><strong>Vision Perception:</strong> Designed an image processing pipeline (dynamic thresholding, median filtering) for real-time 120×188 frame analysis and robust lane extraction.</li>
+
                 <li><strong>Control & Integration:</strong> Implemented multi-core task scheduling (vision/control separation) and PID closed-loop servo control for stable high-speed maneuvering and obstacle handling.</li>
+
               </ul>
+
               <div class="media-tags">Keywords: Horizon RDK X3 · ROS2 · Infineon TC264 · High-Speed Vision · PID Control · Multi-core</div>
+
             </div>
+
           </div>
+
         </div>
+
+
 
         <div class="media-item">
-          <div class="media-left">
-            <div class="media-gallery">
-              <a href="images/media/diansai.jpg" target="_blank" rel="noopener noreferrer">
-                <img class="media-thumb" src="images/media/diansai.jpg" alt="NUEDC 2025" />
-              </a>
-              <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000;">
-                <video controls style="width: 100%; height: 100%; object-fit: contain;">
-                  <source src="images/video/jiguang.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-          </div>
 
-          <div class="media-right">
+          <div class="media-left">
+
+            <div class="media-gallery">
+
+              <a href="images/media/diansai.jpg" target="_blank" rel="noopener noreferrer">
+
+                <img class="media-thumb" src="images/media/diansai.jpg" alt="NUEDC 2025" />
+
+              </a>
+
+              <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000;">
+
+                <video controls style="width: 100%; height: 100%; object-fit: contain;">
+
+                  <source src="images/video/jiguang.mp4" type="video/mp4">
+
+                  Your browser does not support the video tag.
+
+            </div>
+
             <div class="media-title lang-zh">
+
               <a href="https://res.nuedc-training.com.cn/topic/2025/topic_124.html" target="_blank" rel="noopener noreferrer">2025 全国大学生电子设计竞赛（TI 杯）· E 题</a>
+
             </div>
+
             <div class="media-title lang-en">
+
               <a href="https://res.nuedc-training.com.cn/topic/2025/topic_124.html" target="_blank" rel="noopener noreferrer">2025 National Undergraduate Electronics Design Contest (NUEDC) · Problem E</a>
+
             </div>
+
+
 
             <div class="media-subtitle lang-zh">简易自瞄准装置</div>
+
             <div class="media-subtitle lang-en">Simple Self-Aiming Device</div>
 
+
+
             <div class="media-actions">
+
               <button class="media-toggle" type="button" data-toggle-lang>中文 / EN</button>
+
             </div>
+
+
 
             <div class="media-desc lang-zh">
+
               <div class="media-paragraph">构建了一款具备自动循迹功能的智能小车，搭载双自由度云台激光瞄准模块。系统可完成 1–5 圈赛程（每圈 ≤20 秒），自动识别并锁定目标，将激光精准对准靶心，误差小于 2 cm。</div>
+
               <ul class="media-bullets">
+
                 <li><strong>MCU：</strong>TI MSPM0（如 MSPM0G3507）；<strong>视觉：</strong>K230 用于目标感知。</li>
+
                 <li><strong>循迹：</strong>8 通道灰度/红外阵列，支持直线跟踪与 90° 转弯处理；圈数可配置，自动停止。</li>
+
                 <li><strong>瞄准：</strong>双轴云台（步进电机/舵机），同轴相机+激光；基于 OpenCV 目标检测 + 图像透视变换（homography），结合 PID 闭环实现高精度对准。</li>
+
                 <li><strong>工程设计：</strong>混合信号电源隔离、3D 打印刚性云台结构，双电源切换符合安全规范。</li>
+
               </ul>
+
               <div class="media-tags">关键词：MSPM0G3507 · K230 · 8 通道灰度传感器 · 双自由度云台 · OpenCV · PID · 同轴激光</div>
+
             </div>
+
+
 
             <div class="media-desc lang-en">
+
               <div class="media-paragraph">Built an autonomous line-following car with a 2-DoF gimbal laser aiming module. The system completes 1–5 laps (≤20s per lap), detects/locks targets automatically, and aligns the laser to the bullseye with ≤2cm error.</div>
+
               <ul class="media-bullets">
+
                 <li><strong>MCU:</strong> TI MSPM0 (e.g., MSPM0G3507); <strong>Vision:</strong> K230 for target perception.</li>
+
                 <li><strong>Line following:</strong> 8-channel grayscale/IR array with straight tracking and 90° turn handling; lap count configurable; auto stop.</li>
+
                 <li><strong>Aiming:</strong> dual-axis gimbal (stepper/servo), coaxial camera+laser; OpenCV detection + homography; PID closed-loop alignment.</li>
+
                 <li><strong>Engineering:</strong> mixed-signal power isolation, rigid gimbal (3D-printed), dual power-switch rule compliance.</li>
+
               </ul>
+
               <div class="media-tags">Keywords: MSPM0G3507 · K230 · 8-channel grayscale · 2-DoF gimbal · OpenCV · PID · Coaxial laser</div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 </div>
 
+
+
 <footer class="site-footer">
+
   <div class="wrapper">
+
     <div class="footer-col-wrapper">
+
       <div class="footer-col  footer-col-1">
+
         <ul class="contact-list">
+
           <li>Personal Email:</li>
+
           <li><a href="mailto:zhanghaobo@zjut.edu.cn">zhanghaobo@zjut.edu.cn</a></li>
+
         </ul>
+
       </div>
+
+
 
       <div class="footer-col  footer-col-2">
+
           <a href="https://scholar.google.com/citations?hl=zh-CN&user=sY6udPcAAAAJ" target="_blank" class="icon-button github">
+
           <i class="ai ai-google-scholar-square icon-github"></i>
+
             <span></span>
+
           </a>
+
+
 
           <a href="https://github.com/zhb0119" target="_blank" class="icon-button github">
+
             <i class="fa fa-github icon-github"></i>
+
             <span></span>
+
           </a>
+
          
+
           <a href="https://www.xiaohongshu.com/user/profile/64a92324000000001f007da6" class="icon-button xiaohongshu" aria-label="小红书" target="_blank" rel="noopener noreferrer">
+
             <i> <img src="https://cdn.simpleicons.org/xiaohongshu/FF2D55" alt="" width="45" height="45" style="vertical-align:middle;"> </i>
+
             <span></span>
+
           </a>
+
       </div>
+
 	<div class="footer-col footer-col-3">
+
     		<p class="text">Last updated: Aug, 2025.<br>The style of this website is borrowed from <a href='https://leoyuan.site/' target="_blank">Zeqing Yuan's</a>.</p>
+
 	</div>
-  </div>
+
   </div>
 
+  </div>
+
+
+
 </footer>
+
     <div class="back-to-top">Top</div>
 
 
+
+
+
 <script type="text/javascript">
+
 document.addEventListener('DOMContentLoaded', () => {
+
     const backToTop = document.querySelector('.back-to-top');
+
     const offset = 220;
 
+
+
     function toggleBackToTop() {
+
         if (window.scrollY > offset) {
+
             backToTop.style.display = 'block';
+
         } else {
+
             backToTop.style.display = 'none';
+
         }
+
     }
 
+
+
     // Initial check
+
     toggleBackToTop();
+
+
 
     window.addEventListener('scroll', toggleBackToTop);
 
+
+
     backToTop.addEventListener('click', (event) => {
+
         event.preventDefault();
+
         window.scrollTo({
+
             top: 0,
+
             behavior: 'smooth'
+
         });
+
     });
+
+
 
     // Global Language Toggle Logic
+
     const globalLangBtn = document.getElementById('global-lang-toggle');
+
     const body = document.body;
-    const mediaLists = document.querySelectorAll('.media-list');
+
+
 
     // Load saved language or default to English
+
     const savedLang = localStorage.getItem('lang') || 'en';
+
     
+
     function setLang(lang) {
+
         body.setAttribute('data-lang', lang);
-        mediaLists.forEach(list => list.setAttribute('data-lang', lang));
+
         localStorage.setItem('lang', lang);
+
         if (globalLangBtn) {
+
             globalLangBtn.textContent = lang === 'zh' ? 'EN' : '中文';
+
         }
+
     }
+
+
 
     // Initialize
+
     setLang(savedLang);
 
+
+
     if (globalLangBtn) {
+
         globalLangBtn.addEventListener('click', (e) => {
+
             e.preventDefault();
+
             const current = body.getAttribute('data-lang');
+
             const next = current === 'en' ? 'zh' : 'en';
+
             setLang(next);
+
         });
+
     }
+
+
 
     // GitHub Repo Stats Fetcher
+
     const githubCards = document.querySelectorAll('.github-card');
+
     githubCards.forEach(card => {
+
         const repoLink = card.querySelector('.repo-link');
+
         if (!repoLink) return;
+
         
+
         // Extract owner/repo from href (e.g., https://github.com/owner/repo)
+
         try {
+
             const url = new URL(repoLink.href);
+
             const pathParts = url.pathname.split('/').filter(p => p);
+
             if (pathParts.length < 2) return;
+
             
+
             const owner = pathParts[0];
+
             const repo = pathParts[1];
+
             const apiUrl = `https://api.github.com/repos/${owner}/${repo}`;
+
             
+
             fetch(apiUrl)
+
                 .then(response => {
+
                     if (!response.ok) throw new Error(`GitHub API Error: ${response.status}`);
+
                     return response.json();
+
                 })
+
                 .then(data => {
+
                     const starSpan = card.querySelector('.gh-star');
+
                     const forkSpan = card.querySelector('.gh-fork');
+
                     
+
                     if (starSpan) starSpan.textContent = data.stargazers_count;
+
                     if (forkSpan) forkSpan.textContent = data.forks_count;
+
                 })
+
                 .catch(err => {
+
                     console.warn('Failed to fetch GitHub stats:', err);
+
                 });
+
         } catch (e) {
+
             console.error('Error parsing GitHub URL:', e);
+
         }
+
     });
 
-    // Video Modal Logic
-    const videoModal = document.getElementById('video-modal');
-    const videoModalPlayer = document.getElementById('video-modal-player');
-    const videoModalClose = document.getElementById('video-modal-close');
-    const videoModalFs = document.getElementById('video-modal-fs');
 
-    function closeVideoModal() {
-        if (!videoModal || !videoModalPlayer) return;
-        videoModal.classList.remove('is-open');
-        videoModal.setAttribute('aria-hidden', 'true');
-        try { videoModalPlayer.pause(); } catch (e) {}
-        videoModalPlayer.removeAttribute('src');
-        videoModalPlayer.load();
-        document.body.style.overflow = '';
-    }
-
-    function openVideoModal(src) {
-        if (!videoModal || !videoModalPlayer) return;
-        videoModalPlayer.src = src;
-        videoModal.classList.add('is-open');
-        videoModal.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-        try { videoModalPlayer.play(); } catch (e) {}
-    }
-
-    if (videoModal && videoModalPlayer) {
-        document.querySelectorAll('.media-gallery video').forEach(v => {
-            const host = v.parentElement;
-            if (!host) return;
-            if (host.querySelector('.video-expand-btn')) return;
-
-            const btn = document.createElement('button');
-            btn.type = 'button';
-            btn.className = 'video-expand-btn';
-            btn.textContent = 'Expand';
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                try { v.pause(); } catch (err) {}
-                const src = v.currentSrc || v.querySelector('source')?.getAttribute('src');
-                if (src) openVideoModal(src);
-            });
-            host.appendChild(btn);
-        });
-
-        if (videoModalClose) {
-            videoModalClose.addEventListener('click', (e) => {
-                e.preventDefault();
-                closeVideoModal();
-            });
-        }
-
-        if (videoModalFs && videoModalPlayer) {
-            videoModalFs.addEventListener('click', (e) => {
-                e.preventDefault();
-                const el = videoModalPlayer;
-                try {
-                    if (el.requestFullscreen) el.requestFullscreen();
-                    else if (el.webkitEnterFullscreen) el.webkitEnterFullscreen();
-                } catch (err) {}
-            });
-        }
-
-        videoModal.addEventListener('click', (e) => {
-            if (e.target === videoModal) closeVideoModal();
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeVideoModal();
-        });
-    }
 
     // Intersection Observer for fade-in animations
+
     const observerOptions = {
+
         root: null,
+
         rootMargin: '0px',
+
         threshold: 0.1
+
     };
 
+
+
     const observer = new IntersectionObserver((entries, observer) => {
+
         entries.forEach(entry => {
+
             if (entry.isIntersecting) {
+
                 entry.target.classList.add('is-visible');
+
                 observer.unobserve(entry.target); // Only animate once
+
             }
+
         });
+
     }, observerOptions);
 
+
+
     document.querySelectorAll('.fade-in-section').forEach(section => {
+
         observer.observe(section);
+
     });
 
+
+
     // Typing Effect
+
     const typingTextElement = document.getElementById('typing-text');
+
     const textToType = "Haobo Zhang";
+
     let charIndex = 0;
 
+
+
     function type() {
+
         if (charIndex < textToType.length) {
+
             typingTextElement.textContent += textToType.charAt(charIndex);
+
             charIndex++;
+
             setTimeout(type, 150); // Typing speed
+
         }
+
     }
+
+
 
     // Start typing after a short delay
+
     setTimeout(type, 800);
 
-    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0);
-    const fxCanvas = document.getElementById('fx-canvas');
-
-    if (!prefersReducedMotion && !isTouchDevice && fxCanvas) {
-        fxCanvas.style.position = 'fixed';
-        fxCanvas.style.left = '0';
-        fxCanvas.style.top = '0';
-        fxCanvas.style.right = '0';
-        fxCanvas.style.bottom = '0';
-        fxCanvas.style.pointerEvents = 'none';
-        fxCanvas.style.zIndex = '9999';
-
-        const ctx = fxCanvas.getContext('2d');
-        const dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
-        let w = 0;
-        let h = 0;
-
-        const trail = [];
-        const meteors = [];
-        let lastMouse = null;
-        let lastTime = performance.now();
-        let meteorCooldown = 900 + Math.random() * 900;
-
-        function resizeFx() {
-            w = window.innerWidth;
-            h = window.innerHeight;
-            fxCanvas.width = Math.floor(w * dpr);
-            fxCanvas.height = Math.floor(h * dpr);
-            fxCanvas.style.width = w + 'px';
-            fxCanvas.style.height = h + 'px';
-            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        }
-
-        function addTrail(x, y, vx, vy) {
-            trail.push({
-                x,
-                y,
-                vx,
-                vy,
-                r: 3.0 + Math.random() * 2.2,
-                rot: Math.random() * Math.PI * 2,
-                spin: (Math.random() * 2 - 1) * 0.008,
-                tw: Math.random() * Math.PI * 2,
-                life: 520 + Math.random() * 320,
-                born: performance.now(),
-            });
-            if (trail.length > 140) trail.splice(0, trail.length - 140);
-        }
-
-        function drawStar(x, y, outerR, innerR, rotation) {
-            const spikes = 5;
-            let rot = rotation;
-            const step = Math.PI / spikes;
-            ctx.beginPath();
-            ctx.moveTo(x + Math.cos(rot) * outerR, y + Math.sin(rot) * outerR);
-            for (let i = 0; i < spikes; i++) {
-                rot += step;
-                ctx.lineTo(x + Math.cos(rot) * innerR, y + Math.sin(rot) * innerR);
-                rot += step;
-                ctx.lineTo(x + Math.cos(rot) * outerR, y + Math.sin(rot) * outerR);
-            }
-            ctx.closePath();
-        }
-
-        function spawnMeteor() {
-            const startX = w * (0.2 + Math.random() * 0.8);
-            const startY = -40 - Math.random() * 120;
-            const speed = 900 + Math.random() * 700;
-            const angle = (Math.PI / 2) + (Math.PI / 6) + (Math.random() * Math.PI / 12);
-            const vx = Math.cos(angle) * speed;
-            const vy = Math.sin(angle) * speed;
-            meteors.push({
-                x: startX,
-                y: startY,
-                vx,
-                vy,
-                len: 180 + Math.random() * 220,
-                born: performance.now(),
-                life: 900 + Math.random() * 500,
-            });
-            if (meteors.length > 8) meteors.shift();
-        }
-
-        function drawTrail(now, dt) {
-            for (let i = trail.length - 1; i >= 0; i--) {
-                const p = trail[i];
-                const age = now - p.born;
-                const t = Math.max(0, 1 - age / p.life);
-                p.x += p.vx * 0.016;
-                p.y += p.vy * 0.016;
-                p.vx *= 0.92;
-                p.vy *= 0.92;
-
-                p.rot += p.spin * dt;
-
-                const twinkle = 0.78 + 0.22 * Math.sin((now * 0.012) + p.tw);
-                const alpha = 0.55 * t * twinkle;
-                const size = p.r * (0.8 + 0.7 * t);
-                ctx.save();
-                ctx.shadowColor = `rgba(56, 189, 248, ${0.55 * t})`;
-                ctx.shadowBlur = 10 * t;
-                ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
-                drawStar(p.x, p.y, size, size * 0.5, p.rot);
-                ctx.fill();
-                ctx.restore();
-
-                if (t <= 0.02 || p.x < -50 || p.x > w + 50 || p.y < -50 || p.y > h + 50) {
-                    trail.splice(i, 1);
-                }
-            }
-        }
-
-        function drawMeteors(now, dt) {
-            meteorCooldown -= dt;
-            if (meteorCooldown <= 0) {
-                spawnMeteor();
-                meteorCooldown = 1200 + Math.random() * 1800;
-            }
-
-            for (let i = meteors.length - 1; i >= 0; i--) {
-                const m = meteors[i];
-                const age = now - m.born;
-                const t = Math.max(0, 1 - age / m.life);
-
-                m.x += (m.vx * dt) / 1000;
-                m.y += (m.vy * dt) / 1000;
-
-                const dx = (m.vx / 1000) * (m.len / 2);
-                const dy = (m.vy / 1000) * (m.len / 2);
-
-                const x1 = m.x;
-                const y1 = m.y;
-                const x2 = m.x - dx;
-                const y2 = m.y - dy;
-
-                const grad = ctx.createLinearGradient(x2, y2, x1, y1);
-                grad.addColorStop(0, `rgba(56, 189, 248, 0)`);
-                grad.addColorStop(0.35, `rgba(56, 189, 248, ${0.28 * t})`);
-                grad.addColorStop(1, `rgba(255, 255, 255, ${0.55 * t})`);
-
-                ctx.lineWidth = 2;
-                ctx.strokeStyle = grad;
-                ctx.beginPath();
-                ctx.moveTo(x2, y2);
-                ctx.lineTo(x1, y1);
-                ctx.stroke();
-
-                if (t <= 0.02 || m.y > h + 200 || m.x > w + 200) {
-                    meteors.splice(i, 1);
-                }
-            }
-        }
-
-        function tick(now) {
-            const dt = Math.min(50, now - lastTime);
-            lastTime = now;
-            ctx.clearRect(0, 0, w, h);
-            drawMeteors(now, dt);
-            drawTrail(now, dt);
-            requestAnimationFrame(tick);
-        }
-
-        window.addEventListener('resize', resizeFx);
-        window.addEventListener('mousemove', (e) => {
-            const x = e.clientX;
-            const y = e.clientY;
-            if (!lastMouse) {
-                lastMouse = { x, y, t: performance.now() };
-                addTrail(x, y, 0, 0);
-                return;
-            }
-            const dx = x - lastMouse.x;
-            const dy = y - lastMouse.y;
-            const dist = Math.hypot(dx, dy);
-            const steps = Math.max(1, Math.min(6, Math.floor(dist / 12)));
-            for (let i = 0; i < steps; i++) {
-                const k = (i + 1) / steps;
-                addTrail(lastMouse.x + dx * k, lastMouse.y + dy * k, dx * 0.05, dy * 0.05);
-            }
-            lastMouse = { x, y, t: performance.now() };
-        }, { passive: true });
-
-        resizeFx();
-        requestAnimationFrame(tick);
-    } else if (fxCanvas) {
-        fxCanvas.remove();
-    }
 });
+
 </script>
+
   </body>
+
 <!--<script src="custom-pub.js"></script>-->
+
 </html>
