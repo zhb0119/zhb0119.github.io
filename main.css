@@ -94,29 +94,21 @@ body {
 
     font-size: 16px;
 
-    line-height: 1.5;
+    line-height: 1.6;
 
-    font-weight: 300;
+    font-weight: 400;
 
-    color: #111;
+    color: #333;
 
-    /* Full page fixed starry background */
+    background-color: #fff;
 
-    background-image: url("images/background.jpg");
-
-    background-attachment: fixed;
-
-    background-size: cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-    /* Glassmorphism removed from body to keep background clear */
-
-    background-color: transparent;
+    background-image: none;
 
     -webkit-text-size-adjust: 100%;
+
+    margin: 0;
+
+    padding: 0;
 
 }
 
@@ -331,40 +323,22 @@ pre>code {
 
 
 .wrapper {
-
-    max-width: -webkit-calc(1120px - (30px * 2));
-
-    max-width: calc(1120px - (30px * 2));
-
+    max-width: 1200px;
+    width: 100%;
     margin-right: auto;
-
     margin-left: auto;
-
-    padding-right: 30px;
-
-    padding-left: 30px
-
+    padding-right: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
 }
-
-
 
 @media screen and (max-width: 800px) {
-
     .wrapper {
-
-        max-width: -webkit-calc(1024px - (30px));
-
-        max-width: calc(1024px - (30px));
-
-        padding-right: 15px;
-
-        padding-left: 15px
-
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
-
 }
-
-
 
 .wrapper:after,
 
@@ -698,8 +672,6 @@ pre>code {
 
 @media screen and (max-width: 800px) {
 
-
-
     .footer-col-1,
 
     .footer-col-2 {
@@ -709,8 +681,6 @@ pre>code {
         width: calc(50% - (30px / 2))
 
     }
-
-
 
     .footer-col-3 {
 
@@ -741,9 +711,11 @@ pre>code {
 
 
 .page-content {
-
-    padding: 24px 0 60px 0
-
+    padding: 0;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
 }
 
 
@@ -824,7 +796,7 @@ pre>code {
 
     text-align: center;
 
-}
+)
 
 
 
@@ -956,7 +928,7 @@ pre>code {
 
     object-fit: contain;
 
-}
+)
 
 
 
@@ -1064,8 +1036,6 @@ pre>code {
 
     }
 
-    
-
     .edu-time {
 
         margin-top: 4px;
@@ -1140,7 +1110,7 @@ pre>code {
 
 .timeline-brief {
 
-    margin-top: 20px;
+    margin-top: 0;
 
     margin-bottom: 30px;
 
@@ -1396,17 +1366,13 @@ pre>code {
 
 .shallow-bg {
 
-    /* background-image: url("images/background/background1.JPG"); */
-
-    background-image: url("images/background.jpg");
-
-    background-size: cover;
+    background: #f5f1e8;
 
     background-repeat: no-repeat;
 
     background-position: center 25%
 
-}
+)
 
 
 
@@ -1420,7 +1386,7 @@ pre>code {
 
     background-position: center 25%
 
-}
+)
 
 
 
@@ -1438,7 +1404,7 @@ pre>code {
 
     margin-right: auto
 
-}
+)
 
 
 
@@ -1544,7 +1510,7 @@ pre>code {
 
     width: calc(40% - (30px / 2))
 
-}
+)
 
 
 
@@ -1559,8 +1525,6 @@ pre>code {
 
 
 @media screen and (max-width: 800px) {
-
-
 
     .profile-col-1,
 
@@ -1608,7 +1572,7 @@ pre>code {
 
     border-radius: 50%
 
-}
+)
 
 
 
@@ -1788,7 +1752,7 @@ pre>code {
 
     background: linear-gradient(135deg, rgba(255, 45, 85, 0.85), rgba(15, 23, 42, 0.20))
 
-}
+)
 
 
 
@@ -1972,7 +1936,7 @@ hr.soft {
 
     background-color: rgba(15, 23, 42, 0.9)
 
-}
+)
 
 
 
@@ -2096,6 +2060,12 @@ hr.soft {
 
     object-fit: cover;
 
+    border: none;
+
+    border-radius: 0;
+
+    background: #fff;
+
     display: block;
 
     transition: transform 0.3s ease;
@@ -2152,7 +2122,7 @@ hr.soft {
 
     line-height: 1.4;
 
-}
+)
 
 
 
@@ -2175,8 +2145,6 @@ hr.soft {
         flex-direction: column;
 
     }
-
-    
 
     .award-image {
 
@@ -2358,8 +2326,6 @@ hr.soft {
 
     }
 
-
-
     .media-left {
 
         width: 100%;
@@ -2374,15 +2340,11 @@ hr.soft {
 
     }
 
-
-
     .media-gallery {
 
         flex-direction: row;
 
     }
-
-
 
     .media-gallery > a {
 
@@ -2394,15 +2356,11 @@ hr.soft {
 
     }
 
-
-
     .media-gallery > a:last-child {
 
         border-right: none;
 
     }
-
-
 
     .media-thumb {
 
@@ -2500,7 +2458,7 @@ hr.soft {
 
     font-size: 12px
 
-}
+)
 
 
 
@@ -2546,7 +2504,7 @@ hr.soft {
 
     border-color: rgba(155, 48, 34, 0.45)
 
-}
+)
 
 
 
@@ -2578,7 +2536,7 @@ hr.soft {
 
     padding-left: 18px
 
-}
+)
 
 
 
@@ -2614,9 +2572,9 @@ hr.soft {
 
     width: 100%;
 
-    margin-top: 10px;
+    margin-top: 0;
 
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
 }
 
@@ -2627,6 +2585,20 @@ hr.soft {
     .bio {
 
         width: 100%;
+
+    }
+
+    .wrapper {
+
+        padding-right: 15px;
+
+        padding-left: 15px;
+
+    }
+
+    .page-content {
+
+        padding: 20px 0 40px 0;
 
     }
 

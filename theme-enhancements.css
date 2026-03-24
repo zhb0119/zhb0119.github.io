@@ -1,0 +1,163 @@
+/* ===== Enhanced Typography & Colors for Eye-friendly Theme ===== */
+
+/* Headings */
+.md-heading, 
+.bio-subtitle {
+    color: #1a1a1a;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Card Titles */
+.exp-title, 
+.edu-school, 
+.award-title, 
+.media-title, 
+.pub-right .title, 
+.internship-title {
+    color: #1a1a1a !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Subtitles / Metadata */
+.exp-details, 
+.edu-details, 
+.award-meta, 
+.media-subtitle, 
+.pub-right .authors, 
+.internship-topic, 
+.github-card .description {
+    color: #5a5a5a !important;
+    font-size: 15px;
+}
+
+/* Links */
+a, 
+.media-title a, 
+.pub-right .title a, 
+.repo-link {
+    color: #1e40af !important;
+    transition: color 0.2s ease;
+}
+
+a:hover, 
+.media-title a:hover {
+    color: #1e3a8a !important;
+    text-decoration: underline;
+}
+
+/* Inner element backgrounds */
+.exp-logo, 
+.edu-logo, 
+.award-image, 
+.pub-left, 
+.media-left {
+    background-color: #faf8f3 !important;
+    border-color: #e8dcc8 !important;
+}
+
+/* ===== Publications Conference Tags ===== */
+.pub-right .publish .place {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #dbeafe !important;
+    color: #1e40af !important;
+    border: 1px solid #93c5fd;
+}
+
+/* Different colors for different conference levels */
+.pub-right .publish .place.ccf-a {
+    background-color: #dbeafe !important;
+    color: #1e40af !important;
+    border: 1px solid #93c5fd;
+}
+
+.pub-right .publish .place.ccf-b {
+    background-color: #d1fae5 !important;
+    color: #065f46 !important;
+    border: 1px solid #6ee7b7;
+}
+
+/* ===== Education Timeline Style ===== */
+.bio-section .education-card {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+.bio-section .education-card::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: -30px;
+    width: 3px;
+    background: linear-gradient(180deg, #8b5cf6, #a78bfa);
+}
+
+.bio-section .education-card::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #8b5cf6;
+    border: 3px solid #fefdfb;
+    box-shadow: 0 0 0 3px #e9d5ff;
+}
+
+.bio-section .education-card:last-child::before {
+    display: none;
+}
+
+/* Adjust education card layout for timeline */
+.bio-section .education-card .edu-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+/* ===== Section Title with Left Border ===== */
+.md-heading {
+    background: transparent;
+    padding: 0 0 0 15px;
+    border-radius: 0;
+    display: inline-flex;
+    align-items: center;
+    border-left: 4px solid #1e40af;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+/* ===== Improved Text Readability ===== */
+p {
+    color: #2c2c2c;
+    line-height: 1.8;
+}
+
+.bio-body > p {
+    background-color: transparent;
+    color: #2c2c2c;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.bio-section ul {
+    background-color: transparent;
+    color: #2c2c2c;
+    padding: 0 0 0 20px;
+}
+
+.bio-section ul li {
+    margin-bottom: 8px;
+    line-height: 1.7;
+}

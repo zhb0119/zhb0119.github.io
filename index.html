@@ -42,7 +42,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="main.css?v=20260116-13">
+  <link rel="stylesheet" href="main.css?v=20260324-1">
+
+  <link rel="stylesheet" href="theme-enhancements.css">
+
+  <link rel="stylesheet" href="academic-layout.css?v=20260324-12">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -400,8 +404,6 @@
 
     <!--<a class="page-link" href="#otherprojects">Projects</a>-->
 
-    <!-- Button for Posts -->
-
   </div>
 
 </nav>
@@ -488,9 +490,29 @@
 
 <div class="page-content">
 
-<div class="wrapper">
+<!-- Sidebar -->
+<aside class="sidebar">
+  <img src="images/myself.jpg" alt="Haobo Zhang" class="sidebar-avatar">
+  <div class="sidebar-name">Haobo Zhang</div>
+  <div class="sidebar-title">Zhejiang University of Technology</div>
+  <div class="sidebar-email">zhanghaobo@zjut.edu.cn</div>
+  <div class="sidebar-links">
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=sY6udPcAAAAJ" target="_blank">
+      <i class="ai ai-google-scholar"></i> Google Scholar
+    </a>
+    <a href="https://github.com/zhb0119" target="_blank">
+      <i class="fa fa-github"></i> GitHub
+    </a>
+    <a href="https://www.xiaohongshu.com/user/profile/64a92324000000001f007da6" target="_blank">
+      <i class="fa fa-book"></i> 小红书
+    </a>
+  </div>
+</aside>
 
-<div id="bio" class="bio fade-in-section">
+<!-- Main Content -->
+<main class="main-content">
+<div class="wrapper">
+  <div id="bio" class="bio fade-in-section">
 
 
 
@@ -590,12 +612,9 @@
 
 </div>
 
-
-
-
+</div>
 
 <div class="wrapper">
-
   <div id="timeline" class="timeline-brief fade-in-section">
 
     <h1 class="md-heading text-left">
@@ -624,7 +643,7 @@
 
             <div class="exp-title">Zhejiang University (ZJU) Research Internship</div>
 
-            <div class="exp-time">2024.6 – Present</div>
+            <div class="exp-time">2025.6 – 2026.2</div>
 
           </div>
 
@@ -985,33 +1004,21 @@
         <div class="media-item">
 
           <div class="media-left">
-
             <div class="media-gallery">
 
               <!-- Video 1: Healthcare -->
-
-              <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000; border-bottom: 1px solid #e5e7eb;">
-
-                <video controls style="width: 100%; height: 100%; object-fit: contain;">
-
+              <div class="video-container">
+                <video controls>
                   <source src="images/video/horizon.mp4" type="video/mp4">
-
                   Your browser does not support the video tag.
-
                 </video>
-
               </div>
 
               <!-- Video 2: Camera -->
-
-              <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000;">
-
-                <video controls style="width: 100%; height: 100%; object-fit: contain;">
-
+              <div class="video-container">
+                <video controls>
                   <source src="images/video/camera.mp4" type="video/mp4">
-
                   Your browser does not support the video tag.
-
                 </video>
 
               </div>
@@ -1116,37 +1123,85 @@
 
               <div class="media-tags">Keywords: Horizon RDK X3 · ROS2 · Infineon TC264 · High-Speed Vision · PID Control · Multi-core</div>
 
+
+
             </div>
 
+
+
           </div>
+
+
 
         </div>
 
 
 
+
+
         <div class="media-item">
+
+
 
           <div class="media-left">
 
+
+
             <div class="media-gallery">
+
+
 
               <a href="images/media/diansai.jpg" target="_blank" rel="noopener noreferrer">
 
+
+
                 <img class="media-thumb" src="images/media/diansai.jpg" alt="NUEDC 2025" />
+
+
 
               </a>
 
-              <div style="flex: 1; width: 100%; position: relative; overflow: hidden; background: #000;">
+
+
+              <div style="position: relative; overflow: hidden; background: #000;">
+
+
 
                 <video controls style="width: 100%; height: 100%; object-fit: contain;">
 
+
+
                   <source src="images/video/jiguang.mp4" type="video/mp4">
+
+
 
                   Your browser does not support the video tag.
 
+
+
+                </video>
+
+
+
+              </div>
+
+
+
             </div>
 
+
+
+          </div>
+
+
+
+          <div class="media-right">
+
+
+
             <div class="media-title lang-zh">
+
+
 
               <a href="https://res.nuedc-training.com.cn/topic/2025/topic_124.html" target="_blank" rel="noopener noreferrer">2025 全国大学生电子设计竞赛（TI 杯）· E 题</a>
 
@@ -1225,10 +1280,8 @@
     </div>
 
   </div>
-
+</main>
 </div>
-
-
 
 <footer class="site-footer">
 
@@ -1306,6 +1359,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    const body = document.body;
+
     const backToTop = document.querySelector('.back-to-top');
 
     const offset = 220;
@@ -1358,10 +1413,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const globalLangBtn = document.getElementById('global-lang-toggle');
 
-    const body = document.body;
-
-
-
     // Load saved language or default to English
 
     const savedLang = localStorage.getItem('lang') || 'en';
@@ -1380,6 +1431,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
 
+        // Sync media-list data-lang
+
+        const mediaLists = document.querySelectorAll('.media-list');
+
+        mediaLists.forEach(list => list.setAttribute('data-lang', lang));
+
     }
 
 
@@ -1387,8 +1444,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize
 
     setLang(savedLang);
-
-
+    
+    // Media toggle buttons
+    const mediaToggleBtns = document.querySelectorAll('.media-toggle');
+    mediaToggleBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const current = body.getAttribute('data-lang');
+            const next = current === 'en' ? 'zh' : 'en';
+            setLang(next);
+        });
+    });
 
     if (globalLangBtn) {
 
