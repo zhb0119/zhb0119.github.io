@@ -46,7 +46,7 @@
 
   <link rel="stylesheet" href="theme-enhancements.css">
 
-  <link rel="stylesheet" href="academic-layout.css?v=20260324-13">
+  <link rel="stylesheet" href="academic-layout.css?v=20260324-18">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -534,7 +534,7 @@
 
       During the summer of my sophomore year, I joined a research internship at Zhejiang University, where I worked on LLM Fingerprinting.
 
-      If you would like to get in touch, feel free to send me an <a href="mailto:zhanghaobo@zjut.edu.cn" target="_blank">email</a>.
+      If you would like to get in touch, feel free to send me an <a href="mailto:zhanghaobo@zjut.edu.cn" target="_blank">email</a>. 
 
 
 
@@ -542,7 +542,82 @@
 
     </p>
 
+    <!-- Learning Journey Toggle Button -->
+    <button class="journey-toggle" id="journeyToggle">
+      <i class="fa fa-chevron-down journey-icon"></i>
+      <span>View My Learning Journey</span>
+    </button>
 
+    <!-- Learning Journey Timeline (Hidden by default) -->
+    <div class="learning-journey" id="learningJourney" style="display: none;">
+      <div class="timeline-container">
+        
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2023.09 - Present</div>
+            <div class="timeline-title">Undergraduate Studies</div>
+            <div class="timeline-desc">
+              Started my journey in Intelligent Science and Technology at Zhejiang University of Technology. 
+              Focused on AI fundamentals, machine learning, and embedded systems development.
+              <br><br>
+              <strong>📟 Embedded Systems Learning Path:</strong><br>
+              <span class="tech-path">
+                <span class="tech-item">8051 MCU</span>
+                <span class="tech-item">STM32 (ARM Cortex-M)</span>
+                <span class="tech-item">Infineon TC264 (AURIX)</span>
+                <span class="tech-item">RDK X3/X5 (Horizon Robotics)</span>
+                <span class="tech-item">Huawei Atlas 200 DK (Ascend AI)</span>
+              </span>
+              <br><br>
+              <strong>🛠️ Development Tools & Frameworks:</strong><br>
+              <span class="tech-path">
+                <span class="tech-item">Keil µVision</span> 
+                <span class="tech-item">STM32CubeMX</span> 
+                <span class="tech-item">ROS2</span>
+              </span>
+            </div>
+            <div class="timeline-highlight">
+              <div class="highlight-title">🏆 Competition Achievements & Team Experience</div>
+              <div class="highlight-desc">
+                Participated in multiple national-level competitions including RoboCup, Smart Car Race, 
+                and Electronics Design Contest, winning several first and second prizes.
+              </div>
+              <div class="highlight-note">
+                <strong>💡 Reflection:</strong> During my freshman and sophomore years, I developed a profound passion for electronics and embedded systems competitions. I was honored to join the <strong>ZJUT Smart-Car Race Team</strong>, where I met many like-minded teammates who shared the same enthusiasm. Team-based competitions demand exceptional collaboration, communication skills, and hands-on engineering capabilities. The inherent uncertainties in competitions—such as real-world track conditions (materials, friction coefficients, lighting variations)—transform them into complex "black boxes" that require considering non-programmatic factors. These challenges, while demanding, made the journey incredibly rewarding and deepened our love for this field.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2024.06 - 2025.02</div>
+            <div class="timeline-title">Research Internship at ZJU</div>
+            <div class="timeline-desc">
+              Joined the <strong>IFRC (Intelligent Fusion Research Center) Lab</strong> at Zhejiang University, working on LLM Fingerprinting under the supervision of Prof. Haitao Xu. 
+              Contributed to cutting-edge research in trustworthy AI, model security, and intellectual property protection for large language models.
+            </div>
+            <div class="timeline-highlight timeline-highlight-research">
+              <div class="highlight-title">📄 Research Publications</div>
+              <div class="highlight-desc">
+                <strong>1. ForgetMark (ICASSP 2026)</strong><br>
+                Published "ForgetMark: Stealthy Fingerprint Embedding via Targeted Unlearning in Language Models" at ICASSP 2026. 
+                Introduced a novel approach to embed imperceptible fingerprints into LLMs through targeted unlearning, enabling robust ownership verification.
+                <br><br>
+                <strong>2. AttnDiff (Under Review, 2026)</strong><br>
+                Submitted "AttnDiff: Attention-based Differential Fingerprinting for Large Language Models" for peer review. 
+                Proposed an attention mechanism-based differential fingerprinting method that achieves higher accuracy and robustness in model ownership identification.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <div class="bio-section">
 
@@ -550,17 +625,15 @@
 
 		    <i class="fa fa-star" aria-hidden="true"></i>
 
-		    <strong>Research Directions</strong>
+		    <strong>Research Interests</strong>
 
 			</h3>
 
       <ul>
 
-        <li><b>Trustworthy AI</b></li>
+        <li><b>Trustworthy AI & Safety AI</b></li>
 
-        <li><b>AI Safety</b></li>
-
-        <li><b>Large Language Models</b></li>
+        <li><b>Self-Evolving of LLMs</b></li>
 
       </ul>
 
@@ -1412,6 +1485,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+
+    // Learning Journey Toggle
+    const journeyToggle = document.getElementById('journeyToggle');
+    const learningJourney = document.getElementById('learningJourney');
+    
+    if (journeyToggle && learningJourney) {
+        journeyToggle.addEventListener('click', () => {
+            const isHidden = learningJourney.style.display === 'none';
+            
+            if (isHidden) {
+                learningJourney.style.display = 'block';
+                journeyToggle.classList.add('active');
+                journeyToggle.querySelector('span').textContent = 'Hide My Learning Journey';
+            } else {
+                learningJourney.style.display = 'none';
+                journeyToggle.classList.remove('active');
+                journeyToggle.querySelector('span').textContent = 'View My Learning Journey';
+            }
+        });
+    }
 
     // Global Language Toggle Logic
 
