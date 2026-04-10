@@ -643,7 +643,7 @@ body {
     background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%) !important;
     border-right: 1px solid #ddd6fe !important;
     border-radius: 8px 0 0 8px !important;
-    width: 500px !important;
+    width: 900px !important;
     flex-shrink: 0 !important;
 }
 
