@@ -643,7 +643,7 @@ body {
     background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%) !important;
     border-right: 1px solid #ddd6fe !important;
     border-radius: 8px 0 0 8px !important;
-    width: 280px !important;
+    width: 500px !important;
     flex-shrink: 0 !important;
 }
 
@@ -651,7 +651,7 @@ body {
     display: flex !important;
     flex-direction: row !important;
     width: 100% !important;
-    height: 180px !important;
+    height: 250px !important;
     overflow: hidden !important;
 }
 
@@ -664,9 +664,7 @@ body {
     position: relative !important;
     overflow: hidden !important;
     background: #000 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    display: block !important;
 }
 
 .media-gallery > div:last-child,
