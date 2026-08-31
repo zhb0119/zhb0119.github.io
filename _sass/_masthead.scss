@@ -5,8 +5,9 @@
 .masthead {
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, .96);
   border-bottom: 1px solid $border-color;
+  box-shadow: 0 1px 8px rgba(23, 32, 51, .035);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -51,6 +52,26 @@
     vertical-align:middle;
   }
  // display: none !important;
+}
+
+.site-wordmark {
+  display: inline-flex;
+  gap: .55rem;
+  align-items: center;
+  color: #172033;
+
+  span {
+    display: inline-flex;
+    width: 1.85rem;
+    height: 1.85rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #fff;
+    background: #172033;
+    font-size: .68rem;
+    letter-spacing: 0;
+  }
 }
 
 .masthead__menu-item {

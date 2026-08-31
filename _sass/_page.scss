@@ -412,8 +412,10 @@
 }
 
 .footer_site{
-  padding-top: 9em;
-  align-items: center;
+  max-width: $x-large;
+  margin: 5em auto 0;
+  padding: 1.5em 1em 2em;
+  border-top: 1px solid $border-color;
 }
 .page_a {
   color: #224b8d;
@@ -428,9 +430,15 @@ hr {
 
 .footer_copyright{
   font-family: $sans-serif-narrow;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
   display: flex;
+  gap: .6em;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  color: #7a8492;
+  font-size: .82rem;
+
+  .footer-separator {
+    color: #c0c6cf;
+  }
 }
