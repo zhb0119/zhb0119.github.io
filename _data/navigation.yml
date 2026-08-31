@@ -2,7 +2,7 @@
 main:
   - title: "简介 / About"
     url: "/#about-me"
-  - title: "研究经历 / Research"
+  - title: "实习经历 / Internship"
     url: "/#-yj"
   - title: "论文 / Publications"
     url: "/#-lwzl"

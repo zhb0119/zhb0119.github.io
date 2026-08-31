@@ -22,11 +22,11 @@ I am a third-year undergraduate student majoring in Intelligent Science and Tech
 
 <span class='anchor' id='-yj'></span>
 
-# 研究经历 / Research Experience
+# 实习经历 / Internship Experience
 
-- *2025.06 - 2026.01* · **浙江大学 Zhejiang University**, Research Assistant, LLM Security
+- *2025.06 - 2026.01* · **浙江大学 Zhejiang University**, [Intelligence Fusion Research Center (IFRC) 实验室](https://ifrc-zju.github.io/), Research Intern
   - 负责大语言模型指纹技术研究，参与模型版权保护方案设计与实现。
-  - Researched LLM fingerprinting and contributed to the design and implementation of model copyright protection methods.
+  - Interned on LLM fingerprinting and contributed to the design and implementation of model copyright protection methods.
 
 <span class='anchor' id='-lwzl'></span>
 
@@ -78,8 +78,6 @@ I am a third-year undergraduate student majoring in Intelligent Science and Tech
 
 - *2023.09 - 2027.06* · **浙江工业大学 Zhejiang University of Technology**, College of Information Engineering
   - 智能科学与技术 / **B.Eng. in Intelligent Science and Technology**
-  - GPA 4.0/5.0; major rank **1/48**; CET-6 514, CET-4 539.
-  - 核心课程 / Selected coursework: Optimization Methods (96), Data Structures (96), Principles of Artificial Intelligence (95), Machine Learning (87), Image Processing and Video Analysis (98).
 
 <script>
 document.querySelectorAll('.abstract-toggle').forEach(function (button) {
