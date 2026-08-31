@@ -120,12 +120,19 @@
     .paper-authors,
     .paper-venue {
         color: #3e4a5a;
+        line-height: 1.55;
         margin: 0 0 .55em;
     }
 
     .paper-venue {
         color: #5a6878;
         font-size: .94em;
+    }
+
+    .author-note {
+        color: #6a7685;
+        font-size: .8em;
+        margin: .25em 0 .55em;
     }
 
     .abstract-toggle {

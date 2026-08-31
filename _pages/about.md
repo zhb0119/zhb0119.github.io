@@ -41,7 +41,7 @@ I am an undergraduate student majoring in Intelligent Science and Technology at 
 <div class='paper-box-image'><div><div class="badge">NeurIPS 2026 · Under Review</div><img src='images/paper/attndiff.png' alt="AttnDiff" width="100%"></div></div>
 <div class='paper-box-text'>
 <a class="paper-title" href="https://arxiv.org/abs/2604.05502">AttnDiff: Attention-based Differential Fingerprinting for Large Language Models</a>
-<p class="paper-authors"><strong>Haobo Zhang</strong>, et al.</p>
+<p class="paper-authors"><strong>Haobo Zhang</strong>, Zhenhua Xu, Junxian Li, Shangfeng Sheng, Dezhang Kong, Meng Han.</p>
 <p class="paper-venue"><em>Thirty-Ninth Conference on Neural Information Processing Systems (NeurIPS), 2026</em> · Under Review</p>
 <button class="abstract-toggle" type="button" aria-expanded="false">Abstract <span aria-hidden="true">▾</span></button>
 <div class="paper-abstract" hidden>Protecting the intellectual property of open-weight large language models requires verifying whether a suspect model is derived from a victim model despite fine-tuning, pruning/compression, and model merging. We propose AttnDiff, a data-efficient white-box framework that extracts fingerprints from intrinsic information-routing behavior. AttnDiff probes minimally edited prompt pairs that induce controlled semantic conflicts, captures differential attention patterns, summarizes them with compact spectral descriptors, and compares models using CKA. Across Llama-2/3, Qwen2.5, and additional open-source families, it yields high similarity for related derivatives while separating unrelated model families, supporting practical provenance verification and accountability.</div>
@@ -51,7 +51,7 @@ I am an undergraduate student majoring in Intelligent Science and Technology at 
 <div class='paper-box-image'><div><div class="badge">EMNLP Findings 2026</div><img src='images/paper/memmark.png' alt="MemMark" width="100%"></div></div>
 <div class='paper-box-text'>
 <a class="paper-title" href="https://arxiv.org/abs/2605.25002">MemMark: State-Evolution Attribution Watermarking for Agent Long-Term Memory Systems</a>
-<p class="paper-authors"><strong>Haobo Zhang</strong>, et al.</p>
+<p class="paper-authors"><strong>Haobo Zhang</strong>, Xutao Mao, Guangyuan Dong, Ziwei Li, Xuanbo Su, Kaijie Chen, Jing Yang, Zheng Lin.</p>
 <p class="paper-venue"><em>Findings of the Association for Computational Linguistics: EMNLP, 2026</em></p>
 <button class="abstract-toggle" type="button" aria-expanded="false">Abstract <span aria-hidden="true">▾</span></button>
 <div class="paper-abstract" hidden>Memory-backed agents need provenance that can survive leaked or migrated snapshots, where logs, visible outputs, and trusted metadata may be absent. We propose MemMark, a state-evolution attribution watermark that embeds an owner-controlled signal into latent memory-write decisions. Across A-Mem and Graphiti on LoCoMo, MemMark preserves memory utility while providing usable carrier capacity. In the snapshot-only setting, it recovers the full 40-bit payload from final snapshots, while wrong-key verification remains near chance. Under nine memory-lifecycle attacks, verification distinguishes tampering, evidence deletion, and partial payload recovery.</div>
@@ -61,8 +61,9 @@ I am an undergraduate student majoring in Intelligent Science and Technology at 
 <div class='paper-box-image'><div><div class="badge">ICASSP 2026</div><img src='images/paper/forgetmark.png' alt="ForgetMark" width="100%"></div></div>
 <div class='paper-box-text'>
 <a class="paper-title" href="https://arxiv.org/abs/2601.08189">ForgetMark: Stealthy Fingerprint Embedding via Targeted Unlearning in Language Models</a>
-<p class="paper-authors"><strong>Haobo Zhang</strong>, et al.</p>
+<p class="paper-authors">Zhenhua Xu<sup>*</sup>, <strong>Haobo Zhang<sup>*</sup></strong>, Zhebo Wang, Qichen Liu, Haitao Xu, Wenpeng Xing, Meng Han.</p>
 <p class="paper-venue"><em>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2026</em> · Accepted</p>
+<p class="author-note"><sup>*</sup> Equal contribution.</p>
 <button class="abstract-toggle" type="button" aria-expanded="false">Abstract <span aria-hidden="true">▾</span></button>
 <div class="paper-abstract" hidden>Existing invasive fingerprints suffer from high-perplexity triggers, fixed response patterns, and spurious activations on benign inputs. ForgetMark encodes provenance via targeted unlearning: it builds a compact human-readable key-value set with predictive-entropy ranking, then trains lightweight LoRA adapters to suppress the original values while preserving general capabilities. Ownership is verified by aggregating likelihood and semantic evidence. Across diverse architectures, it achieves 100% ownership verification while maintaining standard performance, surpasses backdoor baselines in stealthiness and robustness to model merging, and remains effective under moderate incremental fine-tuning.</div>
 </div></div>
@@ -70,7 +71,7 @@ I am an undergraduate student majoring in Intelligent Science and Technology at 
 <div class='paper-box paper-box-no-image'>
 <div class='paper-box-text'>
 <a class="paper-title" href="https://arxiv.org/abs/2508.11548">Copyright Protection for Large Language Models: A Survey of Methods, Challenges, and Trends</a>
-<p class="paper-authors"><strong>Haobo Zhang</strong>, et al.</p>
+<p class="paper-authors">Zhenhua Xu, Xubin Yue, Zhebo Wang, <strong>Haobo Zhang</strong>, Qichen Liu, Xixiang Zhao, Jingxuan Zhang, Wenjun Zeng, Wengpeng Xing, Dezhang Kong, Changting Lin, Meng Han.</p>
 <p class="paper-venue"><em>Survey</em></p>
 <p>系统梳理文本水印、模型水印和模型指纹三条技术路线。<br>We organize major approaches, challenges, and trends in LLM copyright protection.</p>
 <p><a href="https://xuzhenhua55.github.io/awesome-llm-copyright-protection/">Project homepage / Open-source resource collection</a> · <a href="https://arxiv.org/abs/2508.11548">arXiv</a></p>
