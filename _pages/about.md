@@ -10,11 +10,15 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-我是浙江工业大学信息工程学院智能科学与技术专业本科生张皓博（**Haobo Zhang**），专业排名 1/48，预计 2027 年毕业（expected graduation: June 2027）。目前在浙江大学担任科研助理，研究大模型安全与知识产权保护。
+<div class="intro-panel">
+<p class="intro-kicker">UNDERGRADUATE RESEARCHER · HANGZHOU, CHINA</p>
+<h1>你好，我是张皓博 <span>/ Haobo Zhang</span></h1>
+<p class="intro-summary">浙江工业大学信息工程学院智能科学与技术专业本科生，专业排名 1/48，预计 2027 年毕业。目前在浙江大学担任科研助理，研究大模型安全与知识产权保护。</p>
+</div>
 
 I am an undergraduate student majoring in Intelligent Science and Technology at Zhejiang University of Technology. My research interests include **LLM security, model fingerprinting and watermarking, AI copyright protection, computer vision, and robot control**.
 
-简历 / CV：<a href="/files/haobo-zhang-resume.pdf">Download PDF</a> · <a href="https://github.com/zhb0119">GitHub</a>
+<p class="quick-links"><a class="quick-link quick-link-primary" href="/files/haobo-zhang-resume.pdf">简历 / Download CV <span aria-hidden="true">↗</span></a><a class="quick-link" href="https://github.com/zhb0119">GitHub <span aria-hidden="true">↗</span></a></p>
 
 <span class='anchor' id='-xl'></span>
 
