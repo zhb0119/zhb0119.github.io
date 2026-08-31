@@ -20,8 +20,17 @@ redirect_from:
 
 # Internship Experience
 
-- *2025.06 - 2026.01*, **Zhejiang University**, [Intelligence Fusion Research Center (IFRC) Lab](https://ifrc-zju.github.io/), Research Intern
-  - Researched LLM fingerprinting and contributed to the design and implementation of model copyright protection methods.
+<article class="experience-entry">
+  <div class="experience-logo experience-logo--intern"><img src="/images/intern/image.png" alt="Zhejiang University logo" loading="lazy"></div>
+  <div class="experience-content">
+    <div class="experience-heading">
+      <h3>Zhejiang University</h3>
+      <span><time datetime="2025-06">Jun 2025</time> – <time datetime="2026-01">Jan 2026</time></span>
+    </div>
+    <p class="experience-role"><a href="https://ifrc-zju.github.io/">Intelligence Fusion Research Center (IFRC) Lab</a> · Research Intern</p>
+    <p class="experience-description">Researched LLM fingerprinting and contributed to the design and implementation of model copyright protection methods.</p>
+  </div>
+</article>
 
 <span class='anchor' id='-lwzl'></span>
 
@@ -68,5 +77,14 @@ redirect_from:
 
 # Education
 
-- *2023.09 - 2027.06*, **Zhejiang University of Technology**, College of Information Engineering
-  - **B.Eng. in Intelligent Science and Technology**
+<article class="experience-entry">
+  <div class="experience-logo experience-logo--education"><img src="/images/education/image.png" alt="Zhejiang University of Technology logo" loading="lazy"></div>
+  <div class="experience-content">
+    <div class="experience-heading">
+      <h3>Zhejiang University of Technology</h3>
+      <span><time datetime="2023-09">Sep 2023</time> – <time datetime="2027-06">Jun 2027</time></span>
+    </div>
+    <p class="experience-role">B.Eng. in Intelligent Science and Technology</p>
+    <p class="experience-description">College of Information Engineering</p>
+  </div>
+</article>
