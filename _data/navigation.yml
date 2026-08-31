@@ -1,19 +1,12 @@
-# main links links
+# Main navigation links
 main:
-  - title: "简介"
+  - title: "简介 / About"
     url: "/#about-me"
-
-  - title: "教育背景"
+  - title: "教育 / Education"
     url: "/#-xl"
-
-  - title: "科研成果"
-    url: "/#-lwzl"
-
-  - title: "荣誉奖项"
-    url: "/#-ryjx"
-
-  - title: "项目经历"
-    url: "/#-xmjl"
-
-  - title: "研究经历"
+  - title: "研究经历 / Research"
     url: "/#-yj"
+  - title: "论文 / Publications"
+    url: "/#-lwzl"
+  - title: "项目 / Projects"
+    url: "/#-xmjl"

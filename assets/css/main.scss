@@ -46,8 +46,18 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
+    border-bottom: 1px solid #dde3ec;
+    background: #f7f9fc;
+    border-radius: 6px;
+    margin: 1.5em 0;
+    padding: 1.5em;
+    transition: box-shadow 160ms ease, border-color 160ms ease;
+
+    &:hover,
+    &:focus-within {
+        border-color: #b8c5d8;
+        box-shadow: 0 8px 22px rgba(26, 42, 66, 0.08);
+    }
     
 
     .paper-box-image{
@@ -57,14 +67,66 @@
         order: 2;
         img {
             max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(26, 42, 66, 0.14);
+            object-fit: contain;
         }
     }
     
     .paper-box-text{
         max-width: 100%;
         order: 1;
+    }
+
+    .paper-title {
+        display: inline-block;
+        color: #145bd7;
+        font-size: 1.05em;
+        font-weight: 600;
+        line-height: 1.45;
+        margin-bottom: .6em;
+    }
+
+    .paper-authors,
+    .paper-venue {
+        margin: 0 0 .55em;
+    }
+
+    .abstract-toggle {
+        border: 0;
+        border-radius: 4px;
+        background: #1f63e9;
+        color: #fff;
+        cursor: pointer;
+        font: inherit;
+        font-size: .82em;
+        font-weight: 600;
+        margin-top: .35em;
+        padding: .45em .8em;
+        transition: opacity 150ms ease, background-color 150ms ease;
+
+        &:hover,
+        &:focus-visible {
+            background: #124ebf;
+        }
+    }
+
+    .paper-abstract {
+        border-left: 3px solid #1f63e9;
+        color: #3d4959;
+        font-size: .92em;
+        line-height: 1.65;
+        margin-top: 1em;
+        padding-left: 1em;
+    }
+
+    .paper-abstract[hidden] {
+        display: none;
+    }
+
+    &.paper-box-no-image .paper-box-text {
+        max-width: 100%;
+        padding-left: 0;
     }
     
     @include breakpoint($medium) {
@@ -83,8 +145,19 @@
         }
 
     }
+}
 
+@media (hover: hover) and (pointer: fine) {
+    .paper-box .abstract-toggle {
+        opacity: 0;
+        pointer-events: none;
+    }
 
+    .paper-box:hover .abstract-toggle,
+    .paper-box:focus-within .abstract-toggle {
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 
 $scroll_offset : 2em;
