@@ -12,13 +12,21 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 <section class="intro-block" aria-labelledby="intro-title">
-  <p class="intro-kicker">RESEARCHER · LLM SECURITY</p>
-  <h1 id="intro-title">Building practical provenance tools for language models.</h1>
-  <p class="intro-copy">I am a third-year undergraduate student majoring in Intelligent Science and Technology at Zhejiang University of Technology. My research focuses on large language model security, with an emphasis on model fingerprinting, watermarking, and copyright protection.</p>
-  <div class="research-snapshot" aria-label="Research snapshot">
-    <div><strong>04</strong><span>Selected papers</span></div>
-    <div><strong>03</strong><span>Research directions</span></div>
-    <div><strong>2023–27</strong><span>ZJUT · B.Eng.</span></div>
+  <p class="intro-kicker">UNDERGRADUATE RESEARCHER</p>
+  <h1 id="intro-title">Haobo Zhang</h1>
+  <div class="profile-facts" aria-label="Personal information">
+    <div class="profile-fact">
+      <span class="profile-fact-label"><i class="fas fa-university" aria-hidden="true"></i> Institution</span>
+      <strong>Zhejiang University of Technology</strong>
+    </div>
+    <div class="profile-fact">
+      <span class="profile-fact-label"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Major</span>
+      <strong>Intelligent Science and Technology</strong>
+    </div>
+    <div class="profile-fact">
+      <span class="profile-fact-label"><i class="fas fa-flask" aria-hidden="true"></i> Research</span>
+      <strong>LLM Security · Model Fingerprinting · Model Watermarking</strong>
+    </div>
   </div>
 </section>
 
@@ -33,45 +41,42 @@ redirect_from:
 
 # Selected Publications
 
-<div class='paper-box paper-card'><div class='paper-box-image'><div class="paper-media"><div class="badge">ACL 2026 · Accepted</div><img src='images/paper/attndiff.png' alt="AttnDiff" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-<div class="paper-card-top"><span class="paper-kind">Conference paper</span><span class="paper-role">First author</span></div>
+<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">NeurIPS 2026 · Under Review</div><img src="images/paper/attndiff.png" alt="AttnDiff method overview"></div></div>
+<div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2604.05502">AttnDiff: Attention-based Differential Fingerprinting for Large Language Models</a></h3>
-<p class="paper-authors"><strong>Haobo Zhang</strong>, Zhenhua Xu, Junxian Li, Shangfeng Sheng, Dezhang Kong, Meng Han</p>
-<p class="paper-summary">A white-box fingerprinting framework based on differential attention dynamics, robust to fine-tuning, pruning, and model merging.</p>
-<div class="paper-actions"><a href="https://arxiv.org/abs/2604.05502" class="paper-link">arXiv <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
-<div class="paper-abstract"><span>Abstract</span><p>AttnDiff extracts differential attention patterns from minimally edited prompt pairs and compares compact spectral descriptors with CKA similarity for model provenance verification.</p></div>
-</div></div>
+<p class="paper-authors"><strong>Haobo Zhang</strong>, Zhenhua Xu, Junxian Li, Shangfeng Sheng, Dezhang Kong, Meng Han.</p>
+<p class="paper-venue"><em>Submitted to the Conference on Neural Information Processing Systems (NeurIPS), 2026.</em></p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2604.05502">(arXiv)</a></p>
+<details class="paper-abstract"><summary>Abstract</summary><p>AttnDiff extracts differential attention patterns from minimally edited prompt pairs and compares compact spectral descriptors with CKA similarity for model provenance verification.</p></details>
+</div></article>
 
-<div class='paper-box paper-card'><div class='paper-box-image'><div class="paper-media"><div class="badge">EMNLP Findings 2026</div><img src='images/paper/memmark.png' alt="MemMark" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-<div class="paper-card-top"><span class="paper-kind">Conference paper</span><span class="paper-role">First author</span></div>
+<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">EMNLP 2026</div><img src="images/paper/memmark.png" alt="MemMark method overview"></div></div>
+<div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2605.25002">MemMark: State-Evolution Attribution Watermarking for Agent Long-Term Memory Systems</a></h3>
-<p class="paper-authors"><strong>Haobo Zhang</strong>, Xutao Mao, Guangyuan Dong, Ziwei Li, Xuanbo Su, Kaijie Chen, Jing Yang, Zheng Lin</p>
-<p class="paper-summary">A state-evolution attribution watermark for long-term agent memory systems that supports provenance verification from snapshots.</p>
-<div class="paper-actions"><a href="https://henrymao2004.github.io/MemMark/" class="paper-link">Project <i class="fas fa-external-link-alt" aria-hidden="true"></i></a><a href="https://arxiv.org/abs/2605.25002" class="paper-link">arXiv <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
-<div class="paper-abstract"><span>Abstract</span><p>MemMark embeds an owner-controlled signal into latent memory-write decisions and verifies provenance from final snapshots while preserving memory utility under lifecycle attacks.</p></div>
-</div></div>
+<p class="paper-authors"><strong>Haobo Zhang</strong>, Xutao Mao, Guangyuan Dong, Ziwei Li, Xuanbo Su, Kaijie Chen, Jing Yang, Zheng Lin.</p>
+<p class="paper-venue"><em>Findings of the Association for Computational Linguistics: EMNLP, 2026.</em></p>
+<p class="paper-links"><a href="https://henrymao2004.github.io/MemMark/">(Project)</a> <a href="https://arxiv.org/abs/2605.25002">(arXiv)</a></p>
+<details class="paper-abstract"><summary>Abstract</summary><p>MemMark embeds an owner-controlled signal into latent memory-write decisions and verifies provenance from final snapshots while preserving memory utility under lifecycle attacks.</p></details>
+</div></article>
 
-<div class='paper-box paper-card'><div class='paper-box-image'><div class="paper-media"><div class="badge">ICASSP 2026 · Accepted</div><img src='images/paper/forgetmark.png' alt="ForgetMark" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-<div class="paper-card-top"><span class="paper-kind">Conference paper</span><span class="paper-role">Equal contribution</span></div>
+<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">ICASSP 2026</div><img src="images/paper/forgetmark.png" alt="ForgetMark method overview"></div></div>
+<div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2601.08189">ForgetMark: Stealthy Fingerprint Embedding via Targeted Unlearning in Language Models</a></h3>
-<p class="paper-authors">Zhenhua Xu, <strong>Haobo Zhang</strong>, Zhebo Wang, Qichen Liu, Haitao Xu, Wenpeng Xing, Meng Han</p>
-<p class="paper-summary">A stealthy fingerprinting framework that uses LoRA adapters and targeted unlearning, robust to model merging and incremental fine-tuning.</p>
-<div class="paper-actions"><a href="https://arxiv.org/abs/2601.08189" class="paper-link">arXiv <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
-<div class="paper-abstract"><span>Abstract</span><p>ForgetMark encodes provenance through targeted unlearning of a compact key-value set and verifies ownership with likelihood and semantic evidence.</p></div>
-</div></div>
+<p class="paper-authors">Zhenhua Xu<sup>*</sup>, <strong>Haobo Zhang<sup>*</sup></strong>, Zhebo Wang, Qichen Liu, Haitao Xu, Wenpeng Xing, Meng Han.</p>
+<p class="paper-venue"><em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026.</em></p>
+<p class="paper-contribution"><sup>*</sup> Equal contribution.</p>
+<p class="paper-links"><a href="https://arxiv.org/abs/2601.08189">(arXiv)</a></p>
+<details class="paper-abstract"><summary>Abstract</summary><p>ForgetMark encodes provenance through targeted unlearning of a compact key-value set and verifies ownership with likelihood and semantic evidence.</p></details>
+</div></article>
 
-<div class='paper-box paper-card'><div class='paper-box-image'><div class="paper-media"><div class="badge">Survey · 2025</div><img src='images/paper/copyright.png' alt="Copyright Protection for Large Language Models survey" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-<div class="paper-card-top"><span class="paper-kind">Survey article</span><span class="paper-role">Co-author</span></div>
+<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">SURVEY 2025</div><img src="images/paper/copyright.png" alt="LLM copyright protection survey taxonomy"></div></div>
+<div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2508.11548">Copyright Protection for Large Language Models: A Survey of Methods, Challenges, and Trends</a></h3>
-<p class="paper-authors">Zhenhua Xu, Xubin Yue, Zhebo Wang, <strong>Haobo Zhang</strong>, Qichen Liu, Xixiang Zhao, Jingxuan Zhang, Wenjun Zeng, Wengpeng Xing, Dezhang Kong, Changting Lin, Meng Han</p>
-<p class="paper-summary">A systematic survey of text watermarking, model watermarking, and model fingerprinting for LLM copyright protection.</p>
-<div class="paper-actions"><a href="https://xuzhenhua55.github.io/awesome-llm-copyright-protection/" class="paper-link">Project <i class="fas fa-external-link-alt" aria-hidden="true"></i></a><a href="https://arxiv.org/abs/2508.11548" class="paper-link">arXiv <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
-<div class="paper-abstract"><span>Abstract</span><p>This survey organizes three technical routes for LLM copyright protection and summarizes their open challenges and future directions.</p></div>
-</div></div>
+<p class="paper-authors">Zhenhua Xu, Xubin Yue, Zhebo Wang, <strong>Haobo Zhang</strong>, Qichen Liu, Xixiang Zhao, Jingxuan Zhang, Wenjun Zeng, Wengpeng Xing, Dezhang Kong, Changting Lin, Meng Han.</p>
+<p class="paper-venue"><em>arXiv preprint, 2025.</em></p>
+<p class="paper-links"><a href="https://xuzhenhua55.github.io/awesome-llm-copyright-protection/">(Project)</a> <a href="https://arxiv.org/abs/2508.11548">(arXiv)</a></p>
+<details class="paper-abstract"><summary>Abstract</summary><p>This survey organizes three technical routes for LLM copyright protection and summarizes their open challenges and future directions.</p></details>
+</div></article>
 
 <span class='anchor' id='-xl'></span>
 
