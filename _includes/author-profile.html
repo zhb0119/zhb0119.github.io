@@ -9,18 +9,18 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    <h3 class="author__name"><span class="lang-text" data-zh="{{ author.name }}" data-en="Haobo Zhang">{{ author.name }}</span></h3>
+    {% if author.bio %}<p class="author__bio"><span class="lang-text" data-zh="{{ author.bio }}" data-en="Zhejiang University of Technology · Intelligent Science and Technology · Year 3">{{ author.bio }}</span></p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
       {% if site.description %}
-        <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
+        <li><div style="white-space: normal; margin-bottom: 1em;"><span class="lang-text" data-zh="{{ site.description }}" data-en="LLM Security · Model Fingerprinting · Model Watermarking">{{ site.description }}</span></div></li>
       {% endif %}
       {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span class="lang-text" data-zh="{{ author.location }}" data-en="Hangzhou, China">{{ author.location }}</span></li>
       {% endif %}
       {% if author.employer %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
