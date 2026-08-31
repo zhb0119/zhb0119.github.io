@@ -2,11 +2,9 @@
 main:
   - title: "简介 / About"
     url: "/#about-me"
-  - title: "教育 / Education"
-    url: "/#-xl"
   - title: "研究经历 / Research"
     url: "/#-yj"
   - title: "论文 / Publications"
     url: "/#-lwzl"
-  - title: "项目 / Projects"
-    url: "/#-xmjl"
+  - title: "教育 / Education"
+    url: "/#-xl"

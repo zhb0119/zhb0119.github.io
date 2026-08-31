@@ -13,21 +13,12 @@ redirect_from:
 <div class="intro-panel">
 <p class="intro-kicker">UNDERGRADUATE RESEARCHER · HANGZHOU, CHINA</p>
 <h1>你好，我是张皓博 <span>/ Haobo Zhang</span></h1>
-<p class="intro-summary">浙江工业大学信息工程学院智能科学与技术专业本科生，专业排名 1/48，预计 2027 年毕业。目前在浙江大学担任科研助理，研究大模型安全与知识产权保护。</p>
+<p class="intro-summary">浙江工业大学信息工程学院智能科学与技术专业本科生，目前大三。研究兴趣为大模型安全，重点关注模型指纹与模型水印。</p>
 </div>
 
-I am an undergraduate student majoring in Intelligent Science and Technology at Zhejiang University of Technology. My research interests include **LLM security, model fingerprinting and watermarking, AI copyright protection, computer vision, and robot control**.
+I am a third-year undergraduate student majoring in Intelligent Science and Technology at Zhejiang University of Technology. My research interests focus on **LLM security, model fingerprinting, and model watermarking**.
 
 <p class="quick-links"><a class="quick-link quick-link-primary" href="/files/haobo-zhang-resume.pdf">简历 / Download CV <span aria-hidden="true">↗</span></a><a class="quick-link" href="https://github.com/zhb0119">GitHub <span aria-hidden="true">↗</span></a></p>
-
-<span class='anchor' id='-xl'></span>
-
-# 教育背景 / Education
-
-- *2023.09 - 2027.06* · **浙江工业大学 Zhejiang University of Technology**, College of Information Engineering
-  - 智能科学与技术 / **B.Eng. in Intelligent Science and Technology**
-  - GPA 4.0/5.0; major rank **1/48**; CET-6 514, CET-4 539.
-  - 核心课程 / Selected coursework: Optimization Methods (96), Data Structures (96), Principles of Artificial Intelligence (95), Machine Learning (87), Image Processing and Video Analysis (98).
 
 <span class='anchor' id='-yj'></span>
 
@@ -81,23 +72,14 @@ I am an undergraduate student majoring in Intelligent Science and Technology at 
 <p><a href="https://xuzhenhua55.github.io/awesome-llm-copyright-protection/">Project homepage / Open-source resource collection</a> · <a href="https://arxiv.org/abs/2508.11548">arXiv</a></p>
 </div></div>
 
-<span class='anchor' id='-xmjl'></span>
+<span class='anchor' id='-xl'></span>
 
-# 项目经历 / Projects
+# 教育背景 / Education
 
-- **国家级大创项目 / National Innovation Project: 乒乓颠球机器人 Table-Tennis Ball-Juggling Robot**
-  - 通过视觉实时捕捉球轨迹，估计位置、速度与旋转，驱动执行机构实现连续稳定颠球。
-  - Developed a vision-based control system for real-time trajectory tracking and stable ball juggling.
-- **软件著作 / Software Copyright: 基于二维激光雷达的智能车控制系统**
-  - 双控制器架构，集成 DMA、卡尔曼滤波与 PID，实现高效解算、精准避障与稳定控制。
-- **专利 / Patent: 基于领域特异性偏见特征指纹的大语言模型知识产权保护方法及装置**
-  - 面向闭源模型的非侵入式黑盒指纹方法，对微调、剪枝和扰动具有鲁棒性。
-
-<span class='anchor' id='-jsz'></span>
-
-# 技术栈 / Technical Skills
-
-Python · PyTorch · C/C++ · STM32 · YOLOv5 · Computer Vision · Robot Control
+- *2023.09 - 2027.06* · **浙江工业大学 Zhejiang University of Technology**, College of Information Engineering
+  - 智能科学与技术 / **B.Eng. in Intelligent Science and Technology**
+  - GPA 4.0/5.0; major rank **1/48**; CET-6 514, CET-4 539.
+  - 核心课程 / Selected coursework: Optimization Methods (96), Data Structures (96), Principles of Artificial Intelligence (95), Machine Learning (87), Image Processing and Video Analysis (98).
 
 <script>
 document.querySelectorAll('.abstract-toggle').forEach(function (button) {

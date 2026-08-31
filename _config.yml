@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "张皓博"
-description              : "智能科学与技术本科生 · 大模型安全研究"
+description              : "大模型安全 · 模型指纹 · 模型水印"
 repository               : "zhb0119/zhb0119.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "张皓博"
   avatar           : "images/avatar.jpg"
-  bio              : "浙江工业大学 · 智能科学与技术"
+  bio              : "浙江工业大学 · 智能科学与技术 · 大三"
   location         : "浙江 杭州"
   employer         : #"Hefei General Machinery Research Institute"
   pubmed           : 
