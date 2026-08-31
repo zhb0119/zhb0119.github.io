@@ -62,6 +62,86 @@
     }
 }
 
+.experience-entry {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    margin: .4rem 0 1.8rem;
+    padding: .85rem 0 1.35rem;
+    border-bottom: 1px solid #e6eaf0;
+}
+
+.experience-logo {
+    display: flex;
+    width: 100%;
+    min-height: 112px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.experience-logo--intern img {
+    width: 180px;
+    aspect-ratio: 1066 / 517;
+}
+
+.experience-logo--education img {
+    width: 132px;
+    aspect-ratio: 1 / 1;
+}
+
+.experience-content {
+    min-width: 0;
+}
+
+.experience-heading {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    justify-content: space-between;
+
+    h3 {
+        margin: 0;
+        color: #172033;
+        font-size: 1.08rem;
+        line-height: 1.35;
+    }
+
+    span {
+        flex: 0 0 auto;
+        color: #727d8e;
+        font-size: .78rem;
+        white-space: nowrap;
+    }
+}
+
+.experience-role,
+.experience-description {
+    margin: 0;
+    line-height: 1.55;
+}
+
+.experience-role {
+    margin-top: .45rem;
+    color: #364152;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.experience-description {
+    margin-top: .45rem;
+    color: #657082;
+    font-size: .86rem;
+}
+
 .paper-box {
     display: grid;
     grid-template-columns: minmax(245px, 34%) minmax(0, 1fr);
@@ -301,6 +381,31 @@ h1:before, .anchor:before {
         h1 {
             font-size: 1.8rem;
         }
+    }
+
+    .experience-entry {
+        grid-template-columns: 1fr;
+        gap: .7rem;
+        padding-top: .65rem;
+    }
+
+    .experience-logo {
+        min-height: 0;
+        justify-content: flex-start;
+    }
+
+    .experience-logo--intern img {
+        width: min(190px, 62vw);
+    }
+
+    .experience-logo--education img {
+        width: 112px;
+    }
+
+    .experience-heading {
+        gap: .25rem;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .paper-box {
