@@ -41,22 +41,36 @@
 @import "print";
 
 .paper-box {
+    position: relative;
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px solid #dde3ec;
-    background: #f7f9fc;
+    border: 1px solid #dfe6f0;
+    background: #f8fafc;
     border-radius: 6px;
     margin: 1.5em 0;
     padding: 1.5em;
-    transition: box-shadow 160ms ease, border-color 160ms ease;
+    box-shadow: 0 3px 12px rgba(26, 42, 66, 0.06);
+    overflow: hidden;
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+
+    &::before {
+        background: #1f63e9;
+        content: '';
+        height: 3px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
     &:hover,
     &:focus-within {
-        border-color: #b8c5d8;
-        box-shadow: 0 8px 22px rgba(26, 42, 66, 0.08);
+        border-color: #b9c8dc;
+        box-shadow: 0 12px 28px rgba(26, 42, 66, 0.13);
+        transform: translateY(-3px);
     }
     
 
@@ -65,10 +79,18 @@
         display: flex;
         width: 100%;
         order: 2;
+
+        > div {
+            position: relative;
+            width: 100%;
+        }
+
         img {
             max-width: 400px;
+            width: 100%;
             border-radius: 4px;
-            box-shadow: 0 4px 12px rgba(26, 42, 66, 0.14);
+            border: 1px solid #d6deea;
+            box-shadow: 0 5px 14px rgba(26, 42, 66, 0.15);
             object-fit: contain;
         }
     }
@@ -80,16 +102,30 @@
 
     .paper-title {
         display: inline-block;
-        color: #145bd7;
-        font-size: 1.05em;
+        color: #155bd5;
+        font-size: 1.08em;
         font-weight: 600;
         line-height: 1.45;
         margin-bottom: .6em;
+        text-decoration: none;
+
+        &:hover,
+        &:focus-visible {
+            color: #0e439d;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
     }
 
     .paper-authors,
     .paper-venue {
+        color: #3e4a5a;
         margin: 0 0 .55em;
+    }
+
+    .paper-venue {
+        color: #5a6878;
+        font-size: .94em;
     }
 
     .abstract-toggle {
@@ -102,7 +138,7 @@
         font-size: .82em;
         font-weight: 600;
         margin-top: .35em;
-        padding: .45em .8em;
+        padding: .48em .9em;
         transition: opacity 150ms ease, background-color 150ms ease;
 
         &:hover,
@@ -112,12 +148,14 @@
     }
 
     .paper-abstract {
+        background: #eef4ff;
         border-left: 3px solid #1f63e9;
+        border-radius: 0 4px 4px 0;
         color: #3d4959;
         font-size: .92em;
         line-height: 1.65;
         margin-top: 1em;
-        padding-left: 1em;
+        padding: .85em 1em;
     }
 
     .paper-abstract[hidden] {
@@ -171,12 +209,15 @@ h1:before, .anchor:before {
 }
 
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 3px 8px rgba(18, 50, 105, .22);
+    left: .65rem;
+    padding: .3rem .65rem;
     position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
+    top: .65rem;
     color: white;
     background-color: #00369f;
-    font-size: .8em;
+    font-size: .76em;
+    font-weight: 600;
+    line-height: 1.2;
 }
