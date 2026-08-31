@@ -11,11 +11,16 @@
             </a>
           </li>
           {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}" data-nav-zh="{{ link.title_zh }}" data-nav-en="{{ link.title_en }}">{{ link.title_zh }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <div class="language-switcher" data-language-switcher role="group" aria-label="切换到英文">
+        <button type="button" data-lang-option="zh" aria-pressed="true">中</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang-option="en" aria-pressed="false">EN</button>
+      </div>
     </div>
   </div>
 </div>
