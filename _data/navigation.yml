@@ -1,14 +1,10 @@
 # Main navigation links
 main:
-  - title_zh: "简介"
-    title_en: "About"
+  - title: "About"
     url: "/#about-me"
-  - title_zh: "实习经历"
-    title_en: "Internship"
+  - title: "Internship"
     url: "/#-yj"
-  - title_zh: "科研成果"
-    title_en: "Publications"
+  - title: "Publications"
     url: "/#-lwzl"
-  - title_zh: "教育背景"
-    title_en: "Education"
+  - title: "Education"
     url: "/#-xl"

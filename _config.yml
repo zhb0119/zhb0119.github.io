@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "张皓博"
-description              : "大模型安全 · 模型指纹 · 模型水印"
+title                    : "Haobo Zhang"
+description              : "Undergraduate Researcher in LLM Security"
 repository               : "zhb0119/zhb0119.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -21,10 +21,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "张皓博"
+  name             : "Haobo Zhang"
   avatar           : "images/avatar.jpg"
-  bio              : "浙江工业大学 · 智能科学与技术 · 大三"
-  location         : "浙江 杭州"
+  bio              : "Zhejiang University of Technology · Intelligent Science and Technology · Year 3"
+  location         : "Hangzhou, China"
   employer         : #"Hefei General Machinery Research Institute"
   pubmed           : 
   googlescholar    :
