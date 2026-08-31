@@ -94,8 +94,11 @@
 }
 
 .experience-logo--education img {
-    width: 132px;
-    aspect-ratio: 1 / 1;
+    width: 180px;
+    height: 120px;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: center 50%;
 }
 
 .experience-content {
@@ -399,7 +402,8 @@ h1:before, .anchor:before {
     }
 
     .experience-logo--education img {
-        width: 112px;
+        width: 150px;
+        height: 100px;
     }
 
     .experience-heading {
