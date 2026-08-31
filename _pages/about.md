@@ -14,20 +14,7 @@ redirect_from:
 <section class="intro-block" aria-labelledby="intro-title">
   <p class="intro-kicker">UNDERGRADUATE RESEARCHER</p>
   <h1 id="intro-title">Haobo Zhang</h1>
-  <div class="profile-facts" aria-label="Personal information">
-    <div class="profile-fact">
-      <span class="profile-fact-label"><i class="fas fa-university" aria-hidden="true"></i> Institution</span>
-      <strong>Zhejiang University of Technology</strong>
-    </div>
-    <div class="profile-fact">
-      <span class="profile-fact-label"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Major</span>
-      <strong>Intelligent Science and Technology</strong>
-    </div>
-    <div class="profile-fact">
-      <span class="profile-fact-label"><i class="fas fa-flask" aria-hidden="true"></i> Research</span>
-      <strong>LLM Security · Model Fingerprinting · Model Watermarking</strong>
-    </div>
-  </div>
+  <p class="intro-copy">Zhejiang University of Technology · Intelligent Science and Technology · Research interests: LLM Security, Model Fingerprinting, and Model Watermarking.</p>
 </section>
 
 <span class='anchor' id='-yj'></span>

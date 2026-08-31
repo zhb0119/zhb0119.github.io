@@ -60,48 +60,13 @@
         font-size: 2rem;
         line-height: 1.2;
     }
-}
 
-.profile-facts {
-    max-width: 780px;
-    margin-top: 1.3rem;
-    border-top: 1px solid #e2e7ef;
-    border-bottom: 1px solid #e2e7ef;
-}
-
-.profile-fact {
-    display: grid;
-    grid-template-columns: 9.5rem minmax(0, 1fr);
-    gap: 1rem;
-    align-items: baseline;
-    padding: .78rem .15rem;
-
-    & + & {
-        border-top: 1px solid #edf0f4;
-    }
-
-    strong {
-        min-width: 0;
-        color: #303a4b;
-        font-size: .92rem;
-        font-weight: 600;
-        line-height: 1.5;
-    }
-}
-
-.profile-fact-label {
-    display: inline-flex;
-    gap: .5rem;
-    align-items: center;
-    color: #778294;
-    font-size: .72rem;
-    font-weight: 700;
-    text-transform: uppercase;
-
-    i {
-        width: .9rem;
-        color: #2864e8;
-        text-align: center;
+    .intro-copy {
+        max-width: 760px;
+        margin: 1rem 0 0;
+        color: #566071;
+        font-size: 1rem;
+        line-height: 1.7;
     }
 }
 
@@ -344,12 +309,6 @@ h1:before, .anchor:before {
         h1 {
             font-size: 1.8rem;
         }
-    }
-
-    .profile-fact {
-        grid-template-columns: 1fr;
-        gap: .3rem;
-        padding: .75rem .1rem;
     }
 
     .paper-box {
