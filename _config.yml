@@ -23,12 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Haobo Zhang"
   avatar           : "images/me/cat.jpg"
-  bio              : "Zhejiang University of Technology · Intelligent Science and Technology · Year 3"
+  bio              : "I am Haobo Zhang (张皓博), a third-year undergraduate student in Intelligent Science and Technology at the College of Information Engineering, Zhejiang University of Technology. My research interests focus on large language model security, especially model watermarking, model fingerprinting, and model alignment. I am always happy to connect with researchers and practitioners working on trustworthy AI."
   location         : "Hangzhou, China"
   employer         : #"Hefei General Machinery Research Institute"
   pubmed           : 
-  googlescholar    :
-  email            :
+  googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=sY6udPcAAAAJ"
+  email            : "zhanghaobo@zjut.edu.cn"
   researchgate     :
   uri              : 
   bitbucket        :

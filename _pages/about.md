@@ -13,7 +13,7 @@ redirect_from:
 
 <section class="intro-block" aria-labelledby="intro-title">
   <h1 id="intro-title">Haobo Zhang</h1>
-  <p class="intro-copy">Zhejiang University of Technology · Intelligent Science and Technology · Research interests: LLM Security, Model Fingerprinting, and Model Watermarking.</p>
+  <p class="intro-copy">Hello, I am Haobo Zhang (张皓博), a third-year undergraduate student majoring in Intelligent Science and Technology at the College of Information Engineering, Zhejiang University of Technology. My research interests center on large language model security, with a particular focus on model watermarking, model fingerprinting, and model alignment. I am interested in building reliable and trustworthy AI systems, and I welcome opportunities to connect and collaborate. You can reach me at <a href="mailto:zhanghaobo@zjut.edu.cn">zhanghaobo@zjut.edu.cn</a>.</p>
 </section>
 
 <span class='anchor' id='-yj'></span>
