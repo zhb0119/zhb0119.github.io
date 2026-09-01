@@ -138,6 +138,9 @@
 
 .author__bio {
   margin: 0;
+  color: #596579;
+  font-size: .82rem;
+  line-height: 1.55;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -235,6 +238,22 @@
 
   li {
     white-space: nowrap;
+  }
+
+  .author__scholar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: .25rem;
+  }
+
+  .author__scholar a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .author__scholar .ai-google-scholar {
+    color: #4285f4;
   }
 
   .scholar-citations {
