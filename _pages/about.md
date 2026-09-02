@@ -130,8 +130,8 @@ redirect_from:
           <section class="honor-group honor-group--wide">
             <h4>Competitions &amp; projects</h4>
             <ul>
-              <li><strong class="honor-award">National First Prize</strong>, <a class="honor-link" href="https://smartcar.cdstm.cn/">National Undergraduate Smart Car Competition</a> (<a class="honor-link" href="https://www.d-robotics.cc/">D-Robotics</a> Smart Healthcare Track).</li>
-              <li><strong class="honor-award">National Second Prize</strong>, <a class="honor-link" href="https://www.nuedc.org.cn/">TI Cup National Undergraduate Electronic Design Competition</a> (Problem E).</li>
+              <li><strong class="honor-award">National First Prize</strong>, <a class="honor-link" href="http://smartcarrace.com/">National Undergraduate Smart Car Competition</a> (<a class="honor-link" href="https://www.d-robotics.cc/">D-Robotics</a> Smart Healthcare Track).</li>
+              <li><strong class="honor-award">National Second Prize</strong>, <a class="honor-link" href="http://nuedc.xjtu.edu.cn/">TI Cup National Undergraduate Electronic Design Competition</a> (Problem E).</li>
               <li><strong class="honor-award">National First Prize</strong>, <a class="honor-link" href="https://www.cnrobo.com/">China Robot Competition &amp; RoboCup China</a>; <a class="honor-link" href="https://gjcxcy.bjtu.edu.cn/">National Undergraduate Innovation and Entrepreneurship Training Program</a> (Table-Tennis Ball-Balancing Robot).</li>
             </ul>
             <div class="competition-gallery" aria-label="Competition project photos">
