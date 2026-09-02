@@ -68,26 +68,50 @@
     align-items: center;
 
     .section-icon {
-        width: 1.25em;
+        display: inline-grid;
+        width: 1.65em;
+        height: 1.65em;
+        place-items: center;
+        border-radius: 5px;
         color: #2864e8;
         font-size: .78em;
         text-align: center;
 
         &--news {
             color: #e85d04;
+            background: #fff1e6;
         }
 
         &--internship {
             color: #2864e8;
+            background: #edf4ff;
         }
 
         &--publications {
             color: #7a4fb3;
+            background: #f5efff;
         }
 
         &--education {
             color: #208b6d;
+            background: #eafaf4;
         }
+    }
+
+    &--news {
+        color: #9a3412;
+    }
+
+    &--internship {
+        color: #1f4f9a;
+    }
+
+    &--publications {
+        color: #624095;
+    }
+
+    &--education {
+        color: #176b55;
     }
 }
 
@@ -111,9 +135,10 @@
     line-height: 1.55;
 
     time {
-        color: #727d8e;
+        color: #667085;
         font-size: .78rem;
         font-variant-numeric: tabular-nums;
+        font-weight: 700;
         white-space: nowrap;
     }
 

@@ -18,7 +18,7 @@ redirect_from:
 
 <span class='anchor' id='-news'></span>
 
-<h1 class="section-heading"><i class="fas fa-fire section-icon section-icon--news" aria-hidden="true"></i> News</h1>
+<h1 class="section-heading section-heading--news"><i class="fas fa-fire section-icon section-icon--news" aria-hidden="true"></i> News</h1>
 
 <ul class="news-list" aria-label="Recent news">
   <li class="news-item">
@@ -33,7 +33,7 @@ redirect_from:
 
 <span class='anchor' id='-yj'></span>
 
-<h1 class="section-heading"><i class="fas fa-briefcase section-icon section-icon--internship" aria-hidden="true"></i> Internship Experience</h1>
+<h1 class="section-heading section-heading--internship"><i class="fas fa-briefcase section-icon section-icon--internship" aria-hidden="true"></i> Internship Experience</h1>
 
 <article class="experience-entry">
   <div class="experience-logo experience-logo--intern"><img src="/images/intern/image.png" alt="Zhejiang University logo" loading="lazy"></div>
@@ -49,7 +49,7 @@ redirect_from:
 
 <span class='anchor' id='-lwzl'></span>
 
-<h1 class="section-heading"><i class="fas fa-book-open section-icon section-icon--publications" aria-hidden="true"></i> Selected Publications</h1>
+<h1 class="section-heading section-heading--publications"><i class="fas fa-book-open section-icon section-icon--publications" aria-hidden="true"></i> Selected Publications</h1>
 
 <article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">NeurIPS 2026 · Under Review</div><img src="images/paper/attndiff.png" alt="AttnDiff method overview"></div></div>
 <div class="paper-box-text">
@@ -90,7 +90,7 @@ redirect_from:
 
 <span class='anchor' id='-xl'></span>
 
-<h1 class="section-heading"><i class="fas fa-graduation-cap section-icon section-icon--education" aria-hidden="true"></i> Education</h1>
+<h1 class="section-heading section-heading--education"><i class="fas fa-graduation-cap section-icon section-icon--education" aria-hidden="true"></i> Education</h1>
 
 <article class="experience-entry">
   <div class="experience-logo experience-logo--education"><img src="/images/education/image.png" alt="Zhejiang University of Technology logo" loading="lazy"></div>
