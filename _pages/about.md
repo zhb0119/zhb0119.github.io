@@ -18,22 +18,22 @@ redirect_from:
 
 <span class='anchor' id='-news'></span>
 
-# News
+<h1 class="section-heading"><i class="fas fa-fire section-icon section-icon--news" aria-hidden="true"></i> News</h1>
 
 <ul class="news-list" aria-label="Recent news">
   <li class="news-item">
     <time datetime="2026-08">Aug 2026</time>
-    <span>Our paper <a href="https://arxiv.org/abs/2605.25002">MemMark</a> has been accepted to <strong>Findings of ACL: EMNLP 2026</strong>.</span>
+    <span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2605.25002">MemMark</a> to <strong class="news-venue">Findings of ACL: EMNLP 2026</strong>.</span>
   </li>
   <li class="news-item">
     <time datetime="2026-01">Jan 2026</time>
-    <span>Our paper <a href="https://arxiv.org/abs/2601.08189">ForgetMark</a> has been accepted to <strong>ICASSP 2026</strong>.</span>
+    <span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2601.08189">ForgetMark</a> to <strong class="news-venue">ICASSP 2026</strong>.</span>
   </li>
 </ul>
 
 <span class='anchor' id='-yj'></span>
 
-# Internship Experience
+<h1 class="section-heading"><i class="fas fa-briefcase section-icon section-icon--internship" aria-hidden="true"></i> Internship Experience</h1>
 
 <article class="experience-entry">
   <div class="experience-logo experience-logo--intern"><img src="/images/intern/image.png" alt="Zhejiang University logo" loading="lazy"></div>
@@ -49,7 +49,7 @@ redirect_from:
 
 <span class='anchor' id='-lwzl'></span>
 
-# Selected Publications
+<h1 class="section-heading"><i class="fas fa-book-open section-icon section-icon--publications" aria-hidden="true"></i> Selected Publications</h1>
 
 <article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">NeurIPS 2026 · Under Review</div><img src="images/paper/attndiff.png" alt="AttnDiff method overview"></div></div>
 <div class="paper-box-text">
@@ -90,7 +90,7 @@ redirect_from:
 
 <span class='anchor' id='-xl'></span>
 
-# Education
+<h1 class="section-heading"><i class="fas fa-graduation-cap section-icon section-icon--education" aria-hidden="true"></i> Education</h1>
 
 <article class="experience-entry">
   <div class="experience-logo experience-logo--education"><img src="/images/education/image.png" alt="Zhejiang University of Technology logo" loading="lazy"></div>

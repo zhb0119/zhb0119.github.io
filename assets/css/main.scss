@@ -62,6 +62,35 @@
     }
 }
 
+.section-heading {
+    display: flex;
+    gap: .58rem;
+    align-items: center;
+
+    .section-icon {
+        width: 1.25em;
+        color: #2864e8;
+        font-size: .78em;
+        text-align: center;
+
+        &--news {
+            color: #e85d04;
+        }
+
+        &--internship {
+            color: #2864e8;
+        }
+
+        &--publications {
+            color: #7a4fb3;
+        }
+
+        &--education {
+            color: #208b6d;
+        }
+    }
+}
+
 .news-list {
     max-width: 820px;
     margin: .35rem 0 2.2rem;
@@ -102,6 +131,30 @@
     strong {
         color: #252b36;
     }
+}
+
+.news-copy {
+    font-weight: 500;
+}
+
+.news-status {
+    display: inline-block;
+    margin-right: .35rem;
+    color: #b54708;
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+}
+
+.news-paper {
+    color: #1f5eea !important;
+    font-weight: 800 !important;
+}
+
+.news-venue {
+    color: #15745b !important;
+    font-weight: 800;
 }
 
 .experience-entry {
