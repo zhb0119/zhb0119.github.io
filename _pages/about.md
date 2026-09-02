@@ -102,12 +102,40 @@ redirect_from:
     <p class="experience-role">B.Eng. in Intelligent Science and Technology</p>
     <p class="experience-description">College of Information Engineering</p>
     <details class="education-details">
-      <summary>Honors, ranking &amp; activities</summary>
+      <summary>Selected honors</summary>
       <div class="education-details-content">
-        <p><strong>Academic standing:</strong> GPA 4.0/5.0; ranked <strong>1st/48 (top 2%)</strong>. CET-6 514, CET-4 539.</p>
-        <p><strong>Honors:</strong> Provincial Government Scholarship &times;2 (top 10%); University Outstanding Student First-Class Scholarship &times;2; Learning First-Class Scholarship &times;2 (top 3%); Outstanding Communist Youth League Member.</p>
-        <p><strong>Leadership:</strong> Secretary-General of the Information Innovation and Entrepreneurship Center; Head of the Practice Training Department; Study Committee Member, Intelligent Science and Technology 2301.</p>
-        <p><strong>Competitions &amp; projects:</strong> National First Prize, National Undergraduate Intelligent Vehicle Competition (Dagu Robot Smart Healthcare); National Second Prize, TI Cup National Undergraduate Electronic Design Competition (Problem E); National First Prize, China Robot Competition &amp; RoboCup China; National Undergraduate Innovation and Entrepreneurship Program, Table-Tennis Ball-Balancing Robot.</p>
+        <div class="honors-grid">
+          <section class="honor-group">
+            <h4>Academic</h4>
+            <ul>
+              <li>GPA <strong class="honor-highlight">4.0/5.0</strong>; ranked <strong class="honor-highlight">1st/48 (top 2%)</strong>.</li>
+              <li>CET-6 514; CET-4 539.</li>
+            </ul>
+          </section>
+          <section class="honor-group">
+            <h4>Scholarships</h4>
+            <ul>
+              <li><strong class="honor-award">Provincial Government Scholarship</strong> &times;2 (top 10%).</li>
+              <li>University Outstanding Student First-Class Scholarship &times;2; Learning First-Class Scholarship &times;2 (top 3%).</li>
+              <li>Outstanding Communist Youth League Member.</li>
+            </ul>
+          </section>
+          <section class="honor-group">
+            <h4>Leadership</h4>
+            <ul>
+              <li>Secretary-General, Information Innovation and Entrepreneurship Center.</li>
+              <li>Head, Practice Training Department; Study Committee Member, Intelligent Science and Technology 2301.</li>
+            </ul>
+          </section>
+          <section class="honor-group honor-group--wide">
+            <h4>Competitions &amp; projects</h4>
+            <ul>
+              <li><strong class="honor-award">National First Prize</strong>, Undergraduate Intelligent Vehicle Competition (Dagu Robot Smart Healthcare).</li>
+              <li><strong class="honor-award">National Second Prize</strong>, TI Cup Undergraduate Electronic Design Competition (Problem E).</li>
+              <li><strong class="honor-award">National First Prize</strong>, China Robot Competition &amp; RoboCup China; National Undergraduate Innovation and Entrepreneurship Program (Table-Tennis Ball-Balancing Robot).</li>
+            </ul>
+          </section>
+        </div>
       </div>
     </details>
   </div>
