@@ -348,6 +348,27 @@
     font-weight: 800;
 }
 
+.honor-link {
+    color: #2864e8;
+    font-weight: 650;
+    text-decoration: none;
+
+    &:after {
+        content: "\f35d";
+        margin-left: .22rem;
+        font-family: "Font Awesome 5 Free";
+        font-size: .68em;
+        font-weight: 900;
+        vertical-align: .08em;
+    }
+
+    &:hover,
+    &:focus-visible {
+        color: #1648b8;
+        text-decoration: underline;
+    }
+}
+
 .competition-gallery {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
