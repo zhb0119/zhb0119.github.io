@@ -16,6 +16,21 @@ redirect_from:
   <p class="intro-copy">Hello, I am Haobo Zhang (张皓博), a third-year undergraduate student majoring in Intelligent Science and Technology at the College of Information Engineering, Zhejiang University of Technology. My research interests center on large language model security, with a particular focus on model watermarking, model fingerprinting, and model alignment. I am interested in building reliable and trustworthy AI systems, and I welcome opportunities to connect and collaborate. You can reach me at <a href="mailto:zhanghaobo@zjut.edu.cn">zhanghaobo@zjut.edu.cn</a>.</p>
 </section>
 
+<span class='anchor' id='-news'></span>
+
+# News
+
+<ul class="news-list" aria-label="Recent news">
+  <li class="news-item">
+    <time datetime="2026-08">Aug 2026</time>
+    <span>Our paper <a href="https://arxiv.org/abs/2605.25002">MemMark</a> has been accepted to <strong>Findings of ACL: EMNLP 2026</strong>.</span>
+  </li>
+  <li class="news-item">
+    <time datetime="2026-01">Jan 2026</time>
+    <span>Our paper <a href="https://arxiv.org/abs/2601.08189">ForgetMark</a> has been accepted to <strong>ICASSP 2026</strong>.</span>
+  </li>
+</ul>
+
 <span class='anchor' id='-yj'></span>
 
 # Internship Experience
@@ -45,7 +60,7 @@ redirect_from:
 <details class="paper-abstract"><summary>Abstract</summary><p>Protecting the intellectual property of open-weight large language models (LLMs) requires verifying whether a suspect model is derived from a victim model despite common laundering operations such as fine-tuning (including PPO/DPO), pruning/compression, and model merging. We propose AttnDiff, a data-efficient white-box framework that extracts fingerprints from models via intrinsic information-routing behavior. AttnDiff probes minimally edited prompt pairs that induce controlled semantic conflicts, captures differential attention patterns, summarizes them with compact spectral descriptors, and compares models using CKA. Across Llama-2/3 and Qwen2.5 (3B–14B) and additional open-source families, it yields high similarity for related derivatives while separating unrelated model families (e.g., $>0.98$ vs. $&lt;0.22$ with $M=60$ probes). With 5–60 multi-domain probes, it supports practical provenance verification and accountability.</p></details></div>
 </div></article>
 
-<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">EMNLP 2026</div><img src="images/paper/memmark.png" alt="MemMark method overview"></div></div>
+<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">EMNLP 2026 · Accepted</div><img src="images/paper/memmark.png" alt="MemMark method overview"></div></div>
 <div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2605.25002">MemMark: State-Evolution Attribution Watermarking for Agent Long-Term Memory Systems</a></h3>
 <p class="paper-authors"><strong>Haobo Zhang</strong>, Xutao Mao, Guangyuan Dong, Ziwei Li, Xuanbo Su, Kaijie Chen, Jing Yang, Zheng Lin.</p>
@@ -54,7 +69,7 @@ redirect_from:
 <details class="paper-abstract"><summary>Abstract</summary><p>Memory-backed agents need provenance that can survive leaked or migrated snapshots, where logs, visible outputs, and trusted metadata may be absent. We propose MemMark, a state-evolution attribution watermark that embeds an owner-controlled signal into latent memory-write decisions. At each internal LLM call, MemMark samples among admissible candidates using keyed, distribution-preserving selection, and records cryptographic commitments with signed session anchors and reveal evidence. This makes attribution depend on reproducible backend behavior rather than mutable provenance fields. Across A-Mem and Graphiti on LoCoMo, with three LLM backbones, MemMark preserves memory utility: Overall F1 retains 99.6% of the unwatermarked baseline, while BLEU-1 changes by +0.2%. It also provides usable carrier capacity, with 1.16, 1.14, and 1.26 bits of mean entropy for update-target, link-target, and semantic-realization decisions. In the snapshot-only R3 setting, MemMark recovers the full 40-bit payload from final snapshots, while wrong-key verification remains near chance. Under nine memory-lifecycle attacks, verification distinguishes tampering, evidence deletion, and partial payload recovery. These results show that robust snapshot-only attribution is feasible for long-term agent memory without surviving traces, trusted metadata, or utility-degrading.</p></details></div>
 </div></article>
 
-<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">ICASSP 2026</div><img src="images/paper/forgetmark.png" alt="ForgetMark method overview"></div></div>
+<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge">ICASSP 2026 · Accepted</div><img src="images/paper/forgetmark.png" alt="ForgetMark method overview"></div></div>
 <div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2601.08189">ForgetMark: Stealthy Fingerprint Embedding via Targeted Unlearning in Language Models</a></h3>
 <p class="paper-authors">Zhenhua Xu<sup>*</sup>, <strong>Haobo Zhang<sup>*</sup></strong>, Zhebo Wang, Qichen Liu, Haitao Xu, Wenpeng Xing, Meng Han.</p>
@@ -86,5 +101,14 @@ redirect_from:
     </div>
     <p class="experience-role">B.Eng. in Intelligent Science and Technology</p>
     <p class="experience-description">College of Information Engineering</p>
+    <details class="education-details">
+      <summary>Honors, ranking &amp; activities</summary>
+      <div class="education-details-content">
+        <p><strong>Academic standing:</strong> GPA 4.0/5.0; ranked <strong>1st/48 (top 2%)</strong>. CET-6 514, CET-4 539.</p>
+        <p><strong>Honors:</strong> Provincial Government Scholarship &times;2 (top 10%); University Outstanding Student First-Class Scholarship &times;2; Learning First-Class Scholarship &times;2 (top 3%); Outstanding Communist Youth League Member.</p>
+        <p><strong>Leadership:</strong> Secretary-General of the Information Innovation and Entrepreneurship Center; Head of the Practice Training Department; Study Committee Member, Intelligent Science and Technology 2301.</p>
+        <p><strong>Competitions &amp; projects:</strong> National First Prize, National Undergraduate Intelligent Vehicle Competition (Dagu Robot Smart Healthcare); National Second Prize, TI Cup National Undergraduate Electronic Design Competition (Problem E); National First Prize, China Robot Competition &amp; RoboCup China; National Undergraduate Innovation and Entrepreneurship Program, Table-Tennis Ball-Balancing Robot.</p>
+      </div>
+    </details>
   </div>
 </article>
