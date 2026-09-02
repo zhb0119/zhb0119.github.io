@@ -134,6 +134,24 @@ redirect_from:
               <li><strong class="honor-award">National Second Prize</strong>, TI Cup Undergraduate Electronic Design Competition (Problem E).</li>
               <li><strong class="honor-award">National First Prize</strong>, China Robot Competition &amp; RoboCup China; National Undergraduate Innovation and Entrepreneurship Program (Table-Tennis Ball-Balancing Robot).</li>
             </ul>
+            <div class="competition-gallery" aria-label="Competition project photos">
+              <figure class="competition-card">
+                <a href="/images/competition/image%20copy.png"><img src="/images/competition/image%20copy.png" alt="Smart healthcare autonomous vehicle prototype" loading="lazy" decoding="async"></a>
+                <figcaption>Smart healthcare vehicle</figcaption>
+              </figure>
+              <figure class="competition-card">
+                <a href="/images/competition/image.png"><img src="/images/competition/image.png" alt="Autonomous vehicle navigating a competition track" loading="lazy" decoding="async"></a>
+                <figcaption>Autonomous track testing</figcaption>
+              </figure>
+              <figure class="competition-card">
+                <a href="/images/competition/%E8%B4%9F%E5%8E%8B%E6%B6%B5%E9%81%93.jpg"><img src="/images/competition/%E8%B4%9F%E5%8E%8B%E6%B6%B5%E9%81%93.jpg" alt="Negative-pressure duct robot prototype" loading="lazy" decoding="async"></a>
+                <figcaption>Negative-pressure duct robot</figcaption>
+              </figure>
+              <figure class="competition-card">
+                <a href="/images/competition/%E8%B4%9F%E5%8E%8B%E9%A3%8E%E6%89%87.jpg"><img src="/images/competition/%E8%B4%9F%E5%8E%8B%E9%A3%8E%E6%89%87.jpg" alt="Negative-pressure fan robot chassis" loading="lazy" decoding="async"></a>
+                <figcaption>Fan-propulsion chassis</figcaption>
+              </figure>
+            </div>
           </section>
         </div>
       </div>
