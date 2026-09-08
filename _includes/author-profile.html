@@ -17,7 +17,7 @@
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
       {% if site.description %}
-        <li><div style="white-space: normal; margin-bottom: 1em;">{% if page.lang == 'en' %}LLM Security · Model Fingerprinting · Model Watermarking{% else %}{{ site.description }}{% endif %}</div></li>
+        <li><div class="author__research-tags">{% if page.lang == 'en' %}LLM Security - Model Fingerprinting - Model Watermarking{% else %}{{ site.description }}{% endif %}</div></li>
       {% endif %}
       {% if author.location %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {% if page.lang == 'en' %}Hangzhou, China{% else %}{{ author.location }}{% endif %}</li>
