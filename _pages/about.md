@@ -14,22 +14,19 @@ redirect_from:
 <section class="intro-block" aria-labelledby="intro-title">
   <h1 id="intro-title">Haobo Zhang</h1>
   <p class="intro-copy">Hello, I am Haobo Zhang (Zhang Haobo), a third-year undergraduate student majoring in Intelligent Science and Technology at the College of Information Engineering, Zhejiang University of Technology. My research interests center on large language model security, with a particular focus on model watermarking, model fingerprinting, and model alignment. I am interested in building reliable and trustworthy AI systems, and I welcome opportunities to connect and collaborate. You can reach me at <a href="mailto:zhanghaobo@zjut.edu.cn">zhanghaobo@zjut.edu.cn</a>.</p>
-  <div class="intro-tags" aria-label="Research areas">
-    <span>LLM Security</span><span>Model Fingerprinting</span><span>Trustworthy AI</span>
-  </div>
   <section class="research-timeline" aria-labelledby="research-timeline-title">
     <h2 id="research-timeline-title">Research focus</h2>
     <div class="timeline-item">
       <time datetime="2025">2025</time>
-      <div><h3>Model Fingerprinting</h3><p>Tracing model provenance and identifying derived language models.</p></div>
+      <h3>Model Fingerprinting</h3>
     </div>
     <div class="timeline-item">
       <time datetime="2025/2026">2025-2026</time>
-      <div><h3>Model Watermarking</h3><p>Designing robust, stealthy signals for model ownership protection.</p></div>
+      <h3>Model Watermarking</h3>
     </div>
     <div class="timeline-item">
       <time datetime="2026">2026</time>
-      <div><h3>Model Alignment</h3><p>Exploring reliable alignment and trustworthy behavior in LLMs.</p></div>
+      <h3>Model Alignment</h3>
     </div>
   </section>
   <nav class="intro-actions" aria-label="Profile links">
