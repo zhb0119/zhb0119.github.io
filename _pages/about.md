@@ -56,10 +56,14 @@ redirect_from:
 <h2 class="section-heading section-heading--internship"><i class="fas fa-briefcase section-icon section-icon--internship" aria-hidden="true"></i> Internship Experience</h2>
 
 <article class="experience-entry">
-  <div class="experience-logo experience-logo--intern"><img src="/images/intern/image.png" alt="Zhejiang University logo" loading="lazy"></div>
+  <div class="experience-logo experience-logo--joint" aria-label="Zhejiang University and GenTel">
+    <img class="joint-logo joint-logo--zju" src="/images/intern/image.png" alt="Zhejiang University logo" loading="lazy">
+    <span class="joint-logo-divider" aria-hidden="true"></span>
+    <img class="joint-logo joint-logo--gentel" src="/images/intern/juntongweilai.png" alt="GenTel logo" loading="lazy">
+  </div>
   <div class="experience-content">
     <div class="experience-heading">
-      <h3>Zhejiang University</h3>
+      <h3>Zhejiang University &amp; GenTel</h3>
       <span><time datetime="2025-06">Jun 2025</time> - <time datetime="2026-01">Jan 2026</time></span>
     </div>
     <p class="experience-role"><a href="https://ifrc-zju.github.io/">Intelligence Fusion Research Center (IFRC) Lab</a> - Research Intern</p>
@@ -119,7 +123,7 @@ redirect_from:
       <h3>Renmin University of China</h3>
       <span>Starting <time datetime="2027-09">Sep 2027</time></span>
     </div>
-    <p class="experience-role">Incoming Direct Ph.D. Student in Computer Science and Technology</p>
+    <p class="experience-role">Incoming Ph.D. Student in Computer Science and Technology</p>
   </div>
 </article>
 

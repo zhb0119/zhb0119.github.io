@@ -224,6 +224,28 @@ body { background: #fbfcfe; color: #3f4755; overflow-x: hidden; }
     aspect-ratio: 1066 / 517;
 }
 
+.experience-logo--joint {
+    gap: .55rem;
+}
+
+.experience-logo--joint .joint-logo--zju {
+    width: 105px;
+    aspect-ratio: 1066 / 517;
+}
+
+.experience-logo--joint .joint-logo--gentel {
+    width: 54px;
+    aspect-ratio: 1;
+    border-radius: .45rem;
+}
+
+.joint-logo-divider {
+    width: 1px;
+    height: 46px;
+    flex: 0 0 1px;
+    background: #d9dee7;
+}
+
 .experience-logo--education img {
     width: 180px;
     height: 120px;
@@ -724,6 +746,19 @@ h1:before, .anchor:before {
 
     .experience-logo--intern img {
         width: min(190px, 62vw);
+    }
+
+    .experience-logo--joint {
+        width: min(190px, 62vw);
+        justify-content: center;
+    }
+
+    .experience-logo--joint .joint-logo--zju {
+        width: 108px;
+    }
+
+    .experience-logo--joint .joint-logo--gentel {
+        width: 56px;
     }
 
     .experience-logo--education img {
