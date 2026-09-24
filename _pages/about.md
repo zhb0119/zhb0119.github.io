@@ -48,10 +48,10 @@ redirect_from:
 <h2 class="section-heading section-heading--internship"><i class="fas fa-briefcase section-icon section-icon--internship" aria-hidden="true"></i> Internship Experience</h2>
 
 <article class="experience-entry">
-  <div class="experience-logo experience-logo--joint" aria-label="Zhejiang University and GenTel">
-    <span class="joint-logo-slot joint-logo-slot--zju"><img src="/images/intern/image.png" alt="Zhejiang University logo" loading="lazy"></span>
+  <div class="experience-logo experience-logo--joint experience-logo--collaboration" aria-label="Zhejiang University and GenTel">
+    <span class="joint-logo-slot joint-logo-slot--zju"><img src="/images/logos/zju.png" alt="Zhejiang University logo" loading="lazy"></span>
     <span class="joint-logo-divider" aria-hidden="true"></span>
-    <a class="joint-logo-slot joint-logo-slot--gentel" href="https://www.gentel.com/en/home" aria-label="Visit the GenTel website"><img src="/images/intern/juntongweilai.png" alt="GenTel logo" loading="lazy"></a>
+    <a class="joint-logo-slot joint-logo-slot--gentel" href="https://www.gentel.com/en/home" aria-label="Visit the GenTel website"><img src="/images/logos/gentel.png" alt="GenTel logo" loading="lazy"></a>
   </div>
   <div class="experience-content">
     <div class="experience-heading">
@@ -67,7 +67,7 @@ redirect_from:
 
 <h2 class="section-heading section-heading--publications"><i class="fas fa-book-open section-icon section-icon--publications" aria-hidden="true"></i> Selected Publications</h2>
 
-<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--review">NeurIPS 2026 - Under Review</div><img src="images/paper/attndiff.png" alt="AttnDiff method overview"></div></div>
+<article class="paper-box paper-box--review"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--review">NeurIPS 2026 - Under Review</div><img src="images/paper/attndiff.png" alt="AttnDiff method overview"></div></div>
 <div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2604.05502">AttnDiff: Attention-based Differential Fingerprinting for Large Language Models</a></h3>
 <p class="paper-authors"><strong>Haobo Zhang</strong>, Zhenhua Xu, Junxian Li, Shangfeng Sheng, Dezhang Kong, Meng Han.</p>
@@ -76,7 +76,7 @@ redirect_from:
 <details class="paper-abstract"><summary>Abstract</summary><p>Protecting the intellectual property of open-weight large language models (LLMs) requires verifying whether a suspect model is derived from a victim model despite common laundering operations such as fine-tuning (including PPO/DPO), pruning/compression, and model merging. We propose AttnDiff, a data-efficient white-box framework that extracts fingerprints from models via intrinsic information-routing behavior. AttnDiff probes minimally edited prompt pairs that induce controlled semantic conflicts, captures differential attention patterns, summarizes them with compact spectral descriptors, and compares models using CKA. Across Llama-2/3 and Qwen2.5 (3B-14B) and additional open-source families, it yields high similarity for related derivatives while separating unrelated model families (e.g., $>0.98$ vs. $&lt;0.22$ with $M=60$ probes). With 5-60 multi-domain probes, it supports practical provenance verification and accountability.</p></details></div>
 </div></article>
 
-<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--accepted">EMNLP 2026 - Accepted</div><img src="images/paper/memmark.png" alt="MemMark method overview"></div></div>
+<article class="paper-box paper-box--accepted"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--accepted">EMNLP 2026 - Accepted</div><img src="images/paper/memmark.png" alt="MemMark method overview"></div></div>
 <div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2605.25002">MemMark: State-Evolution Attribution Watermarking for Agent Long-Term Memory Systems</a></h3>
 <p class="paper-authors"><strong>Haobo Zhang</strong>, Xutao Mao, Guangyuan Dong, Ziwei Li, Xuanbo Su, Kaijie Chen, Jing Yang, Zheng Lin.</p>
@@ -85,7 +85,7 @@ redirect_from:
 <details class="paper-abstract"><summary>Abstract</summary><p>Memory-backed agents need provenance that can survive leaked or migrated snapshots, where logs, visible outputs, and trusted metadata may be absent. We propose MemMark, a state-evolution attribution watermark that embeds an owner-controlled signal into latent memory-write decisions. At each internal LLM call, MemMark samples among admissible candidates using keyed, distribution-preserving selection, and records cryptographic commitments with signed session anchors and reveal evidence. This makes attribution depend on reproducible backend behavior rather than mutable provenance fields. Across A-Mem and Graphiti on LoCoMo, with three LLM backbones, MemMark preserves memory utility: Overall F1 retains 99.6% of the unwatermarked baseline, while BLEU-1 changes by +0.2%. It also provides usable carrier capacity, with 1.16, 1.14, and 1.26 bits of mean entropy for update-target, link-target, and semantic-realization decisions. In the snapshot-only R3 setting, MemMark recovers the full 40-bit payload from final snapshots, while wrong-key verification remains near chance. Under nine memory-lifecycle attacks, verification distinguishes tampering, evidence deletion, and partial payload recovery. These results show that robust snapshot-only attribution is feasible for long-term agent memory without surviving traces, trusted metadata, or utility-degrading.</p></details></div>
 </div></article>
 
-<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--accepted">ICASSP 2026 - Accepted</div><img src="images/paper/forgetmark.png" alt="ForgetMark method overview"></div></div>
+<article class="paper-box paper-box--accepted"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--accepted">ICASSP 2026 - Accepted</div><img src="images/paper/forgetmark.png" alt="ForgetMark method overview"></div></div>
 <div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2601.08189">ForgetMark: Stealthy Fingerprint Embedding via Targeted Unlearning in Language Models</a></h3>
 <p class="paper-authors">Zhenhua Xu<sup>*</sup>, <strong>Haobo Zhang<sup>*</sup></strong>, Zhebo Wang, Qichen Liu, Haitao Xu, Wenpeng Xing, Meng Han.</p>
@@ -95,7 +95,7 @@ redirect_from:
 <details class="paper-abstract"><summary>Abstract</summary><p>Existing invasive (backdoor) fingerprints suffer from high-perplexity triggers that are easily filtered, fixed response patterns exposed by heuristic detectors, and spurious activations on benign inputs. We introduce ForgetMark, a stealthy fingerprinting framework that encodes provenance via targeted unlearning. It builds a compact, human-readable key-value set with an assistant model and predictive-entropy ranking, then trains lightweight LoRA adapters to suppress the original values on their keys while preserving general capabilities. Ownership is verified under black/gray-box access by aggregating likelihood and semantic evidence into a fingerprint success rate. By relying on probabilistic forgetting traces rather than fixed trigger-response patterns, ForgetMark avoids high-perplexity triggers, reduces detectability, and lowers false triggers. Across diverse architectures and settings, it achieves 100% ownership verification on fingerprinted models while maintaining standard performance, surpasses backdoor baselines in stealthiness and robustness to model merging, and remains effective under moderate incremental fine-tuning. Our code and data are available at <a href="https://github.com/Xuzhenhua55/ForgetMark">https://github.com/Xuzhenhua55/ForgetMark</a>.</p></details></div>
 </div></article>
 
-<article class="paper-box"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--preprint">Survey 2025</div><img src="images/paper/copyright.png" alt="LLM copyright protection survey taxonomy"></div></div>
+<article class="paper-box paper-box--survey"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--preprint">Survey 2025</div><img src="images/paper/copyright.png" alt="LLM copyright protection survey taxonomy"></div></div>
 <div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2508.11548">Copyright Protection for Large Language Models: A Survey of Methods, Challenges, and Trends</a></h3>
 <p class="paper-authors">Zhenhua Xu, Xubin Yue, Zhebo Wang, <strong>Haobo Zhang</strong>, Qichen Liu, Xixiang Zhao, Jingxuan Zhang, Wenjun Zeng, Wengpeng Xing, Dezhang Kong, Changting Lin, Meng Han.</p>
@@ -109,7 +109,7 @@ redirect_from:
 <h2 class="section-heading section-heading--education"><i class="fas fa-graduation-cap section-icon section-icon--education" aria-hidden="true"></i> Education</h2>
 
 <article class="experience-entry">
-  <div class="experience-logo experience-logo--education"><img src="/images/education/ruc.png" alt="Renmin University of China logo" loading="lazy"></div>
+  <div class="experience-logo experience-logo--education experience-logo--ruc"><img src="/images/logos/ruc.png" alt="Renmin University of China logo" loading="lazy"></div>
   <div class="experience-content">
     <div class="experience-heading">
       <h3>Renmin University of China</h3>
@@ -120,7 +120,7 @@ redirect_from:
 </article>
 
 <article class="experience-entry">
-  <div class="experience-logo experience-logo--education"><img src="/images/education/image.png" alt="Zhejiang University of Technology logo" loading="lazy"></div>
+  <div class="experience-logo experience-logo--education experience-logo--zjut"><img src="/images/logos/zjut.png" alt="Zhejiang University of Technology logo" loading="lazy"></div>
   <div class="experience-content">
     <div class="experience-heading">
       <h3>Zhejiang University of Technology</h3>
