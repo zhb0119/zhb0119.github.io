@@ -9,34 +9,39 @@ redirect_from:
   - /about.html
 ---
 
-<span class='anchor' id='about-me'></span>
+<span class="anchor" id="about"></span>
 
-<section class="intro-block" aria-labelledby="intro-title">
-  <h1 id="intro-title">Haobo Zhang</h1>
-  <p class="intro-copy">Hello, I am Haobo Zhang (Zhang Haobo), a third-year undergraduate student majoring in Intelligent Science and Technology at the College of Information Engineering, Zhejiang University of Technology. My research interests center on large language model security, with a particular focus on model watermarking, model fingerprinting, and model alignment. I am interested in building reliable and trustworthy AI systems, and I welcome opportunities to connect and collaborate. You can reach me at <a href="mailto:zhanghaobo@zjut.edu.cn">zhanghaobo@zjut.edu.cn</a>.</p>
-  <section class="research-timeline" aria-labelledby="research-timeline-title">
-    <h2 id="research-timeline-title">Research focus</h2>
-    <div class="timeline-item">
-      <time datetime="2025">2025</time>
-      <h3>Model Fingerprinting</h3>
+<section class="profile-hero" aria-labelledby="intro-title">
+  <div class="hero-glow hero-glow--one" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow--two" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow"><span></span> Intelligent Science &amp; Technology</p>
+    <h1 id="intro-title">Haobo Zhang</h1>
+    <p class="hero-lead">I explore interesting problems in artificial intelligence through research and engineering.</p>
+    <p class="hero-copy">I am an undergraduate student majoring in Intelligent Science and Technology at Zhejiang University of Technology. My current work includes model fingerprinting, watermarking, and alignment, while my broader interests continue to evolve with new questions and collaborations.</p>
+    <div class="interest-row" aria-label="Current research interests">
+      <span>Current interests</span>
+      <ul>
+        <li>Model Fingerprinting</li>
+        <li>Model Watermarking</li>
+        <li>Model Alignment</li>
+      </ul>
     </div>
-    <div class="timeline-item">
-      <time datetime="2025/2026">2025-2026</time>
-      <h3>Model Watermarking</h3>
-    </div>
-    <div class="timeline-item">
-      <time datetime="2026">2026</time>
-      <h3>Model Alignment</h3>
-    </div>
-  </section>
-  <nav class="intro-actions" aria-label="Profile links">
-    <a class="intro-action intro-action--primary" href="mailto:zhanghaobo@zjut.edu.cn"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
-    <a class="intro-action" href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=sY6udPcAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
-    <a class="intro-action" href="https://github.com/zhb0119"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
-  </nav>
+    <nav class="hero-actions" aria-label="Profile links">
+      <a class="hero-action hero-action--primary" href="mailto:zhanghaobo@zjut.edu.cn"><i class="fas fa-paper-plane" aria-hidden="true"></i> Get in touch</a>
+      <a class="hero-action" href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=sY6udPcAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i> Scholar</a>
+      <a class="hero-action" href="https://github.com/zhb0119"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      <a class="hero-action" href="/files/haobo-zhang-resume.pdf"><i class="fas fa-file-alt" aria-hidden="true"></i> CV</a>
+    </nav>
+  </div>
+  <aside class="hero-note" aria-label="Academic status">
+    <span class="hero-note-icon"><i class="fas fa-compass" aria-hidden="true"></i></span>
+    <p>Curious about ideas that connect rigorous research with real-world impact.</p>
+  </aside>
 </section>
 
-<span class='anchor' id='-news'></span>
+<span class="anchor" id="news"></span>
 
 <h2 class="section-heading section-heading--news"><i class="fas fa-fire section-icon section-icon--news" aria-hidden="true"></i> News</h2>
 
@@ -51,7 +56,7 @@ redirect_from:
   </li>
 </ul>
 
-<span class='anchor' id='-yj'></span>
+<span class="anchor" id="experience"></span>
 
 <h2 class="section-heading section-heading--internship"><i class="fas fa-briefcase section-icon section-icon--internship" aria-hidden="true"></i> Internship Experience</h2>
 
@@ -71,7 +76,7 @@ redirect_from:
   </div>
 </article>
 
-<span class='anchor' id='-lwzl'></span>
+<span class="anchor" id="publications"></span>
 
 <h2 class="section-heading section-heading--publications"><i class="fas fa-book-open section-icon section-icon--publications" aria-hidden="true"></i> Selected Publications</h2>
 
@@ -112,7 +117,7 @@ redirect_from:
 <details class="paper-abstract"><summary>Abstract</summary><p>Copyright protection for large language models is of critical importance, given their substantial development costs, proprietary value, and potential for misuse. Existing surveys have predominantly focused on techniques for tracing LLM-generated content - namely, text watermarking - while a systematic exploration of methods for protecting the models themselves (i.e., model watermarking and model fingerprinting) remains absent. Moreover, the relationships and distinctions among text watermarking, model watermarking, and model fingerprinting have not been comprehensively clarified. This work presents a comprehensive survey of the current state of LLM copyright protection technologies, with a focus on model fingerprinting, covering the following aspects: (1) clarifying the conceptual connection from text watermarking to model watermarking and fingerprinting, and adopting a unified terminology that incorporates model watermarking into the broader fingerprinting framework; (2) providing an overview and comparison of diverse text watermarking techniques, highlighting cases where such methods can function as model fingerprinting; (3) systematically categorizing and comparing existing model fingerprinting approaches for LLM copyright protection; (4) presenting, for the first time, techniques for fingerprint transfer and fingerprint removal; (5) summarizing evaluation metrics for model fingerprints, including effectiveness, harmlessness, robustness, stealthiness, and reliability; and (6) discussing open challenges and future research directions. This survey aims to offer researchers a thorough understanding of both text watermarking and model fingerprinting technologies in the era of LLMs, thereby fostering further advances in protecting their intellectual property.</p></details></div>
 </div></article>
 
-<span class='anchor' id='-xl'></span>
+<span class="anchor" id="education"></span>
 
 <h2 class="section-heading section-heading--education"><i class="fas fa-graduation-cap section-icon section-icon--education" aria-hidden="true"></i> Education</h2>
 

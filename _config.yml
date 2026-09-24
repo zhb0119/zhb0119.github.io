@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Haobo Zhang"
-description              : "Undergraduate Researcher in LLM Security"
+description              : "Personal academic homepage of Haobo Zhang"
 repository               : "zhb0119/zhb0119.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Haobo Zhang"
   avatar           : "images/me/cat.jpg"
-  bio              : "I am Haobo Zhang (张皓博), a third-year undergraduate student in Intelligent Science and Technology at the College of Information Engineering, Zhejiang University of Technology. My research interests focus on large language model security, especially model watermarking, model fingerprinting, and model alignment. I am always happy to connect with researchers and practitioners working on trustworthy AI."
+  bio              : "Intelligent Science and Technology at Zhejiang University of Technology. Interested in exploring new ideas across artificial intelligence."
   location         : "Hangzhou, China"
   employer         : #"Hefei General Machinery Research Institute"
   pubmed           : 

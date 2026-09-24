@@ -10,7 +10,7 @@
 
   <div class="author__content">
     <h3 class="author__name">{% if page.lang == 'en' %}Haobo Zhang{% else %}{{ author.name }}{% endif %}</h3>
-    {% if author.bio %}<p class="author__bio">I am a third-year undergraduate student majoring in Intelligent Science and Technology at Zhejiang University of Technology. My interests include security and trustworthy AI for large language models.</p>{% endif %}
+    {% if author.bio %}<p class="author__bio">Intelligent Science and Technology at Zhejiang University of Technology, with interests that evolve across artificial intelligence.</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
@@ -28,6 +28,7 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
       {% endif %}
+      <li><a href="/files/haobo-zhang-resume.pdf"><i class="fas fa-fw fa-file-alt" aria-hidden="true"></i> Curriculum Vitae</a></li>
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
       {% endif %}
@@ -123,6 +124,7 @@
       {% if author.email %}
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       {% endif %}
+      <a href="/files/haobo-zhang-resume.pdf" aria-label="Curriculum Vitae" title="Curriculum Vitae"><i class="fas fa-fw fa-file-alt" aria-hidden="true"></i></a>
       {% if author.keybase %}
         <a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i></a>
       {% endif %}

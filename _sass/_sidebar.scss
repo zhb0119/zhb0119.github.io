@@ -293,3 +293,112 @@
     display: none;
   }
 }
+
+/* Compact profile card */
+@include breakpoint($large) {
+  .sidebar .profile_box {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #e3e8f1;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, .82);
+    box-shadow: 0 12px 34px rgba(35, 51, 82, .07);
+    backdrop-filter: blur(10px);
+  }
+
+  .author__avatar {
+    width: 100%;
+
+    img {
+      width: 100%;
+      max-width: none;
+      padding: 0;
+      border: 0;
+      border-radius: 14px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      transition: transform .3s ease, box-shadow .3s ease;
+
+      &:hover {
+        box-shadow: 0 15px 30px rgba(31, 47, 76, .13);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  .author__name {
+    margin: .9rem 0 .45rem;
+    color: #172033;
+    font-size: 1.22rem !important;
+    font-weight: 760;
+    letter-spacing: -.02em;
+  }
+
+  .author__bio {
+    margin: 0 0 .85rem;
+    color: #687487;
+    font-size: .75rem;
+    line-height: 1.6;
+  }
+
+  .author__urls {
+    padding-top: .72rem;
+    border-top: 1px solid #e8ecf3;
+
+    li {
+      margin: 0;
+      white-space: normal;
+    }
+
+    a {
+      display: flex;
+      gap: .42rem;
+      align-items: center;
+      margin: .12rem 0;
+      padding: .38rem .35rem;
+      border-radius: 7px;
+      color: #4c5b71;
+      font-size: .73rem;
+      transition: color .16s ease, background-color .16s ease, transform .16s ease;
+
+      &:hover,
+      &:focus-visible {
+        color: #2449a2;
+        background: #edf3ff;
+        text-decoration: none;
+        outline: none;
+        transform: translateX(2px);
+      }
+    }
+
+    .scholar-citations {
+      font-size: .68rem;
+    }
+  }
+}
+
+@include breakpoint(max-width $large) {
+  .profile_box {
+    margin-bottom: 1rem;
+    padding: .75rem;
+    border: 1px solid #e3e8f1;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .78);
+  }
+
+  .author__avatar img {
+    border-radius: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .author__avatar img,
+  .author__urls a {
+    transition: none;
+  }
+
+  .author__avatar img:hover,
+  .author__urls a:hover {
+    transform: none;
+  }
+}
