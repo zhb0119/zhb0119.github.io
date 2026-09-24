@@ -2,7 +2,7 @@
 permalink: /
 title: ""
 excerpt: ""
-author_profile: true
+author_profile: false
 lang: en
 redirect_from:
   - /about/
@@ -11,34 +11,21 @@ redirect_from:
 
 <span class="anchor" id="about"></span>
 
-<section class="profile-hero" aria-labelledby="intro-title">
-  <div class="hero-glow hero-glow--one" aria-hidden="true"></div>
-  <div class="hero-glow hero-glow--two" aria-hidden="true"></div>
-  <div class="hero-grid" aria-hidden="true"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow"><span></span> Intelligent Science &amp; Technology</p>
-    <h1 id="intro-title">Haobo Zhang</h1>
-    <p class="hero-lead">I explore interesting problems in artificial intelligence through research and engineering.</p>
-    <p class="hero-copy">I am an undergraduate student majoring in Intelligent Science and Technology at Zhejiang University of Technology. My current work includes model fingerprinting, watermarking, and alignment, while my broader interests continue to evolve with new questions and collaborations.</p>
-    <div class="interest-row" aria-label="Current research interests">
-      <span>Current interests</span>
-      <ul>
-        <li>Model Fingerprinting</li>
-        <li>Model Watermarking</li>
-        <li>Model Alignment</li>
-      </ul>
-    </div>
-    <nav class="hero-actions" aria-label="Profile links">
-      <a class="hero-action hero-action--primary" href="mailto:zhanghaobo@zjut.edu.cn"><i class="fas fa-paper-plane" aria-hidden="true"></i> Get in touch</a>
-      <a class="hero-action" href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=sY6udPcAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i> Scholar</a>
-      <a class="hero-action" href="https://github.com/zhb0119"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
-      <a class="hero-action" href="/files/haobo-zhang-resume.pdf"><i class="fas fa-file-alt" aria-hidden="true"></i> CV</a>
+<section class="academic-profile" aria-labelledby="intro-title">
+  <div class="academic-profile__portrait">
+    <img src="/images/me/cat.jpg" alt="Haobo Zhang" width="220" height="220">
+  </div>
+  <div class="academic-profile__content">
+    <h1 id="intro-title">Haobo Zhang <span>张皓博</span></h1>
+    <p class="academic-profile__affiliation"><i class="fas fa-university" aria-hidden="true"></i> Zhejiang University of Technology</p>
+    <p class="academic-profile__intro">I am an undergraduate student majoring in Intelligent Science and Technology. My current work explores model fingerprinting, watermarking, and alignment, while my broader interests continue to evolve with new questions in artificial intelligence.</p>
+    <p class="academic-profile__note">I enjoy turning research ideas into practical systems and welcome discussions and collaboration.</p>
+    <nav class="academic-profile__links" aria-label="Profile links">
+      <a href="mailto:zhanghaobo@zjut.edu.cn"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+      <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=sY6udPcAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+      <a href="https://github.com/zhb0119"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
     </nav>
   </div>
-  <aside class="hero-note" aria-label="Academic status">
-    <span class="hero-note-icon"><i class="fas fa-compass" aria-hidden="true"></i></span>
-    <p>Curious about ideas that connect rigorous research with real-world impact.</p>
-  </aside>
 </section>
 
 <span class="anchor" id="news"></span>
