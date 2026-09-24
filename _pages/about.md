@@ -113,6 +113,17 @@ redirect_from:
 <h2 class="section-heading section-heading--education"><i class="fas fa-graduation-cap section-icon section-icon--education" aria-hidden="true"></i> Education</h2>
 
 <article class="experience-entry">
+  <div class="experience-logo experience-logo--education"><img src="/images/education/ruc.png" alt="Renmin University of China logo" loading="lazy"></div>
+  <div class="experience-content">
+    <div class="experience-heading">
+      <h3>Renmin University of China</h3>
+      <span>Starting <time datetime="2027-09">Sep 2027</time></span>
+    </div>
+    <p class="experience-role">Incoming Direct Ph.D. Student in Computer Science and Technology</p>
+  </div>
+</article>
+
+<article class="experience-entry">
   <div class="experience-logo experience-logo--education"><img src="/images/education/image.png" alt="Zhejiang University of Technology logo" loading="lazy"></div>
   <div class="experience-content">
     <div class="experience-heading">
