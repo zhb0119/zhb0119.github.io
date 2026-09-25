@@ -1709,3 +1709,345 @@ body {
 
     .news-item .news-flame { margin-top: .08rem; }
 }
+
+/* Final pass: a quieter, content-first academic layout. */
+:root {
+    --accent: #2f5fc4;
+    --accent-deep: #244a98;
+    --ink-strong: #172236;
+    --ink: #445168;
+    --ink-soft: #738096;
+    --line: #e2e7ef;
+    --surface-soft: #f5f7fa;
+}
+
+body {
+    background: #f6f8fb;
+}
+
+.masthead {
+    background: rgba(255, 255, 255, .94);
+    border-bottom: 1px solid #e5e9f0;
+    box-shadow: 0 3px 16px rgba(24, 39, 64, .045);
+}
+
+.masthead__inner-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: .65rem 1rem;
+}
+
+.greedy-nav .visible-links a {
+    color: #59677d;
+    font-size: .78rem;
+    letter-spacing: .02em;
+}
+
+.greedy-nav .visible-links a:hover,
+.greedy-nav .visible-links a:focus-visible {
+    color: var(--accent-deep);
+}
+
+.site-wordmark {
+    color: var(--ink-strong) !important;
+    letter-spacing: -.02em;
+}
+
+.site-wordmark span {
+    background: var(--ink-strong);
+    box-shadow: none;
+}
+
+#main {
+    max-width: 1120px;
+    margin-top: 2.2rem;
+    padding: 0 1rem 2rem;
+}
+
+.page__content {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.academic-profile {
+    grid-template-columns: 172px minmax(0, 1fr);
+    gap: 2.25rem;
+    margin-bottom: 3.25rem;
+    padding: 2.35rem 2.5rem;
+    border: 1px solid #dfe5ee;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(27, 43, 70, .06);
+}
+
+.academic-profile:before {
+    height: 4px;
+    background: var(--accent);
+}
+
+.academic-profile__portrait:after {
+    display: none;
+}
+
+.academic-profile__portrait img {
+    border-radius: 8px;
+    box-shadow: 0 7px 18px rgba(27, 43, 70, .12);
+}
+
+.academic-profile__eyebrow {
+    margin: 0 0 .55rem !important;
+    color: var(--accent);
+    font-size: .7rem !important;
+    font-weight: 800;
+    letter-spacing: .12em;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.academic-profile h1 {
+    font-size: 3rem;
+    letter-spacing: -.035em;
+}
+
+.academic-profile h1 span {
+    color: #7b8798;
+    font-size: .34em;
+}
+
+.academic-profile__intro,
+.academic-profile__note {
+    max-width: 700px;
+}
+
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .45rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.research-tags li {
+    padding: .32rem .58rem;
+    border: 1px solid #dce4f0;
+    border-radius: 999px;
+    color: #53627a;
+    background: #f8fafd;
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.academic-profile__links {
+    gap: .45rem;
+    margin-top: 1.15rem;
+}
+
+.academic-profile__links a {
+    padding: .5rem .68rem;
+    border-radius: 6px;
+    color: #435675;
+    background: #fff;
+    font-size: .72rem;
+}
+
+.academic-profile__links a:hover,
+.academic-profile__links a:focus-visible {
+    color: var(--accent-deep);
+    background: #f4f7fd;
+    box-shadow: none;
+    transform: none;
+}
+
+.section-heading {
+    margin-top: 3.15rem;
+    padding-bottom: .6rem;
+    color: var(--ink-strong) !important;
+    font-size: 1.25rem;
+    letter-spacing: -.01em;
+}
+
+.section-heading:after {
+    width: 42px;
+    height: 2px;
+    background: var(--accent);
+}
+
+.news-item {
+    grid-template-columns: 95px minmax(0, 1fr);
+    gap: 1rem;
+    margin: 0;
+    padding: .82rem .2rem;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+}
+
+.news-item:hover {
+    border-color: var(--line);
+    background: #fff;
+    box-shadow: none;
+    transform: none;
+}
+
+.news-flame {
+    display: none;
+}
+
+.news-item .news-status {
+    margin-right: .35rem;
+    padding: 0;
+    border: 0;
+    color: #16735a;
+    background: transparent;
+    font-size: .7rem;
+}
+
+.experience-entry {
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 1.5rem;
+    margin: 0;
+    padding: 1.2rem 0;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.experience-entry:hover {
+    border-color: var(--line);
+    box-shadow: none;
+    transform: none;
+}
+
+.experience-logo {
+    min-height: 104px;
+    border: 1px solid #e2e7ef;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: none;
+}
+
+.experience-entry:hover .experience-logo {
+    box-shadow: none;
+    transform: none;
+}
+
+.experience-logo:before {
+    width: 3px;
+}
+
+.paper-box {
+    gap: 1.45rem;
+    margin: .95rem 0 1.15rem;
+    padding: .85rem 1rem .85rem .85rem;
+    border-radius: 8px;
+    border-color: #dfe5ee;
+    background: #fff;
+    box-shadow: 0 5px 16px rgba(27, 43, 70, .045);
+}
+
+.paper-box:hover {
+    border-color: #c8d4e8;
+    background: #fff;
+    box-shadow: 0 8px 22px rgba(27, 43, 70, .08);
+    transform: translateY(-2px);
+}
+
+.paper-box .paper-media {
+    min-height: 190px;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.paper-box .paper-box-image img {
+    border-radius: 4px;
+}
+
+.paper-title {
+    font-size: 1.08rem;
+    line-height: 1.42;
+}
+
+.paper-title a {
+    color: #244e9f;
+}
+
+.paper-links a,
+.paper-abstract summary {
+    border-radius: 6px;
+}
+
+.footer_site {
+    max-width: 1120px;
+    margin-top: 2.5rem;
+    padding: 1.25rem 1rem 2rem;
+    border-top-color: #e3e8f0;
+}
+
+@media (max-width: 767px) {
+    #main {
+        margin-top: 1.2rem;
+        padding-right: .8rem;
+        padding-left: .8rem;
+    }
+
+    .academic-profile {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding: 1.4rem;
+    }
+
+    .academic-profile__portrait {
+        width: 132px;
+    }
+
+    .academic-profile h1 {
+        font-size: 2.25rem;
+    }
+
+    .academic-profile h1 span {
+        display: block;
+        margin: .28rem 0 0;
+        font-size: .42em;
+    }
+
+    .academic-profile__links {
+        display: flex;
+    }
+
+    .academic-profile__links a {
+        flex: 1 1 calc(50% - .45rem);
+        justify-content: center;
+    }
+
+    .news-item {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: .65rem;
+        padding: .72rem .1rem;
+    }
+
+    .experience-entry {
+        grid-template-columns: 1fr;
+        gap: .85rem;
+        padding: 1rem 0;
+    }
+
+    .experience-logo {
+        min-height: 92px;
+    }
+
+    .paper-box {
+        grid-template-columns: 1fr;
+        gap: .85rem;
+        padding: .72rem;
+    }
+
+    .paper-box .paper-media {
+        min-height: 0;
+    }
+}

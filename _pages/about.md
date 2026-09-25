@@ -16,14 +16,21 @@ redirect_from:
     <img src="/images/me/cat.jpg" alt="Haobo Zhang" width="220" height="220">
   </div>
   <div class="academic-profile__content">
-    <h1 id="intro-title">Haobo Zhang <span>张皓博</span></h1>
+    <p class="academic-profile__eyebrow">Undergraduate researcher · Hangzhou, China</p>
+    <h1 id="intro-title">Haobo Zhang <span lang="zh-CN">张皓博</span></h1>
     <p class="academic-profile__affiliation"><i class="fas fa-university" aria-hidden="true"></i> Zhejiang University of Technology</p>
     <p class="academic-profile__intro">I am an undergraduate student majoring in Intelligent Science and Technology. My current work explores model fingerprinting, watermarking, and alignment, while my broader interests continue to evolve with new questions in artificial intelligence.</p>
     <p class="academic-profile__note">I enjoy turning research ideas into practical systems and welcome discussions and collaboration.</p>
+    <ul class="research-tags" aria-label="Research interests">
+      <li>Model fingerprinting</li>
+      <li>Watermarking</li>
+      <li>Trustworthy AI</li>
+    </ul>
     <nav class="academic-profile__links" aria-label="Profile links">
       <a href="mailto:zhanghaobo@zjut.edu.cn"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
       <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=zh-CN&amp;user=sY6udPcAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
       <a href="https://github.com/zhb0119"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      <a href="/files/haobo-zhang-resume.pdf"><i class="fas fa-file-pdf" aria-hidden="true"></i> CV</a>
     </nav>
   </div>
 </section>
