@@ -1,5 +1,7 @@
-<script src="assets/js/main.min.js"></script>
-<script src="assets/js/home.js"></script>
+{% if page.author_profile %}
+<script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+{% include fetch_google_scholar_stats.html %}
+{% endif %}
+<script src="{{ '/assets/js/home.js' | relative_url }}" defer></script>
 
 {% include analytics.html %}
-{% include fetch_google_scholar_stats.html %}

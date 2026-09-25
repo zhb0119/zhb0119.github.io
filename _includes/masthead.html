@@ -1,18 +1,15 @@
-<div class="masthead">
+<header class="masthead">
   <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            <a class="site-wordmark" href="{{ '/' | relative_url }}" target="_self" aria-label="Haobo Zhang home"><span>HZ</span> Haobo Zhang</a>
-          </li>
-          {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}" target="_self">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
+    <a class="site-wordmark" href="{{ '/' | relative_url }}" aria-label="Haobo Zhang home">hz<span class="wordmark-dot">.</span></a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul class="site-nav__links">
+        {% for link in site.data.navigation.main %}
+          <li><a href="{{ link.url | relative_url }}" target="_self">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
   </div>
-</div>
+</header>
