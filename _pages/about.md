@@ -178,9 +178,7 @@ redirect_from:
 </div>
 </section>
 
-<section aria-labelledby="visitors-title" class="editorial-section section-visitors" id="visitors" data-statistics-host="zhb0119.github.io">
-  <div class="section-header"><span aria-hidden="true" class="section-index">06</span><h2 class="section-title" id="visitors-title">Visitors</h2></div>
-  <div class="section-body">
+<aside aria-label="Visitor statistics" class="section-visitors" id="visitors" data-statistics-host="zhb0119.github.io">
     <div class="visitor-panel">
       <figure class="visitor-map">
         <img src="{{ '/images/visitors/world-map.svg' | relative_url }}" width="840" height="370" alt="Decorative world map; visitor locations are not shown." loading="lazy" decoding="async"/>
@@ -192,8 +190,7 @@ redirect_from:
       </dl>
       <div class="visitor-caption"><p class="visitor-status" role="status" aria-live="polite">Enable JavaScript to view statistics.</p><span class="visitor-provider">Statistics by Busuanzi</span></div>
     </div>
-  </div>
-</section>
+</aside>
 
 <dialog class="figure-dialog" id="figure-dialog" aria-labelledby="figure-dialog-title">
   <div class="figure-dialog-header"><h2 id="figure-dialog-title">Research figure</h2><button class="figure-dialog-close" type="button" aria-label="Close enlarged figure" autofocus><span aria-hidden="true">×</span></button></div>
