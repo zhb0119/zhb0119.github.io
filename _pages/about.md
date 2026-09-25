@@ -34,10 +34,17 @@ redirect_from:
 
 <ul class="news-list" aria-label="Recent news">
   <li class="news-item">
+    <span class="news-flame" aria-hidden="true"><i class="fas fa-fire"></i></span>
+    <time datetime="2026-09">Sep 2026</time>
+    <span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2604.05502">AttnDiff</a> to <strong class="news-venue">NeurIPS 2026</strong>.</span>
+  </li>
+  <li class="news-item">
+    <span class="news-flame" aria-hidden="true"><i class="fas fa-fire"></i></span>
     <time datetime="2026-08">Aug 2026</time>
     <span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2605.25002">MemMark</a> to <strong class="news-venue">Findings of ACL: EMNLP 2026</strong>.</span>
   </li>
   <li class="news-item">
+    <span class="news-flame" aria-hidden="true"><i class="fas fa-fire"></i></span>
     <time datetime="2026-01">Jan 2026</time>
     <span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2601.08189">ForgetMark</a> to <strong class="news-venue">ICASSP 2026</strong>.</span>
   </li>
@@ -67,11 +74,11 @@ redirect_from:
 
 <h2 class="section-heading section-heading--publications"><i class="fas fa-book-open section-icon section-icon--publications" aria-hidden="true"></i> Selected Publications</h2>
 
-<article class="paper-box paper-box--review"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--review">NeurIPS 2026 - Under Review</div><img src="images/paper/attndiff.png" alt="AttnDiff method overview"></div></div>
+<article class="paper-box paper-box--accepted"><div class="paper-box-image"><div class="paper-media"><div class="badge badge--accepted">NeurIPS 2026 - Accepted</div><img src="images/paper/attndiff.png" alt="AttnDiff method overview"></div></div>
 <div class="paper-box-text">
 <h3 class="paper-title"><a href="https://arxiv.org/abs/2604.05502">AttnDiff: Attention-based Differential Fingerprinting for Large Language Models</a></h3>
 <p class="paper-authors"><strong>Haobo Zhang</strong>, Zhenhua Xu, Junxian Li, Shangfeng Sheng, Dezhang Kong, Meng Han.</p>
-<p class="paper-venue"><em>Submitted to the Conference on Neural Information Processing Systems (NeurIPS), 2026.</em></p>
+<p class="paper-venue"><em>Conference on Neural Information Processing Systems (NeurIPS), 2026.</em></p>
 <div class="paper-controls"><p class="paper-links"><a href="https://arxiv.org/abs/2604.05502">arXiv <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <details class="paper-abstract"><summary>Abstract</summary><p>Protecting the intellectual property of open-weight large language models (LLMs) requires verifying whether a suspect model is derived from a victim model despite common laundering operations such as fine-tuning (including PPO/DPO), pruning/compression, and model merging. We propose AttnDiff, a data-efficient white-box framework that extracts fingerprints from models via intrinsic information-routing behavior. AttnDiff probes minimally edited prompt pairs that induce controlled semantic conflicts, captures differential attention patterns, summarizes them with compact spectral descriptors, and compares models using CKA. Across Llama-2/3 and Qwen2.5 (3B-14B) and additional open-source families, it yields high similarity for related derivatives while separating unrelated model families (e.g., $>0.98$ vs. $&lt;0.22$ with $M=60$ probes). With 5-60 multi-domain probes, it supports practical provenance verification and accountability.</p></details></div>
 </div></article>
