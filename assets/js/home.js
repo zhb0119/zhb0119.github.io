@@ -74,6 +74,49 @@
   updateActiveLink();
 })();
 
+// Only the configured public hostname contributes to the shared visitor counts.
+(function () {
+  "use strict";
+  var section = document.getElementById("visitors");
+  if (!section) return;
+  var status = section.querySelector(".visitor-status");
+  var values = [document.getElementById("busuanzi_value_site_uv"), document.getElementById("busuanzi_value_site_pv")];
+  if (window.location.hostname !== section.getAttribute("data-statistics-host")) {
+    section.setAttribute("data-statistics-state", "preview");
+    status.textContent = "Statistics are available on the live site.";
+    return;
+  }
+
+  section.setAttribute("data-statistics-state", "loading");
+  status.textContent = "Loading visitor statistics…";
+  function unavailable() {
+    if (section.getAttribute("data-statistics-state") === "live") return;
+    section.setAttribute("data-statistics-state", "unavailable");
+    status.textContent = "Statistics are temporarily unavailable.";
+  }
+  var timeout = window.setTimeout(unavailable, 12000);
+  var observer = new MutationObserver(function () {
+    var counts = values.map(function (element) { return element.textContent.trim(); });
+    if (!counts.every(function (value) { return /^\d+$/.test(value); })) return;
+    observer.disconnect();
+    window.clearTimeout(timeout);
+    values.forEach(function (element, index) {
+      element.textContent = counts[index].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      element.removeAttribute("aria-label");
+    });
+    section.setAttribute("data-statistics-state", "live");
+    status.textContent = "Statistics updated.";
+  });
+  observer.observe(section.querySelector(".visitor-stats"), { childList: true, subtree: true, characterData: true });
+
+  var script = document.createElement("script");
+  script.src = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js";
+  script.async = true;
+  script.referrerPolicy = "no-referrer-when-downgrade";
+  script.onerror = function () { window.clearTimeout(timeout); unavailable(); };
+  document.head.appendChild(script);
+})();
+
 // Native dialogs provide keyboard focus containment and Escape dismissal.
 (function () {
   "use strict";
