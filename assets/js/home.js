@@ -40,7 +40,7 @@
     ticking = false;
     if (!sections.length) return;
     var active = sections[0];
-    var marker = window.innerWidth <= 640 ? 100 : 120;
+    var marker = window.innerWidth <= 760 ? 100 : 120;
     sections.forEach(function (item) {
       if (item.section.getBoundingClientRect().top <= marker) active = item;
     });
@@ -63,7 +63,7 @@
 
   window.addEventListener("scroll", requestUpdate, { passive: true });
   window.addEventListener("resize", function () {
-    if (window.innerWidth > 640) closeMenu();
+    if (window.innerWidth > 760) closeMenu();
     requestUpdate();
   });
   window.addEventListener("load", requestUpdate);

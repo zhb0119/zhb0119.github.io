@@ -100,9 +100,9 @@ redirect_from:
 <div class="section-body">
 <article class="experience-entry">
 <div aria-label="Zhejiang University and GenTel" class="experience-logo experience-logo--joint experience-logo--collaboration">
-<span class="joint-logo-slot joint-logo-slot--zju"><img alt="Zhejiang University logo" decoding="async" height="337" loading="lazy" src="{{ '/images/logos/zju.png' | relative_url }}" width="993"/></span>
+<span class="joint-logo-slot joint-logo-slot--zju"><img alt="Zhejiang University logo" decoding="async" height="299" loading="lazy" src="{{ '/images/logos/zju-trimmed.png' | relative_url }}" width="952"/></span>
 <span aria-hidden="true" class="joint-logo-divider"></span>
-<a aria-label="Visit the GenTel website" class="joint-logo-slot joint-logo-slot--gentel" href="https://www.gentel.com/en/home" rel="noopener noreferrer" target="_blank"><img alt="GenTel logo" decoding="async" height="420" loading="lazy" src="{{ '/images/logos/gentel.png' | relative_url }}" width="404"/></a>
+<a aria-label="Visit the GenTel website" class="joint-logo-slot joint-logo-slot--gentel" href="https://www.gentel.com/en/home" rel="noopener noreferrer" target="_blank"><img alt="GenTel logo" decoding="async" height="410" loading="lazy" src="{{ '/images/logos/gentel-trimmed.png' | relative_url }}" width="394"/></a>
 </div>
 <div class="experience-content">
 <div class="experience-heading">
@@ -119,7 +119,7 @@ redirect_from:
 <div class="section-header"><span aria-hidden="true" class="section-index">04</span><h2 class="section-title" id="education-title">Education</h2></div>
 <div class="section-body">
 <article class="experience-entry">
-<div class="experience-logo experience-logo--education experience-logo--ruc"><img alt="Renmin University of China logo" decoding="async" height="266" loading="lazy" src="{{ '/images/logos/ruc.png' | relative_url }}" width="386"/></div>
+<div class="experience-logo experience-logo--education experience-logo--ruc"><img alt="Renmin University of China logo" decoding="async" height="251" loading="lazy" src="{{ '/images/logos/ruc-trimmed.png' | relative_url }}" width="368"/></div>
 <div class="experience-content">
 <div class="experience-heading">
 <h3>Renmin University of China</h3>
@@ -129,7 +129,7 @@ redirect_from:
 </div>
 </article>
 <article class="experience-entry">
-<div class="experience-logo experience-logo--education experience-logo--zjut"><img alt="Zhejiang University of Technology logo" decoding="async" height="718" loading="lazy" src="{{ '/images/logos/zjut.png' | relative_url }}" width="966"/></div>
+<div class="experience-logo experience-logo--education experience-logo--zjut"><img alt="Zhejiang University of Technology logo" decoding="async" height="676" loading="lazy" src="{{ '/images/logos/zjut-trimmed.png' | relative_url }}" width="924"/></div>
 <div class="experience-content">
 <div class="experience-heading">
 <h3>Zhejiang University of Technology</h3>
@@ -156,7 +156,7 @@ redirect_from:
 </article>
 <article class="award-card">
 <div class="award-card__image">
-<img alt="National Undergraduate Electronic Design Contest logo" decoding="async" height="621" loading="lazy" src="{{ '/images/awards/it.png' | relative_url }}" width="1060"/>
+<img alt="National Undergraduate Electronic Design Contest logo" decoding="async" height="552" loading="lazy" src="{{ '/images/awards/it-trimmed.png' | relative_url }}" width="884"/>
 </div>
 <div class="award-card__content">
 <p class="award-card__prize award-card__prize--silver">National Second Prize</p>
