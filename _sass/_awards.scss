@@ -1,0 +1,120 @@
+/* Competition awards: consistent logo areas and compact, readable captions. */
+.section-heading .section-icon--awards {
+    color: #95691b;
+    background: #fbf3e2;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.1rem;
+}
+
+.award-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+    transition: border-color .18s ease, box-shadow .18s ease;
+
+    &:hover,
+    &:focus-within {
+        border-color: #c8d4e8;
+        box-shadow: 0 6px 18px rgba(27, 43, 70, .055);
+    }
+
+    a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+        border-radius: 2px;
+    }
+}
+
+.award-card__image {
+    display: flex;
+    height: 166px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.15rem;
+    padding: 1.15rem 0;
+    border-bottom: 1px solid #edf0f5;
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        height: 126px;
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+.award-card__content {
+    padding: 1.1rem 1.15rem 1.25rem;
+}
+
+.award-card .award-card__prize {
+    display: inline-block;
+    margin: 0 0 .7rem;
+    padding: .3rem .55rem;
+    border: 1px solid #ecdcb8;
+    border-radius: 4px;
+    color: #805615;
+    background: #fcf6e9;
+    font-size: .7rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.award-card .award-card__prize--silver {
+    border-color: #dce3ed;
+    color: #52627b;
+    background: #f2f5f9;
+}
+
+.award-card__title {
+    margin: 0;
+    color: var(--ink-strong);
+    font-size: .95rem;
+    font-weight: 650;
+    line-height: 1.5;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:hover,
+    a:focus-visible {
+        color: var(--accent-deep);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+}
+
+.award-card .award-card__detail {
+    margin: .6rem 0 0;
+    color: #66748a;
+    font-size: .76rem;
+    line-height: 1.6;
+
+    a {
+        color: inherit;
+        text-underline-offset: 3px;
+    }
+}
+
+@media (max-width: 767px) {
+    .awards-grid {
+        grid-template-columns: 1fr;
+        gap: .85rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .award-card {
+        transition: none;
+    }
+}

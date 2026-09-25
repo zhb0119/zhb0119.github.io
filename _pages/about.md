@@ -141,56 +141,42 @@ redirect_from:
     </div>
     <p class="experience-role">B.Eng. in Intelligent Science and Technology</p>
     <p class="experience-description">College of Information Engineering</p>
-    <details class="education-details">
-      <summary>Selected honors</summary>
-      <div class="education-details-content">
-        <div class="honors-grid">
-          <section class="honor-group">
-            <h4>Academic</h4>
-            <ul>
-              <li>GPA <strong class="honor-highlight">4.0/5.0</strong>; ranked <strong class="honor-highlight">1st/48 (top 2%)</strong>.</li>
-              <li>CET-6 514; CET-4 539.</li>
-            </ul>
-          </section>
-          <section class="honor-group">
-            <h4>Scholarships</h4>
-            <ul>
-              <li><strong class="honor-award">Provincial Government Scholarship</strong> &times;2 (top 10%).</li>
-              <li>University Outstanding Student First-Class Scholarship &times;2; Learning First-Class Scholarship &times;2 (top 3%).</li>
-              <li>Outstanding Communist Youth League Member.</li>
-            </ul>
-          </section>
-          <section class="honor-group">
-            <h4>Leadership</h4>
-            <ul>
-              <li>Secretary-General, Information Innovation and Entrepreneurship Center.</li>
-              <li>Head, Practice Training Department; Study Committee Member, Intelligent Science and Technology 2301.</li>
-            </ul>
-          </section>
-          <section class="honor-group honor-group--wide">
-            <h4>Competitions &amp; projects</h4>
-            <ul>
-              <li><strong class="honor-award">National First Prize</strong>, <a class="honor-link" href="http://smartcarrace.com/">National Undergraduate Smart Car Competition</a> (<a class="honor-link" href="https://www.d-robotics.cc/">D-Robotics</a> Smart Healthcare Track).</li>
-              <li><strong class="honor-award">National Second Prize</strong>, <a class="honor-link" href="http://nuedc.xjtu.edu.cn/">TI Cup National Undergraduate Electronic Design Competition</a> (Problem E).</li>
-              <li><strong class="honor-award">National First Prize</strong>, <a class="honor-link" href="https://www.cnrobo.com/">China Robot Competition &amp; RoboCup China</a>.</li>
-            </ul>
-            <div class="competition-gallery" aria-label="Competition project photos">
-              <figure class="competition-card">
-                <a href="/images/competition/image%20copy.png"><img src="/images/competition/image%20copy.png" alt="Smart healthcare autonomous vehicle prototype" loading="lazy" decoding="async"></a>
-              </figure>
-              <figure class="competition-card">
-                <a href="/images/competition/image.png"><img src="/images/competition/image.png" alt="Autonomous vehicle navigating a competition track" loading="lazy" decoding="async"></a>
-              </figure>
-              <figure class="competition-card">
-                <a href="/images/competition/%E8%B4%9F%E5%8E%8B%E6%B6%B5%E9%81%93.jpg"><img src="/images/competition/%E8%B4%9F%E5%8E%8B%E6%B6%B5%E9%81%93.jpg" alt="Negative-pressure duct robot prototype" loading="lazy" decoding="async"></a>
-              </figure>
-              <figure class="competition-card">
-                <a href="/images/competition/%E8%B4%9F%E5%8E%8B%E9%A3%8E%E6%89%87.jpg"><img src="/images/competition/%E8%B4%9F%E5%8E%8B%E9%A3%8E%E6%89%87.jpg" alt="Negative-pressure fan robot chassis" loading="lazy" decoding="async"></a>
-              </figure>
-            </div>
-          </section>
-        </div>
-      </div>
-    </details>
   </div>
 </article>
+
+<span class="anchor" id="awards"></span>
+
+<section class="awards-section" aria-labelledby="awards-title">
+  <h2 class="section-heading section-heading--awards" id="awards-title"><i class="fas fa-trophy section-icon section-icon--awards" aria-hidden="true"></i> Awards</h2>
+  <div class="awards-grid">
+    <article class="award-card">
+      <div class="award-card__image">
+        <img src="{{ '/images/awards/smartcar.png' | relative_url }}" alt="National Undergraduate Smart Car Competition logo" loading="lazy" decoding="async">
+      </div>
+      <div class="award-card__content">
+        <p class="award-card__prize">National First Prize</p>
+        <h3 class="award-card__title"><a href="http://smartcarrace.com/">National Undergraduate Smart Car Competition</a></h3>
+        <p class="award-card__detail"><a href="https://www.d-robotics.cc/">D-Robotics</a> · Smart Healthcare Track</p>
+      </div>
+    </article>
+    <article class="award-card">
+      <div class="award-card__image">
+        <img src="{{ '/images/awards/it.png' | relative_url }}" alt="National Undergraduate Electronic Design Contest logo" loading="lazy" decoding="async">
+      </div>
+      <div class="award-card__content">
+        <p class="award-card__prize award-card__prize--silver">National Second Prize</p>
+        <h3 class="award-card__title"><a href="http://nuedc.xjtu.edu.cn/">TI Cup National Undergraduate Electronic Design Competition</a></h3>
+        <p class="award-card__detail">Problem E</p>
+      </div>
+    </article>
+    <article class="award-card">
+      <div class="award-card__image">
+        <img src="{{ '/images/awards/robocup.png' | relative_url }}" alt="RoboCup logo" loading="lazy" decoding="async">
+      </div>
+      <div class="award-card__content">
+        <p class="award-card__prize">National First Prize</p>
+        <h3 class="award-card__title"><a href="https://www.cnrobo.com/">China Robot Competition &amp; RoboCup China</a></h3>
+      </div>
+    </article>
+  </div>
+</section>
