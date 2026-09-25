@@ -11,8 +11,7 @@ redirect_from:
 
 <section aria-labelledby="intro-title" class="hero" id="about">
 <div class="hero-copy">
-<p class="eyebrow hero-eyebrow"><span aria-hidden="true" class="status-dot"></span> Intelligent Science &amp; Technology</p>
-<h1 id="intro-title">Haobo Zhang<span class="hero-name-cn" lang="zh-CN">张皓博</span></h1>
+<h1 id="intro-title"><span class="hero-name">Haobo Zhang</span><span class="hero-name-meta"><span class="hero-name-cn" lang="zh-CN">张皓博</span><span class="hero-greeting"><span class="wave-hand" aria-hidden="true">👋</span><span>Hi</span></span></span></h1>
 <p class="hero-affiliation">Undergraduate at <span>Zhejiang University of Technology</span></p>
 <p class="academic-profile__intro">I am an undergraduate student majoring in Intelligent Science and Technology. My current work explores model fingerprinting, watermarking, and alignment, while my broader interests continue to evolve with new questions in artificial intelligence.</p>
 <p class="academic-profile__note">I enjoy turning research ideas into practical systems and welcome discussions and collaboration.</p>
@@ -35,19 +34,22 @@ redirect_from:
 </ul></div>
 </section>
 <section aria-labelledby="news-title" class="editorial-section section-news" id="news">
-<div class="section-header"><span aria-hidden="true" class="section-index">01</span><h2 class="section-title" id="news-title">News</h2></div>
+<div class="section-header"><span aria-hidden="true" class="section-index">01</span><h2 class="section-title" id="news-title"><i class="fas fa-bullhorn news-heading-icon" aria-hidden="true"></i> News</h2></div>
 <div class="section-body">
 <ul aria-label="Recent news" class="news-list">
 <li class="news-item news-item--neurips">
-<time datetime="2026-09">Sep 2026</time>
+<time datetime="2026-09"><span class="news-month">Sep</span> <span class="news-year">2026</span></time>
+<span class="news-marker" aria-hidden="true"><i class="fas fa-check"></i></span>
 <span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2604.05502" rel="noopener noreferrer" target="_blank">AttnDiff</a> to <strong class="news-venue">NeurIPS 2026</strong>.</span>
 </li>
 <li class="news-item news-item--emnlp">
-<time datetime="2026-08">Aug 2026</time>
+<time datetime="2026-08"><span class="news-month">Aug</span> <span class="news-year">2026</span></time>
+<span class="news-marker" aria-hidden="true"><i class="fas fa-check"></i></span>
 <span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2605.25002" rel="noopener noreferrer" target="_blank">MemMark</a> to <strong class="news-venue">Findings of ACL: EMNLP 2026</strong>.</span>
 </li>
 <li class="news-item news-item--icassp">
-<time datetime="2026-01">Jan 2026</time>
+<time datetime="2026-01"><span class="news-month">Jan</span> <span class="news-year">2026</span></time>
+<span class="news-marker" aria-hidden="true"><i class="fas fa-check"></i></span>
 <span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2601.08189" rel="noopener noreferrer" target="_blank">ForgetMark</a> to <strong class="news-venue">ICASSP 2026</strong>.</span>
 </li>
 </ul>
