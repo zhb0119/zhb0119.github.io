@@ -27,11 +27,19 @@ redirect_from:
 </div>
 <figcaption><span class="portrait-location"><i aria-hidden="true" class="fas fa-map-marker-alt"></i> Hangzhou, China</span><span aria-hidden="true" class="portrait-signature">h.z.</span></figcaption>
 </figure>
-<div class="research-strip"><span class="eyebrow">Research interests</span><ul aria-label="Research interests" class="research-tags">
-<li>Model fingerprinting</li>
-<li>Watermarking</li>
-<li>Trustworthy AI</li>
-</ul></div>
+<section aria-labelledby="research-title" class="research-strip">
+<h2 class="research-heading eyebrow" id="research-title"><i aria-hidden="true" class="fas fa-microscope"></i> Research interests</h2>
+<ul class="research-areas">
+<li class="research-area">
+<span aria-hidden="true" class="research-area__icon"><i class="fas fa-shield-alt"></i></span>
+<div class="research-area__content"><div class="research-area__heading"><h3>LLM Safety</h3><span class="research-area__period"><time datetime="2025">2025</time> - Present</span></div><p>LLM Watermark / LLM Fingerprint</p></div>
+</li>
+<li class="research-area">
+<span aria-hidden="true" class="research-area__icon"><i class="fas fa-brain"></i></span>
+<div class="research-area__content"><div class="research-area__heading"><h3>Post-Training</h3><span class="research-area__period"><time datetime="2025">2025</time> - Present</span></div><p>Alignment &amp; On-Policy Distillation</p></div>
+</li>
+</ul>
+</section>
 </section>
 <section aria-labelledby="news-title" class="editorial-section section-news" id="news">
 <div class="section-header"><span aria-hidden="true" class="section-index">01</span><h2 class="section-title" id="news-title"><i class="fas fa-bullhorn news-heading-icon" aria-hidden="true"></i> News</h2></div>
