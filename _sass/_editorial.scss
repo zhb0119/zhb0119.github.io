@@ -98,26 +98,20 @@ sup { font-size: .7em; }
 .section-index { display: block; margin: 1px 0 10px; color: #7a846f; font-size: 13px; font-weight: 500; letter-spacing: 1.8px; }
 .section-title { font: 32px/1.2 var(--serif); letter-spacing: -.7px; }
 .section-aside { color: var(--muted); font-size: 14px; letter-spacing: .7px; }
-/* News: compact dates and icon nodes on one continuous timeline. */
-.section-news > .section-header { padding-top: 7px; }
-.section-news .section-title { display: flex; align-items: center; gap: 11px; }
-.news-heading-icon { color: #63805c; font-size: 19px; }
-.news-list { --news-date: 82px; --news-gap: 16px; --news-node: 26px; padding: 0; list-style: none; }
-.news-item { position: relative; display: grid; grid-template-columns: var(--news-date) var(--news-node) minmax(0,1fr); align-items: start; gap: var(--news-gap); padding: 12px 0; font-size: 16px; line-height: 1.7; }
-.news-item::before { position: absolute; top: 0; bottom: 0; left: calc(var(--news-date) + var(--news-gap) + var(--news-node) / 2); width: 1px; background: #ccd9c3; content: ""; }
-.news-item:first-child::before { top: 25px; }
-.news-item:last-child::before { height: 25px; bottom: auto; }
-.news-item time { padding-top: 3px; color: #75806d; font-size: 13px; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.news-month { color: #56674e; font-weight: 500; }
-.news-year { color: #75806d; }
-.news-marker { position: relative; z-index: 1; display: grid; width: var(--news-node); height: var(--news-node); place-items: center; border: 4px solid var(--paper); border-radius: 50%; color: #628053; background: #e3ecdc; font-size: 9px; }
-.news-item:first-child .news-marker { color: white; background: var(--green); }
-.news-item:first-child time { color: var(--green); }
-.news-copy { min-width: 0; color: #64715b; }
-.news-status { color: #64715b; font-weight: 400; }
-.news-paper { padding-block: 4px; color: #284e37; font-size: inherit; font-weight: 650; text-decoration: underline; text-decoration-color: #bacab0; text-decoration-thickness: 1px; }
-.news-paper:hover { text-decoration-color: var(--green); }
-.news-venue { color: #34583e; font-size: inherit; font-weight: 600; }
+/* News: a compact announcement board inspired by the reference. */
+.section-news { display: block; }
+.section-news > .section-header { display: flex; align-items: baseline; gap: 17px; margin-bottom: 20px; }
+.section-news .section-index { margin: 0; }
+.section-news .section-title { font-family: "Segoe Print", "Bradley Hand", cursive; font-size: 34px; font-style: italic; letter-spacing: -1px; }
+.news-list { padding: 15px 20px; border: 1px solid #d8d5cb; border-radius: 6px; background: #fffefa; list-style: none; }
+.news-item { display: grid; grid-template-columns: 73px 18px minmax(0,1fr); align-items: baseline; column-gap: 13px; padding: 6px 0; font-size: 15px; line-height: 1.7; }
+.news-item time { align-self: start; margin-top: 3px; padding: 2px 6px; border: 1px solid #d7d3c9; border-radius: 3px; color: #64655f; background: #f0eee8; font: 12px/1.35 Consolas, "SFMono-Regular", monospace; font-variant-numeric: tabular-nums; text-align: center; white-space: nowrap; }
+.news-marker { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 15px; }
+.news-copy { min-width: 0; color: #424a45; overflow-wrap: break-word; }
+.news-copy strong { font-weight: 650; }
+.news-venue { color: #245edb; font-weight: 500; text-decoration-thickness: 1px; white-space: nowrap; }
+.news-venue:hover { color: #1745a5; }
+.news-detail { color: #687067; }
 
 /* Publications: framed research figures and softly raised editorial cards. */
 .section-publications { display: block; padding-top: 42px; padding-bottom: 42px; }
@@ -275,8 +269,6 @@ html.figure-is-open { overflow: hidden; }
   .paper-media { height: 146px; padding: 3px; }
   .figure-caption { gap: 7px; font-size: 12px; }
   .paper-title { font-size: 23px; }
-  .news-list { --news-date: 78px; --news-gap: 10px; }
-  .news-item { font-size: 15px; }
   .experience-entry { grid-template-columns: 132px minmax(0,1fr); gap: 22px; }
   .experience-logo { min-height: 100px; }
   .section-education .experience-entry { grid-template-columns: 168px minmax(0,1fr); }
@@ -334,17 +326,12 @@ html.figure-is-open { overflow: hidden; }
   .section-header { display: flex; align-items: baseline; gap: 12px; margin-bottom: 23px; }
   .section-index { margin: 0; font-size: 12px; }
   .section-title { font-size: 29px; }
-  .section-news > .section-header { padding-top: 0; }
-  .section-news .section-header { margin-bottom: 14px; }
-  .news-heading-icon { font-size: 18px; }
-  .news-list { --news-node: 24px; --news-gap: 12px; }
-  .news-item { grid-template-columns: var(--news-node) minmax(0,1fr); row-gap: 3px; padding-block: 10px; font-size: 15px; line-height: 1.75; }
-  .news-item time { grid-column: 2; grid-row: 1; padding-top: 0; font-size: 13px; }
-  .news-marker { grid-column: 1; grid-row: 1 / 3; font-size: 8px; }
-  .news-copy { grid-column: 2; grid-row: 2; }
-  .news-item::before { left: calc(var(--news-node) / 2); }
-  .news-item:first-child::before { top: 22px; }
-  .news-item:last-child::before { height: 22px; }
+  .section-news > .section-header { gap: 12px; margin-bottom: 16px; }
+  .section-news .section-title { font-size: 30px; }
+  .news-list { padding: 12px; }
+  .news-item { grid-template-columns: 65px 16px minmax(0,1fr); column-gap: 8px; padding-block: 7px; font-size: 14px; }
+  .news-item time { padding-inline: 3px; font-size: 11px; }
+  .news-marker { font-size: 14px; }
   .section-publications { padding-bottom: 30px; }
   .section-publications .section-header { gap: 12px; margin: 0; padding-bottom: 24px; flex-wrap: wrap; }
   .section-publications .section-title { font-size: 29px; }

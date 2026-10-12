@@ -42,23 +42,23 @@ redirect_from:
 </section>
 </section>
 <section aria-labelledby="news-title" class="editorial-section section-news" id="news">
-<div class="section-header"><span aria-hidden="true" class="section-index">01</span><h2 class="section-title" id="news-title"><i class="fas fa-bullhorn news-heading-icon" aria-hidden="true"></i> News</h2></div>
+<div class="section-header"><span aria-hidden="true" class="section-index">01</span><h2 class="section-title" id="news-title">News</h2></div>
 <div class="section-body">
 <ul aria-label="Recent news" class="news-list">
-<li class="news-item news-item--neurips">
-<time datetime="2026-09"><span class="news-month">Sep</span> <span class="news-year">2026</span></time>
-<span class="news-marker" aria-hidden="true"><i class="fas fa-check"></i></span>
-<span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2604.05502" rel="noopener noreferrer" target="_blank">AttnDiff</a> to <strong class="news-venue">NeurIPS 2026</strong>.</span>
+<li class="news-item">
+<time datetime="2026-09" aria-label="September 2026">09/2026</time>
+<span class="news-marker" aria-hidden="true">🎉</span>
+<span class="news-copy"><strong>AttnDiff</strong> accepted at <a class="news-venue" href="https://arxiv.org/abs/2604.05502" rel="noopener noreferrer" target="_blank">NeurIPS 2026</a>!</span>
 </li>
-<li class="news-item news-item--emnlp">
-<time datetime="2026-08"><span class="news-month">Aug</span> <span class="news-year">2026</span></time>
-<span class="news-marker" aria-hidden="true"><i class="fas fa-check"></i></span>
-<span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2605.25002" rel="noopener noreferrer" target="_blank">MemMark</a> to <strong class="news-venue">Findings of ACL: EMNLP 2026</strong>.</span>
+<li class="news-item">
+<time datetime="2026-08" aria-label="August 2026">08/2026</time>
+<span class="news-marker" aria-hidden="true">🎉</span>
+<span class="news-copy"><strong>MemMark</strong> accepted at <a class="news-venue" href="https://arxiv.org/abs/2605.25002" rel="noopener noreferrer" target="_blank">EMNLP 2026</a> <span class="news-detail">· Findings</span>!</span>
 </li>
-<li class="news-item news-item--icassp">
-<time datetime="2026-01"><span class="news-month">Jan</span> <span class="news-year">2026</span></time>
-<span class="news-marker" aria-hidden="true"><i class="fas fa-check"></i></span>
-<span class="news-copy"><strong class="news-status">Accepted</strong> <a class="news-paper" href="https://arxiv.org/abs/2601.08189" rel="noopener noreferrer" target="_blank">ForgetMark</a> to <strong class="news-venue">ICASSP 2026</strong>.</span>
+<li class="news-item">
+<time datetime="2026-01" aria-label="January 2026">01/2026</time>
+<span class="news-marker" aria-hidden="true">🎉</span>
+<span class="news-copy"><strong>ForgetMark</strong> accepted at <a class="news-venue" href="https://arxiv.org/abs/2601.08189" rel="noopener noreferrer" target="_blank">ICASSP 2026</a>!</span>
 </li>
 </ul>
 </div>
