@@ -109,6 +109,16 @@ redirect_from:
 <div class="section-header"><span aria-hidden="true" class="section-index">03</span><h2 class="section-title" id="experience-title">Internship experience</h2></div>
 <div class="section-body">
 <article class="experience-entry">
+<div class="experience-logo experience-logo--a4x"><img alt="A4X logo" decoding="async" height="100" loading="lazy" src="{{ '/images/logos/a4x-trimmed.png' | relative_url }}" width="281"/></div>
+<div class="experience-content">
+<div class="experience-heading">
+<h3>A4X</h3>
+<span><time datetime="2026-08">Aug 2026</time> - Present</span>
+</div>
+<p class="experience-role">Multimodal Algorithm Intern</p>
+</div>
+</article>
+<article class="experience-entry">
 <div aria-label="Zhejiang University and GenTel" class="experience-logo experience-logo--joint experience-logo--collaboration">
 <span class="joint-logo-slot joint-logo-slot--zju"><img alt="Zhejiang University logo" decoding="async" height="299" loading="lazy" src="{{ '/images/logos/zju-trimmed.png' | relative_url }}" width="952"/></span>
 <span aria-hidden="true" class="joint-logo-divider"></span>

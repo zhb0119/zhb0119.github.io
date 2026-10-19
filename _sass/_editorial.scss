@@ -169,6 +169,8 @@ sup { font-size: .7em; }
 .section-education .experience-entry { grid-template-columns: 210px minmax(0,1fr); align-items: center; }
 .experience-logo--education { padding: 4px; }
 .section-experience .experience-entry { grid-template-columns: 270px minmax(0,1fr); }
+.experience-logo--a4x { width: 100%; max-width: 300px; min-height: 112px; }
+.experience-logo--a4x img { max-width: 240px; }
 .experience-logo--collaboration { display: grid; grid-template-columns: minmax(0,1.5fr) 1px minmax(0,1fr); min-height: 112px; gap: 12px; padding: 10px; }
 .joint-logo-slot { display: flex; width: 100%; min-width: 0; align-items: center; justify-content: center; }
 .joint-logo-slot--zju img { width: 100%; max-width: 100%; max-height: none; }
